@@ -149,9 +149,6 @@ class CreditCardInfo implements ArrayAccess
         if ($this->container['card_number'] === null) {
             $invalid_properties[] = "'card_number' can't be null";
         }
-        if ($this->container['card_verification_code'] === null) {
-            $invalid_properties[] = "'card_verification_code' can't be null";
-        }
         if ($this->container['expiration_month'] === null) {
             $invalid_properties[] = "'expiration_month' can't be null";
         }
@@ -171,9 +168,6 @@ class CreditCardInfo implements ArrayAccess
     {
 
         if ($this->container['card_number'] === null) {
-            return false;
-        }
-        if ($this->container['card_verification_code'] === null) {
             return false;
         }
         if ($this->container['expiration_month'] === null) {

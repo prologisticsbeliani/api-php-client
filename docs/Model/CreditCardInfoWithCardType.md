@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **card_number** | [**\Swagger\Client\Model\CardNumber**](CardNumber.md) |  | 
-**card_verification_code** | [**\Swagger\Client\Model\CardVerificationCode**](CardVerificationCode.md) |  | 
+**card_verification_code** | [**\Swagger\Client\Model\CardVerificationCode**](CardVerificationCode.md) |  | [optional] 
 **expiration_month** | [**\Swagger\Client\Model\ExpirationMonth**](ExpirationMonth.md) |  | 
 **expiration_year** | [**\Swagger\Client\Model\ExpirationYear**](ExpirationYear.md) |  | 
 **card_type** | **string** | Your credit card type. Example: VISA, MasterCard, etc... | 
