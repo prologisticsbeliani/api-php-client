@@ -54,7 +54,8 @@ class ReportFiltersLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\LinksGetReportFiltersLink'
+        'self' => '\Swagger\Client\Model\LinksGetReportFiltersLink',
+        'save' => '\Swagger\Client\Model\LinksSaveReportFilterLink'
     ];
 
     public static function swaggerTypes()
@@ -67,7 +68,8 @@ class ReportFiltersLinks implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'self' => 'self'
+        'self' => 'self',
+        'save' => 'save'
     ];
 
 
@@ -76,7 +78,8 @@ class ReportFiltersLinks implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'self' => 'setSelf'
+        'self' => 'setSelf',
+        'save' => 'setSave'
     ];
 
 
@@ -85,7 +88,8 @@ class ReportFiltersLinks implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'self' => 'getSelf'
+        'self' => 'getSelf',
+        'save' => 'getSave'
     ];
 
     public static function attributeMap()
@@ -120,6 +124,7 @@ class ReportFiltersLinks implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['self'] = isset($data['self']) ? $data['self'] : null;
+        $this->container['save'] = isset($data['save']) ? $data['save'] : null;
     }
 
     /**
@@ -164,6 +169,27 @@ class ReportFiltersLinks implements ArrayAccess
     public function setSelf($self)
     {
         $this->container['self'] = $self;
+
+        return $this;
+    }
+
+    /**
+     * Gets save
+     * @return \Swagger\Client\Model\LinksSaveReportFilterLink
+     */
+    public function getSave()
+    {
+        return $this->container['save'];
+    }
+
+    /**
+     * Sets save
+     * @param \Swagger\Client\Model\LinksSaveReportFilterLink $save
+     * @return $this
+     */
+    public function setSave($save)
+    {
+        $this->container['save'] = $save;
 
         return $this;
     }

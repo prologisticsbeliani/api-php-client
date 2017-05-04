@@ -55,7 +55,7 @@ class ReportFilters implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'report_filters' => '\Swagger\Client\Model\ReportFilterHeader[]',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\ReportFiltersLinks'
     ];
 
     public static function swaggerTypes()
@@ -175,7 +175,7 @@ class ReportFilters implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\ReportFiltersLinks
      */
     public function getLinks()
     {
@@ -184,7 +184,7 @@ class ReportFilters implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links
+     * @param \Swagger\Client\Model\ReportFiltersLinks $links
      * @return $this
      */
     public function setLinks($links)

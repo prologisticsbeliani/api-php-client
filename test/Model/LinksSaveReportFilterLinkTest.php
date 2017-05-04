@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportFiltersLinksTest
+ * LinksSaveReportFilterLinkTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ReportFiltersLinksTest Class Doc Comment
+ * LinksSaveReportFilterLinkTest Class Doc Comment
  *
  * @category    Class */
-// * @description ReportFiltersLinks
+// * @description LinksSaveReportFilterLink
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ReportFiltersLinksTest extends \PHPUnit_Framework_TestCase
+class LinksSaveReportFilterLinkTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,25 +75,73 @@ class ReportFiltersLinksTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ReportFiltersLinks"
+     * Test "LinksSaveReportFilterLink"
      */
-    public function testReportFiltersLinks()
+    public function testLinksSaveReportFilterLink()
     {
 
     }
 
     /**
-     * Test attribute "self"
+     * Test attribute "doc_url"
      */
-    public function testPropertySelf()
+    public function testPropertyDocUrl()
     {
 
     }
 
     /**
-     * Test attribute "save"
+     * Test attribute "description"
      */
-    public function testPropertySave()
+    public function testPropertyDescription()
+    {
+
+    }
+
+    /**
+     * Test attribute "href"
+     */
+    public function testPropertyHref()
+    {
+
+    }
+
+    /**
+     * Test attribute "operation_id"
+     */
+    public function testPropertyOperationId()
+    {
+
+    }
+
+    /**
+     * Test attribute "method"
+     */
+    public function testPropertyMethod()
+    {
+
+    }
+
+    /**
+     * Test attribute "parameters"
+     */
+    public function testPropertyParameters()
+    {
+
+    }
+
+    /**
+     * Test attribute "templated"
+     */
+    public function testPropertyTemplated()
+    {
+
+    }
+
+    /**
+     * Test attribute "info"
+     */
+    public function testPropertyInfo()
     {
 
     }
