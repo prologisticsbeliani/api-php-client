@@ -54,7 +54,7 @@ class LoginRequest implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'login' => '\Swagger\Client\Model\Email',
+        'login' => '\Swagger\Client\Model\BeezUPCommonEmail',
         'password' => 'string'
     ];
 
@@ -166,7 +166,7 @@ class LoginRequest implements ArrayAccess
 
     /**
      * Gets login
-     * @return \Swagger\Client\Model\Email
+     * @return \Swagger\Client\Model\BeezUPCommonEmail
      */
     public function getLogin()
     {
@@ -175,7 +175,7 @@ class LoginRequest implements ArrayAccess
 
     /**
      * Sets login
-     * @param \Swagger\Client\Model\Email $login
+     * @param \Swagger\Client\Model\BeezUPCommonEmail $login
      * @return $this
      */
     public function setLogin($login)

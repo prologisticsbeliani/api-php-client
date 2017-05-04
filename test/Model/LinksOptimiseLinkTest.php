@@ -1,6 +1,6 @@
 <?php
 /**
- * OptimiseRequestTest
+ * LinksOptimiseLinkTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * OptimiseRequestTest Class Doc Comment
+ * LinksOptimiseLinkTest Class Doc Comment
  *
  * @category    Class */
-// * @description OptimiseRequest
+// * @description LinksOptimiseLink
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class OptimiseRequestTest extends \PHPUnit_Framework_TestCase
+class LinksOptimiseLinkTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,89 +75,73 @@ class OptimiseRequestTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "OptimiseRequest"
+     * Test "LinksOptimiseLink"
      */
-    public function testOptimiseRequest()
+    public function testLinksOptimiseLink()
     {
 
     }
 
     /**
-     * Test attribute "channel_id"
+     * Test attribute "doc_url"
      */
-    public function testPropertyChannelId()
+    public function testPropertyDocUrl()
     {
 
     }
 
     /**
-     * Test attribute "begin_period_utc_date"
+     * Test attribute "description"
      */
-    public function testPropertyBeginPeriodUtcDate()
+    public function testPropertyDescription()
     {
 
     }
 
     /**
-     * Test attribute "end_period_utc_date"
+     * Test attribute "href"
      */
-    public function testPropertyEndPeriodUtcDate()
+    public function testPropertyHref()
     {
 
     }
 
     /**
-     * Test attribute "category_filter"
+     * Test attribute "operation_id"
      */
-    public function testPropertyCategoryFilter()
+    public function testPropertyOperationId()
     {
 
     }
 
     /**
-     * Test attribute "indicator_filters"
+     * Test attribute "method"
      */
-    public function testPropertyIndicatorFilters()
+    public function testPropertyMethod()
     {
 
     }
 
     /**
-     * Test attribute "advanced_filters"
+     * Test attribute "parameters"
      */
-    public function testPropertyAdvancedFilters()
+    public function testPropertyParameters()
     {
 
     }
 
     /**
-     * Test attribute "page_size"
+     * Test attribute "templated"
      */
-    public function testPropertyPageSize()
+    public function testPropertyTemplated()
     {
 
     }
 
     /**
-     * Test attribute "page_number"
+     * Test attribute "info"
      */
-    public function testPropertyPageNumber()
-    {
-
-    }
-
-    /**
-     * Test attribute "product_state"
-     */
-    public function testPropertyProductState()
-    {
-
-    }
-
-    /**
-     * Test attribute "product_filters"
-     */
-    public function testPropertyProductFilters()
+    public function testPropertyInfo()
     {
 
     }

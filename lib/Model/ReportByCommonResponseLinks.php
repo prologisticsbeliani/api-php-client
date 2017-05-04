@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportByChannelResponse
+ * ReportByCommonResponseLinks
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * ReportByChannelResponse Class Doc Comment
+ * ReportByCommonResponseLinks Class Doc Comment
  *
  * @category    Class
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ReportByChannelResponse implements ArrayAccess
+class ReportByCommonResponseLinks implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,17 +47,15 @@ class ReportByChannelResponse implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'reportByChannelResponse';
+    protected static $swaggerModelName = 'reportByCommonResponseLinks';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pagination_result' => '\Swagger\Client\Model\BeezUPCommonPaginationResult',
-        'currency_code' => '\Swagger\Client\Model\BeezUPCommonCurrencyCode',
-        'channels' => '\Swagger\Client\Model\ReportByChannel[]',
-        'links' => '\Swagger\Client\Model\ReportByChannelResponseLinks'
+        'enable_all_products' => '\Swagger\Client\Model\LinksOptimiseLink',
+        'disable_all_products' => '\Swagger\Client\Model\LinksOptimiseLink'
     ];
 
     public static function swaggerTypes()
@@ -70,10 +68,8 @@ class ReportByChannelResponse implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pagination_result' => 'paginationResult',
-        'currency_code' => 'currencyCode',
-        'channels' => 'channels',
-        'links' => 'links'
+        'enable_all_products' => 'enableAllProducts',
+        'disable_all_products' => 'disableAllProducts'
     ];
 
 
@@ -82,10 +78,8 @@ class ReportByChannelResponse implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pagination_result' => 'setPaginationResult',
-        'currency_code' => 'setCurrencyCode',
-        'channels' => 'setChannels',
-        'links' => 'setLinks'
+        'enable_all_products' => 'setEnableAllProducts',
+        'disable_all_products' => 'setDisableAllProducts'
     ];
 
 
@@ -94,10 +88,8 @@ class ReportByChannelResponse implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pagination_result' => 'getPaginationResult',
-        'currency_code' => 'getCurrencyCode',
-        'channels' => 'getChannels',
-        'links' => 'getLinks'
+        'enable_all_products' => 'getEnableAllProducts',
+        'disable_all_products' => 'getDisableAllProducts'
     ];
 
     public static function attributeMap()
@@ -131,10 +123,8 @@ class ReportByChannelResponse implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pagination_result'] = isset($data['pagination_result']) ? $data['pagination_result'] : null;
-        $this->container['currency_code'] = isset($data['currency_code']) ? $data['currency_code'] : null;
-        $this->container['channels'] = isset($data['channels']) ? $data['channels'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
+        $this->container['enable_all_products'] = isset($data['enable_all_products']) ? $data['enable_all_products'] : null;
+        $this->container['disable_all_products'] = isset($data['disable_all_products']) ? $data['disable_all_products'] : null;
     }
 
     /**
@@ -146,18 +136,6 @@ class ReportByChannelResponse implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['pagination_result'] === null) {
-            $invalid_properties[] = "'pagination_result' can't be null";
-        }
-        if ($this->container['currency_code'] === null) {
-            $invalid_properties[] = "'currency_code' can't be null";
-        }
-        if ($this->container['channels'] === null) {
-            $invalid_properties[] = "'channels' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalid_properties[] = "'links' can't be null";
-        }
         return $invalid_properties;
     }
 
@@ -170,102 +148,48 @@ class ReportByChannelResponse implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['pagination_result'] === null) {
-            return false;
-        }
-        if ($this->container['currency_code'] === null) {
-            return false;
-        }
-        if ($this->container['channels'] === null) {
-            return false;
-        }
-        if ($this->container['links'] === null) {
-            return false;
-        }
         return true;
     }
 
 
     /**
-     * Gets pagination_result
-     * @return \Swagger\Client\Model\BeezUPCommonPaginationResult
+     * Gets enable_all_products
+     * @return \Swagger\Client\Model\LinksOptimiseLink
      */
-    public function getPaginationResult()
+    public function getEnableAllProducts()
     {
-        return $this->container['pagination_result'];
+        return $this->container['enable_all_products'];
     }
 
     /**
-     * Sets pagination_result
-     * @param \Swagger\Client\Model\BeezUPCommonPaginationResult $pagination_result
+     * Sets enable_all_products
+     * @param \Swagger\Client\Model\LinksOptimiseLink $enable_all_products
      * @return $this
      */
-    public function setPaginationResult($pagination_result)
+    public function setEnableAllProducts($enable_all_products)
     {
-        $this->container['pagination_result'] = $pagination_result;
+        $this->container['enable_all_products'] = $enable_all_products;
 
         return $this;
     }
 
     /**
-     * Gets currency_code
-     * @return \Swagger\Client\Model\BeezUPCommonCurrencyCode
+     * Gets disable_all_products
+     * @return \Swagger\Client\Model\LinksOptimiseLink
      */
-    public function getCurrencyCode()
+    public function getDisableAllProducts()
     {
-        return $this->container['currency_code'];
+        return $this->container['disable_all_products'];
     }
 
     /**
-     * Sets currency_code
-     * @param \Swagger\Client\Model\BeezUPCommonCurrencyCode $currency_code
+     * Sets disable_all_products
+     * @param \Swagger\Client\Model\LinksOptimiseLink $disable_all_products
      * @return $this
      */
-    public function setCurrencyCode($currency_code)
+    public function setDisableAllProducts($disable_all_products)
     {
-        $this->container['currency_code'] = $currency_code;
-
-        return $this;
-    }
-
-    /**
-     * Gets channels
-     * @return \Swagger\Client\Model\ReportByChannel[]
-     */
-    public function getChannels()
-    {
-        return $this->container['channels'];
-    }
-
-    /**
-     * Sets channels
-     * @param \Swagger\Client\Model\ReportByChannel[] $channels
-     * @return $this
-     */
-    public function setChannels($channels)
-    {
-        $this->container['channels'] = $channels;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     * @return \Swagger\Client\Model\ReportByChannelResponseLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     * @param \Swagger\Client\Model\ReportByChannelResponseLinks $links
-     * @return $this
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
+        $this->container['disable_all_products'] = $disable_all_products;
 
         return $this;
     }

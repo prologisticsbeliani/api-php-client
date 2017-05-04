@@ -1,6 +1,6 @@
 <?php
 /**
- * OptimiseRequestTest
+ * ReportByProductResponseLinksTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * OptimiseRequestTest Class Doc Comment
+ * ReportByProductResponseLinksTest Class Doc Comment
  *
  * @category    Class */
-// * @description OptimiseRequest
+// * @description ReportByProductResponseLinks
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class OptimiseRequestTest extends \PHPUnit_Framework_TestCase
+class ReportByProductResponseLinksTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,89 +75,25 @@ class OptimiseRequestTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "OptimiseRequest"
+     * Test "ReportByProductResponseLinks"
      */
-    public function testOptimiseRequest()
+    public function testReportByProductResponseLinks()
     {
 
     }
 
     /**
-     * Test attribute "channel_id"
+     * Test attribute "enable_all_products"
      */
-    public function testPropertyChannelId()
+    public function testPropertyEnableAllProducts()
     {
 
     }
 
     /**
-     * Test attribute "begin_period_utc_date"
+     * Test attribute "disable_all_products"
      */
-    public function testPropertyBeginPeriodUtcDate()
-    {
-
-    }
-
-    /**
-     * Test attribute "end_period_utc_date"
-     */
-    public function testPropertyEndPeriodUtcDate()
-    {
-
-    }
-
-    /**
-     * Test attribute "category_filter"
-     */
-    public function testPropertyCategoryFilter()
-    {
-
-    }
-
-    /**
-     * Test attribute "indicator_filters"
-     */
-    public function testPropertyIndicatorFilters()
-    {
-
-    }
-
-    /**
-     * Test attribute "advanced_filters"
-     */
-    public function testPropertyAdvancedFilters()
-    {
-
-    }
-
-    /**
-     * Test attribute "page_size"
-     */
-    public function testPropertyPageSize()
-    {
-
-    }
-
-    /**
-     * Test attribute "page_number"
-     */
-    public function testPropertyPageNumber()
-    {
-
-    }
-
-    /**
-     * Test attribute "product_state"
-     */
-    public function testPropertyProductState()
-    {
-
-    }
-
-    /**
-     * Test attribute "product_filters"
-     */
-    public function testPropertyProductFilters()
+    public function testPropertyDisableAllProducts()
     {
 
     }

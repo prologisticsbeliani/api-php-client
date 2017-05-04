@@ -56,7 +56,7 @@ class ReportByProductResponse implements ArrayAccess
     protected static $swaggerTypes = [
         'pagination_result' => '\Swagger\Client\Model\BeezUPCommonPaginationResult',
         'products' => '\Swagger\Client\Model\ReportByProduct[]',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\ReportByProductResponseLinks'
     ];
 
     public static function swaggerTypes()
@@ -219,7 +219,7 @@ class ReportByProductResponse implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\ReportByProductResponseLinks
      */
     public function getLinks()
     {
@@ -228,7 +228,7 @@ class ReportByProductResponse implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links
+     * @param \Swagger\Client\Model\ReportByProductResponseLinks $links
      * @return $this
      */
     public function setLinks($links)

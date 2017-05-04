@@ -57,7 +57,7 @@ class ReportByCategoryResponse implements ArrayAccess
         'pagination_result' => '\Swagger\Client\Model\BeezUPCommonPaginationResult',
         'currency_code' => '\Swagger\Client\Model\BeezUPCommonCurrencyCode',
         'categories' => '\Swagger\Client\Model\ReportByCategory[]',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\ReportByCategoryResponseLinks'
     ];
 
     public static function swaggerTypes()
@@ -227,7 +227,7 @@ class ReportByCategoryResponse implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\ReportByCategoryResponseLinks
      */
     public function getLinks()
     {
@@ -236,7 +236,7 @@ class ReportByCategoryResponse implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links
+     * @param \Swagger\Client\Model\ReportByCategoryResponseLinks $links
      * @return $this
      */
     public function setLinks($links)

@@ -37,7 +37,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**\Swagger\Client\Model\LoginRequest**](../Model/\Swagger\Client\Model\LoginRequest.md)|  | [optional]
+ **request** | [**\Swagger\Client\Model\LoginRequest**](../Model/\Swagger\Client\Model\LoginRequest.md)|  |
 
 ### Return type
 
@@ -67,7 +67,7 @@ Lost password - Your password will be regenerated and sent to your email
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\SecurityApi();
-$email = new \Swagger\Client\Model\Email(); // \Swagger\Client\Model\Email | Your email
+$email = new \Swagger\Client\Model\BeezUPCommonEmail(); // \Swagger\Client\Model\BeezUPCommonEmail | Your email
 
 try {
     $api_instance->lostPassword($email);
@@ -81,7 +81,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\Swagger\Client\Model\Email**](../Model/\Swagger\Client\Model\Email.md)| Your email | [optional]
+ **email** | [**\Swagger\Client\Model\BeezUPCommonEmail**](../Model/\Swagger\Client\Model\BeezUPCommonEmail.md)| Your email |
 
 ### Return type
 
@@ -125,7 +125,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**\Swagger\Client\Model\RegisterRequest**](../Model/\Swagger\Client\Model\RegisterRequest.md)|  | [optional]
+ **request** | [**\Swagger\Client\Model\RegisterRequest**](../Model/\Swagger\Client\Model\RegisterRequest.md)|  |
 
 ### Return type
 

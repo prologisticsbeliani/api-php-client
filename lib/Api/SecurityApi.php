@@ -92,11 +92,11 @@ class SecurityApi
      *
      * Login
      *
-     * @param \Swagger\Client\Model\LoginRequest $request  (optional)
+     * @param \Swagger\Client\Model\LoginRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\ApiCredentials
      */
-    public function login($request = null)
+    public function login($request)
     {
         list($response) = $this->loginWithHttpInfo($request);
         return $response;
@@ -107,12 +107,16 @@ class SecurityApi
      *
      * Login
      *
-     * @param \Swagger\Client\Model\LoginRequest $request  (optional)
+     * @param \Swagger\Client\Model\LoginRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\ApiCredentials, HTTP status code, HTTP response headers (array of strings)
      */
-    public function loginWithHttpInfo($request = null)
+    public function loginWithHttpInfo($request)
     {
+        // verify the required parameter 'request' is set
+        if ($request === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $request when calling login');
+        }
         // parse inputs
         $resourcePath = "/v2/public/security/login";
         $httpBody = '';
@@ -178,11 +182,11 @@ class SecurityApi
      *
      * Lost password
      *
-     * @param \Swagger\Client\Model\Email $email Your email (optional)
+     * @param \Swagger\Client\Model\BeezUPCommonEmail $email Your email (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return void
      */
-    public function lostPassword($email = null)
+    public function lostPassword($email)
     {
         list($response) = $this->lostPasswordWithHttpInfo($email);
         return $response;
@@ -193,12 +197,16 @@ class SecurityApi
      *
      * Lost password
      *
-     * @param \Swagger\Client\Model\Email $email Your email (optional)
+     * @param \Swagger\Client\Model\BeezUPCommonEmail $email Your email (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function lostPasswordWithHttpInfo($email = null)
+    public function lostPasswordWithHttpInfo($email)
     {
+        // verify the required parameter 'email' is set
+        if ($email === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $email when calling lostPassword');
+        }
         // parse inputs
         $resourcePath = "/v2/public/security/lostpassword";
         $httpBody = '';
@@ -264,11 +272,11 @@ class SecurityApi
      *
      * User Registration
      *
-     * @param \Swagger\Client\Model\RegisterRequest $request  (optional)
+     * @param \Swagger\Client\Model\RegisterRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return void
      */
-    public function register($request = null)
+    public function register($request)
     {
         list($response) = $this->registerWithHttpInfo($request);
         return $response;
@@ -279,12 +287,16 @@ class SecurityApi
      *
      * User Registration
      *
-     * @param \Swagger\Client\Model\RegisterRequest $request  (optional)
+     * @param \Swagger\Client\Model\RegisterRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function registerWithHttpInfo($request = null)
+    public function registerWithHttpInfo($request)
     {
+        // verify the required parameter 'request' is set
+        if ($request === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $request when calling register');
+        }
         // parse inputs
         $resourcePath = "/v2/public/security/register";
         $httpBody = '';
