@@ -4626,7 +4626,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getStoreReportByDayExport**
-> \Swagger\Client\Model\BeezUPCommonLink2[] getStoreReportByDayExport($store_id, $format, $request)
+> \Swagger\Client\Model\BeezUPCommonLink3 getStoreReportByDayExport($store_id, $format, $request)
 
 Get the report by day
 
@@ -4666,7 +4666,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BeezUPCommonLink2[]**](../Model/BeezUPCommonLink2.md)
+[**\Swagger\Client\Model\BeezUPCommonLink3**](../Model/BeezUPCommonLink3.md)
 
 ### Authorization
 

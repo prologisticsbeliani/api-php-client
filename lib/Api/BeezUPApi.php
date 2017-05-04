@@ -9195,7 +9195,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByDayRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\BeezUPCommonLink3
      */
     public function getStoreReportByDayExport($store_id, $format, $request)
     {
@@ -9212,7 +9212,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByDayRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\BeezUPCommonLink2[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\BeezUPCommonLink3, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStoreReportByDayExportWithHttpInfo($store_id, $format, $request)
     {
@@ -9280,15 +9280,15 @@ class BeezUPApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\BeezUPCommonLink2[]',
+                '\Swagger\Client\Model\BeezUPCommonLink3',
                 '/v2/user/analytics/{storeId}/reports/byday/export'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink2[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink3', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink2[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink3', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:

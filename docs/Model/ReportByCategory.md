@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **turn_over** | **float** | The Turnover for this category | 
 **margin** | **float** | The margin for this category | 
 **performance_indicator** | **float** | The performance indicator based on the performance indicator formula indicated in the request for this category | 
-**links** | [**\Swagger\Client\Model\BeezUPCommonLink2[]**](BeezUPCommonLink2.md) | The action list on this catagory | [optional] 
+**links** | [**\Swagger\Client\Model\ReportByCategoryLinks**](ReportByCategoryLinks.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

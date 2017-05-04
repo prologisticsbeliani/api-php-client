@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **turn_over** | **float** | The Turnover for this product | 
 **margin** | **float** | The margin for this product | 
 **performance_indicator** | **float** | The performance indicator based on the performance indicator formula indicated in the request for this product | 
-**links** | [**\Swagger\Client\Model\BeezUPCommonLink2[]**](BeezUPCommonLink2.md) | The action list on this product | 
+**links** | [**\Swagger\Client\Model\ReportByProductLinks**](ReportByProductLinks.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -63,7 +63,7 @@ class ReportByChannel implements ArrayAccess
         'turn_over' => 'float',
         'margin' => 'float',
         'performance_indicator' => 'float',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\ReportByChannelLinks'
     ];
 
     public static function swaggerTypes()
@@ -437,7 +437,7 @@ class ReportByChannel implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\ReportByChannelLinks
      */
     public function getLinks()
     {
@@ -446,7 +446,7 @@ class ReportByChannel implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links The action list on this channel
+     * @param \Swagger\Client\Model\ReportByChannelLinks $links
      * @return $this
      */
     public function setLinks($links)

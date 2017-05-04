@@ -64,7 +64,7 @@ class ReportByCategory implements ArrayAccess
         'turn_over' => 'float',
         'margin' => 'float',
         'performance_indicator' => 'float',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\ReportByCategoryLinks'
     ];
 
     public static function swaggerTypes()
@@ -463,7 +463,7 @@ class ReportByCategory implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\ReportByCategoryLinks
      */
     public function getLinks()
     {
@@ -472,7 +472,7 @@ class ReportByCategory implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links The action list on this catagory
+     * @param \Swagger\Client\Model\ReportByCategoryLinks $links
      * @return $this
      */
     public function setLinks($links)

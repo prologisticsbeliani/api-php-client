@@ -63,7 +63,7 @@ class ReportByProduct implements ArrayAccess
         'turn_over' => 'float',
         'margin' => 'float',
         'performance_indicator' => 'float',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\ReportByProductLinks'
     ];
 
     public static function swaggerTypes()
@@ -443,7 +443,7 @@ class ReportByProduct implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\ReportByProductLinks
      */
     public function getLinks()
     {
@@ -452,7 +452,7 @@ class ReportByProduct implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links The action list on this product
+     * @param \Swagger\Client\Model\ReportByProductLinks $links
      * @return $this
      */
     public function setLinks($links)
