@@ -55,7 +55,7 @@ class ChannelCatalogList implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]',
-        'channel_catalogs' => '\Swagger\Client\Model\ChannelCatalogHeader[]'
+        'channel_catalogs' => '\Swagger\Client\Model\ChannelCatalog[]'
     ];
 
     public static function swaggerTypes()
@@ -175,7 +175,7 @@ class ChannelCatalogList implements ArrayAccess
 
     /**
      * Gets channel_catalogs
-     * @return \Swagger\Client\Model\ChannelCatalogHeader[]
+     * @return \Swagger\Client\Model\ChannelCatalog[]
      */
     public function getChannelCatalogs()
     {
@@ -184,7 +184,7 @@ class ChannelCatalogList implements ArrayAccess
 
     /**
      * Sets channel_catalogs
-     * @param \Swagger\Client\Model\ChannelCatalogHeader[] $channel_catalogs
+     * @param \Swagger\Client\Model\ChannelCatalog[] $channel_catalogs
      * @return $this
      */
     public function setChannelCatalogs($channel_catalogs)

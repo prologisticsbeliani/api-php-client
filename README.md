@@ -352,8 +352,6 @@ Class | Method | HTTP request | Description
  - [ChannelCatalogCategoryMapping](docs/Model/ChannelCatalogCategoryMapping.md)
  - [ChannelCatalogCategoryMappingInfo](docs/Model/ChannelCatalogCategoryMappingInfo.md)
  - [ChannelCatalogCategoryMappings](docs/Model/ChannelCatalogCategoryMappings.md)
- - [ChannelCatalogHeader](docs/Model/ChannelCatalogHeader.md)
- - [ChannelCatalogHeaderLinks](docs/Model/ChannelCatalogHeaderLinks.md)
  - [ChannelCatalogList](docs/Model/ChannelCatalogList.md)
  - [ChannelCatalogMarketplaceProperties](docs/Model/ChannelCatalogMarketplaceProperties.md)
  - [ChannelCatalogMarketplacePropertiesLinks](docs/Model/ChannelCatalogMarketplacePropertiesLinks.md)
