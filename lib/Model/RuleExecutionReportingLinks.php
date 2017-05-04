@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportFilterHeader
+ * RuleExecutionReportingLinks
  *
  * PHP version 5
  *
@@ -32,14 +32,15 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * ReportFilterHeader Class Doc Comment
+ * RuleExecutionReportingLinks Class Doc Comment
  *
  * @category    Class
+ * @description Links to retrieve/action on this rule execution
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ReportFilterHeader implements ArrayAccess
+class RuleExecutionReportingLinks implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,16 +48,14 @@ class ReportFilterHeader implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'reportFilterHeader';
+    protected static $swaggerModelName = 'ruleExecutionReportingLinks';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'report_filter_id' => 'string',
-        'report_filter_name' => 'string',
-        'links' => '\Swagger\Client\Model\ReportFilterHeaderLinks'
+        'rule' => '\Swagger\Client\Model\DefinitionsLinksGetRuleLink'
     ];
 
     public static function swaggerTypes()
@@ -69,9 +68,7 @@ class ReportFilterHeader implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'report_filter_id' => 'reportFilterId',
-        'report_filter_name' => 'reportFilterName',
-        'links' => 'links'
+        'rule' => 'rule'
     ];
 
 
@@ -80,9 +77,7 @@ class ReportFilterHeader implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'report_filter_id' => 'setReportFilterId',
-        'report_filter_name' => 'setReportFilterName',
-        'links' => 'setLinks'
+        'rule' => 'setRule'
     ];
 
 
@@ -91,9 +86,7 @@ class ReportFilterHeader implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'report_filter_id' => 'getReportFilterId',
-        'report_filter_name' => 'getReportFilterName',
-        'links' => 'getLinks'
+        'rule' => 'getRule'
     ];
 
     public static function attributeMap()
@@ -127,9 +120,7 @@ class ReportFilterHeader implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['report_filter_id'] = isset($data['report_filter_id']) ? $data['report_filter_id'] : null;
-        $this->container['report_filter_name'] = isset($data['report_filter_name']) ? $data['report_filter_name'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
+        $this->container['rule'] = isset($data['rule']) ? $data['rule'] : null;
     }
 
     /**
@@ -141,15 +132,6 @@ class ReportFilterHeader implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['report_filter_id'] === null) {
-            $invalid_properties[] = "'report_filter_id' can't be null";
-        }
-        if ($this->container['report_filter_name'] === null) {
-            $invalid_properties[] = "'report_filter_name' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalid_properties[] = "'links' can't be null";
-        }
         return $invalid_properties;
     }
 
@@ -162,78 +144,27 @@ class ReportFilterHeader implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['report_filter_id'] === null) {
-            return false;
-        }
-        if ($this->container['report_filter_name'] === null) {
-            return false;
-        }
-        if ($this->container['links'] === null) {
-            return false;
-        }
         return true;
     }
 
 
     /**
-     * Gets report_filter_id
-     * @return string
+     * Gets rule
+     * @return \Swagger\Client\Model\DefinitionsLinksGetRuleLink
      */
-    public function getReportFilterId()
+    public function getRule()
     {
-        return $this->container['report_filter_id'];
+        return $this->container['rule'];
     }
 
     /**
-     * Sets report_filter_id
-     * @param string $report_filter_id Report filter identifier
+     * Sets rule
+     * @param \Swagger\Client\Model\DefinitionsLinksGetRuleLink $rule
      * @return $this
      */
-    public function setReportFilterId($report_filter_id)
+    public function setRule($rule)
     {
-        $this->container['report_filter_id'] = $report_filter_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets report_filter_name
-     * @return string
-     */
-    public function getReportFilterName()
-    {
-        return $this->container['report_filter_name'];
-    }
-
-    /**
-     * Sets report_filter_name
-     * @param string $report_filter_name Report filter name
-     * @return $this
-     */
-    public function setReportFilterName($report_filter_name)
-    {
-        $this->container['report_filter_name'] = $report_filter_name;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     * @return \Swagger\Client\Model\ReportFilterHeaderLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     * @param \Swagger\Client\Model\ReportFilterHeaderLinks $links
-     * @return $this
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
+        $this->container['rule'] = $rule;
 
         return $this;
     }

@@ -64,7 +64,7 @@ class Rule implements ArrayAccess
         'enabled' => 'bool',
         'validity_start_utc_date' => '\DateTime',
         'validity_end_utc_date' => '\DateTime',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\DefinitionsRuleLinks'
     ];
 
     public static function swaggerTypes()
@@ -451,7 +451,7 @@ class Rule implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\DefinitionsRuleLinks
      */
     public function getLinks()
     {
@@ -460,7 +460,7 @@ class Rule implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links Links to retrieve/action on other entities
+     * @param \Swagger\Client\Model\DefinitionsRuleLinks $links
      * @return $this
      */
     public function setLinks($links)

@@ -1,11 +1,10 @@
-# ReportFilterHeader
+# RuleList
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**report_filter_id** | **string** | Report filter identifier | 
-**report_filter_name** | **string** | Report filter name | 
-**links** | [**\Swagger\Client\Model\ReportFilterHeaderLinks**](ReportFilterHeaderLinks.md) |  | 
+**rules** | [**\Swagger\Client\Model\Rule[]**](Rule.md) | Rule list | 
+**links** | [**\Swagger\Client\Model\RuleListLinks**](RuleListLinks.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

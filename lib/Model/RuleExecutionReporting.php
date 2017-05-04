@@ -67,7 +67,7 @@ class RuleExecutionReporting implements ArrayAccess
         'user_id' => 'string',
         'execution_source' => '\Swagger\Client\Model\RuleExecutionReportingExecutionSource',
         'report_url' => 'string',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\DefinitionsRuleExecutionReportingLinks'
     ];
 
     public static function swaggerTypes()
@@ -511,7 +511,7 @@ class RuleExecutionReporting implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\DefinitionsRuleExecutionReportingLinks
      */
     public function getLinks()
     {
@@ -520,7 +520,7 @@ class RuleExecutionReporting implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links Links to retrieve/action on this rule execution
+     * @param \Swagger\Client\Model\DefinitionsRuleExecutionReportingLinks $links
      * @return $this
      */
     public function setLinks($links)

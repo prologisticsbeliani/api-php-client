@@ -1,11 +1,9 @@
-# ReportFilterHeader
+# RuleExecutionReportingLinks
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**report_filter_id** | **string** | Report filter identifier | 
-**report_filter_name** | **string** | Report filter name | 
-**links** | [**\Swagger\Client\Model\ReportFilterHeaderLinks**](ReportFilterHeaderLinks.md) |  | 
+**rule** | [**\Swagger\Client\Model\DefinitionsLinksGetRuleLink**](DefinitionsLinksGetRuleLink.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportFilter
+ * LinksGetRulesLink
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * ReportFilter Class Doc Comment
+ * LinksGetRulesLink Class Doc Comment
  *
  * @category    Class
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ReportFilter implements ArrayAccess
+class LinksGetRulesLink implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,17 +47,21 @@ class ReportFilter implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'reportFilter';
+    protected static $swaggerModelName = 'links.GetRulesLink';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'report_filter_id' => 'string',
-        'report_filter_name' => 'string',
-        'parameters' => '\Swagger\Client\Model\ReportFilterParameters',
-        'links' => '\Swagger\Client\Model\ReportFilterLinks'
+        'doc_url' => '\Swagger\Client\Model\BeezUPCommonDocUrl',
+        'description' => 'string',
+        'href' => '\Swagger\Client\Model\BeezUPCommonHref',
+        'operation_id' => '\Swagger\Client\Model\BeezUPCommonOperationId',
+        'method' => '\Swagger\Client\Model\BeezUPCommonHttpMethod',
+        'parameters' => 'map[string,\Swagger\Client\Model\BeezUPCommonLinkParameter3]',
+        'templated' => 'bool',
+        'info' => '\Swagger\Client\Model\BeezUPCommonInfoSummaries'
     ];
 
     public static function swaggerTypes()
@@ -70,10 +74,14 @@ class ReportFilter implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'report_filter_id' => 'reportFilterId',
-        'report_filter_name' => 'reportFilterName',
+        'doc_url' => 'docUrl',
+        'description' => 'description',
+        'href' => 'href',
+        'operation_id' => 'operationId',
+        'method' => 'method',
         'parameters' => 'parameters',
-        'links' => 'links'
+        'templated' => 'templated',
+        'info' => 'info'
     ];
 
 
@@ -82,10 +90,14 @@ class ReportFilter implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'report_filter_id' => 'setReportFilterId',
-        'report_filter_name' => 'setReportFilterName',
+        'doc_url' => 'setDocUrl',
+        'description' => 'setDescription',
+        'href' => 'setHref',
+        'operation_id' => 'setOperationId',
+        'method' => 'setMethod',
         'parameters' => 'setParameters',
-        'links' => 'setLinks'
+        'templated' => 'setTemplated',
+        'info' => 'setInfo'
     ];
 
 
@@ -94,10 +106,14 @@ class ReportFilter implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'report_filter_id' => 'getReportFilterId',
-        'report_filter_name' => 'getReportFilterName',
+        'doc_url' => 'getDocUrl',
+        'description' => 'getDescription',
+        'href' => 'getHref',
+        'operation_id' => 'getOperationId',
+        'method' => 'getMethod',
         'parameters' => 'getParameters',
-        'links' => 'getLinks'
+        'templated' => 'getTemplated',
+        'info' => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -131,10 +147,14 @@ class ReportFilter implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['report_filter_id'] = isset($data['report_filter_id']) ? $data['report_filter_id'] : null;
-        $this->container['report_filter_name'] = isset($data['report_filter_name']) ? $data['report_filter_name'] : null;
+        $this->container['doc_url'] = isset($data['doc_url']) ? $data['doc_url'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['href'] = isset($data['href']) ? $data['href'] : null;
+        $this->container['operation_id'] = isset($data['operation_id']) ? $data['operation_id'] : null;
+        $this->container['method'] = isset($data['method']) ? $data['method'] : null;
         $this->container['parameters'] = isset($data['parameters']) ? $data['parameters'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
+        $this->container['templated'] = isset($data['templated']) ? $data['templated'] : null;
+        $this->container['info'] = isset($data['info']) ? $data['info'] : null;
     }
 
     /**
@@ -146,15 +166,6 @@ class ReportFilter implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['report_filter_id'] === null) {
-            $invalid_properties[] = "'report_filter_id' can't be null";
-        }
-        if ($this->container['report_filter_name'] === null) {
-            $invalid_properties[] = "'report_filter_name' can't be null";
-        }
-        if ($this->container['parameters'] === null) {
-            $invalid_properties[] = "'parameters' can't be null";
-        }
         return $invalid_properties;
     }
 
@@ -167,64 +178,118 @@ class ReportFilter implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['report_filter_id'] === null) {
-            return false;
-        }
-        if ($this->container['report_filter_name'] === null) {
-            return false;
-        }
-        if ($this->container['parameters'] === null) {
-            return false;
-        }
         return true;
     }
 
 
     /**
-     * Gets report_filter_id
-     * @return string
+     * Gets doc_url
+     * @return \Swagger\Client\Model\BeezUPCommonDocUrl
      */
-    public function getReportFilterId()
+    public function getDocUrl()
     {
-        return $this->container['report_filter_id'];
+        return $this->container['doc_url'];
     }
 
     /**
-     * Sets report_filter_id
-     * @param string $report_filter_id Report filter identifier
+     * Sets doc_url
+     * @param \Swagger\Client\Model\BeezUPCommonDocUrl $doc_url
      * @return $this
      */
-    public function setReportFilterId($report_filter_id)
+    public function setDocUrl($doc_url)
     {
-        $this->container['report_filter_id'] = $report_filter_id;
+        $this->container['doc_url'] = $doc_url;
 
         return $this;
     }
 
     /**
-     * Gets report_filter_name
+     * Gets description
      * @return string
      */
-    public function getReportFilterName()
+    public function getDescription()
     {
-        return $this->container['report_filter_name'];
+        return $this->container['description'];
     }
 
     /**
-     * Sets report_filter_name
-     * @param string $report_filter_name Report filter name
+     * Sets description
+     * @param string $description The description of the link
      * @return $this
      */
-    public function setReportFilterName($report_filter_name)
+    public function setDescription($description)
     {
-        $this->container['report_filter_name'] = $report_filter_name;
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets href
+     * @return \Swagger\Client\Model\BeezUPCommonHref
+     */
+    public function getHref()
+    {
+        return $this->container['href'];
+    }
+
+    /**
+     * Sets href
+     * @param \Swagger\Client\Model\BeezUPCommonHref $href
+     * @return $this
+     */
+    public function setHref($href)
+    {
+        $this->container['href'] = $href;
+
+        return $this;
+    }
+
+    /**
+     * Gets operation_id
+     * @return \Swagger\Client\Model\BeezUPCommonOperationId
+     */
+    public function getOperationId()
+    {
+        return $this->container['operation_id'];
+    }
+
+    /**
+     * Sets operation_id
+     * @param \Swagger\Client\Model\BeezUPCommonOperationId $operation_id
+     * @return $this
+     */
+    public function setOperationId($operation_id)
+    {
+        $this->container['operation_id'] = $operation_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets method
+     * @return \Swagger\Client\Model\BeezUPCommonHttpMethod
+     */
+    public function getMethod()
+    {
+        return $this->container['method'];
+    }
+
+    /**
+     * Sets method
+     * @param \Swagger\Client\Model\BeezUPCommonHttpMethod $method
+     * @return $this
+     */
+    public function setMethod($method)
+    {
+        $this->container['method'] = $method;
 
         return $this;
     }
 
     /**
      * Gets parameters
-     * @return \Swagger\Client\Model\ReportFilterParameters
+     * @return map[string,\Swagger\Client\Model\BeezUPCommonLinkParameter3]
      */
     public function getParameters()
     {
@@ -233,7 +298,7 @@ class ReportFilter implements ArrayAccess
 
     /**
      * Sets parameters
-     * @param \Swagger\Client\Model\ReportFilterParameters $parameters
+     * @param map[string,\Swagger\Client\Model\BeezUPCommonLinkParameter3] $parameters
      * @return $this
      */
     public function setParameters($parameters)
@@ -244,22 +309,43 @@ class ReportFilter implements ArrayAccess
     }
 
     /**
-     * Gets links
-     * @return \Swagger\Client\Model\ReportFilterLinks
+     * Gets templated
+     * @return bool
      */
-    public function getLinks()
+    public function getTemplated()
     {
-        return $this->container['links'];
+        return $this->container['templated'];
     }
 
     /**
-     * Sets links
-     * @param \Swagger\Client\Model\ReportFilterLinks $links
+     * Sets templated
+     * @param bool $templated indicates whether the href is templated or not
      * @return $this
      */
-    public function setLinks($links)
+    public function setTemplated($templated)
     {
-        $this->container['links'] = $links;
+        $this->container['templated'] = $templated;
+
+        return $this;
+    }
+
+    /**
+     * Gets info
+     * @return \Swagger\Client\Model\BeezUPCommonInfoSummaries
+     */
+    public function getInfo()
+    {
+        return $this->container['info'];
+    }
+
+    /**
+     * Sets info
+     * @param \Swagger\Client\Model\BeezUPCommonInfoSummaries $info
+     * @return $this
+     */
+    public function setInfo($info)
+    {
+        $this->container['info'] = $info;
 
         return $this;
     }

@@ -2522,7 +2522,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **exportStoreReportByCategory**
-> \Swagger\Client\Model\BeezUPCommonLink2[] exportStoreReportByCategory($store_id, $format, $request)
+> \Swagger\Client\Model\BeezUPCommonLink3 exportStoreReportByCategory($store_id, $format, $request)
 
 Export the report by category
 
@@ -2562,7 +2562,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BeezUPCommonLink2[]**](../Model/BeezUPCommonLink2.md)
+[**\Swagger\Client\Model\BeezUPCommonLink3**](../Model/BeezUPCommonLink3.md)
 
 ### Authorization
 
@@ -2576,7 +2576,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **exportStoreReportByChannel**
-> \Swagger\Client\Model\BeezUPCommonLink2[] exportStoreReportByChannel($store_id, $format, $request)
+> \Swagger\Client\Model\BeezUPCommonLink3 exportStoreReportByChannel($store_id, $format, $request)
 
 Export the report by channel
 
@@ -2616,7 +2616,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BeezUPCommonLink2[]**](../Model/BeezUPCommonLink2.md)
+[**\Swagger\Client\Model\BeezUPCommonLink3**](../Model/BeezUPCommonLink3.md)
 
 ### Authorization
 
@@ -2630,7 +2630,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **exportStoreReportByProduct**
-> \Swagger\Client\Model\BeezUPCommonLink2[] exportStoreReportByProduct($store_id, $format, $request)
+> \Swagger\Client\Model\BeezUPCommonLink3 exportStoreReportByProduct($store_id, $format, $request)
 
 Export the report by product
 
@@ -2670,7 +2670,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BeezUPCommonLink2[]**](../Model/BeezUPCommonLink2.md)
+[**\Swagger\Client\Model\BeezUPCommonLink3**](../Model/BeezUPCommonLink3.md)
 
 ### Authorization
 
@@ -4182,7 +4182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRules**
-> \Swagger\Client\Model\Rules getRules($store_id)
+> \Swagger\Client\Model\Rulelist getRules($store_id)
 
 Gets the list of rules for a given store
 
@@ -4216,7 +4216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Rules**](../Model/Rules.md)
+[**\Swagger\Client\Model\Rulelist**](../Model/Rulelist.md)
 
 ### Authorization
 

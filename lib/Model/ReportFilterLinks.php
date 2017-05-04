@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportFilterHeader
+ * ReportFilterLinks
  *
  * PHP version 5
  *
@@ -32,14 +32,15 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * ReportFilterHeader Class Doc Comment
+ * ReportFilterLinks Class Doc Comment
  *
  * @category    Class
+ * @description Indicates the actions you can do on this report filter
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ReportFilterHeader implements ArrayAccess
+class ReportFilterLinks implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,16 +48,16 @@ class ReportFilterHeader implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'reportFilterHeader';
+    protected static $swaggerModelName = 'reportFilterLinks';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'report_filter_id' => 'string',
-        'report_filter_name' => 'string',
-        'links' => '\Swagger\Client\Model\ReportFilterHeaderLinks'
+        'self' => '\Swagger\Client\Model\LinksGetReportFilterLink',
+        'save' => '\Swagger\Client\Model\LinksSaveReportFilterLink',
+        'delete' => '\Swagger\Client\Model\LinksDeleteReportFilterLink'
     ];
 
     public static function swaggerTypes()
@@ -69,9 +70,9 @@ class ReportFilterHeader implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'report_filter_id' => 'reportFilterId',
-        'report_filter_name' => 'reportFilterName',
-        'links' => 'links'
+        'self' => 'self',
+        'save' => 'save',
+        'delete' => 'delete'
     ];
 
 
@@ -80,9 +81,9 @@ class ReportFilterHeader implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'report_filter_id' => 'setReportFilterId',
-        'report_filter_name' => 'setReportFilterName',
-        'links' => 'setLinks'
+        'self' => 'setSelf',
+        'save' => 'setSave',
+        'delete' => 'setDelete'
     ];
 
 
@@ -91,9 +92,9 @@ class ReportFilterHeader implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'report_filter_id' => 'getReportFilterId',
-        'report_filter_name' => 'getReportFilterName',
-        'links' => 'getLinks'
+        'self' => 'getSelf',
+        'save' => 'getSave',
+        'delete' => 'getDelete'
     ];
 
     public static function attributeMap()
@@ -127,9 +128,9 @@ class ReportFilterHeader implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['report_filter_id'] = isset($data['report_filter_id']) ? $data['report_filter_id'] : null;
-        $this->container['report_filter_name'] = isset($data['report_filter_name']) ? $data['report_filter_name'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
+        $this->container['self'] = isset($data['self']) ? $data['self'] : null;
+        $this->container['save'] = isset($data['save']) ? $data['save'] : null;
+        $this->container['delete'] = isset($data['delete']) ? $data['delete'] : null;
     }
 
     /**
@@ -141,15 +142,6 @@ class ReportFilterHeader implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['report_filter_id'] === null) {
-            $invalid_properties[] = "'report_filter_id' can't be null";
-        }
-        if ($this->container['report_filter_name'] === null) {
-            $invalid_properties[] = "'report_filter_name' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalid_properties[] = "'links' can't be null";
-        }
         return $invalid_properties;
     }
 
@@ -162,78 +154,69 @@ class ReportFilterHeader implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['report_filter_id'] === null) {
-            return false;
-        }
-        if ($this->container['report_filter_name'] === null) {
-            return false;
-        }
-        if ($this->container['links'] === null) {
-            return false;
-        }
         return true;
     }
 
 
     /**
-     * Gets report_filter_id
-     * @return string
+     * Gets self
+     * @return \Swagger\Client\Model\LinksGetReportFilterLink
      */
-    public function getReportFilterId()
+    public function getSelf()
     {
-        return $this->container['report_filter_id'];
+        return $this->container['self'];
     }
 
     /**
-     * Sets report_filter_id
-     * @param string $report_filter_id Report filter identifier
+     * Sets self
+     * @param \Swagger\Client\Model\LinksGetReportFilterLink $self
      * @return $this
      */
-    public function setReportFilterId($report_filter_id)
+    public function setSelf($self)
     {
-        $this->container['report_filter_id'] = $report_filter_id;
+        $this->container['self'] = $self;
 
         return $this;
     }
 
     /**
-     * Gets report_filter_name
-     * @return string
+     * Gets save
+     * @return \Swagger\Client\Model\LinksSaveReportFilterLink
      */
-    public function getReportFilterName()
+    public function getSave()
     {
-        return $this->container['report_filter_name'];
+        return $this->container['save'];
     }
 
     /**
-     * Sets report_filter_name
-     * @param string $report_filter_name Report filter name
+     * Sets save
+     * @param \Swagger\Client\Model\LinksSaveReportFilterLink $save
      * @return $this
      */
-    public function setReportFilterName($report_filter_name)
+    public function setSave($save)
     {
-        $this->container['report_filter_name'] = $report_filter_name;
+        $this->container['save'] = $save;
 
         return $this;
     }
 
     /**
-     * Gets links
-     * @return \Swagger\Client\Model\ReportFilterHeaderLinks
+     * Gets delete
+     * @return \Swagger\Client\Model\LinksDeleteReportFilterLink
      */
-    public function getLinks()
+    public function getDelete()
     {
-        return $this->container['links'];
+        return $this->container['delete'];
     }
 
     /**
-     * Sets links
-     * @param \Swagger\Client\Model\ReportFilterHeaderLinks $links
+     * Sets delete
+     * @param \Swagger\Client\Model\LinksDeleteReportFilterLink $delete
      * @return $this
      */
-    public function setLinks($links)
+    public function setDelete($delete)
     {
-        $this->container['links'] = $links;
+        $this->container['delete'] = $delete;
 
         return $this;
     }

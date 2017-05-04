@@ -4982,7 +4982,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByCategoryRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\BeezUPCommonLink3
      */
     public function exportStoreReportByCategory($store_id, $format, $request)
     {
@@ -4999,7 +4999,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByCategoryRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\BeezUPCommonLink2[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\BeezUPCommonLink3, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportStoreReportByCategoryWithHttpInfo($store_id, $format, $request)
     {
@@ -5067,15 +5067,15 @@ class BeezUPApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\BeezUPCommonLink2[]',
+                '\Swagger\Client\Model\BeezUPCommonLink3',
                 '/v2/user/analytics/{storeId}/reports/bycategory/export'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink2[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink3', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink2[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink3', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:
@@ -5097,7 +5097,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByChannelRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\BeezUPCommonLink3
      */
     public function exportStoreReportByChannel($store_id, $format, $request)
     {
@@ -5114,7 +5114,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByChannelRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\BeezUPCommonLink2[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\BeezUPCommonLink3, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportStoreReportByChannelWithHttpInfo($store_id, $format, $request)
     {
@@ -5182,15 +5182,15 @@ class BeezUPApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\BeezUPCommonLink2[]',
+                '\Swagger\Client\Model\BeezUPCommonLink3',
                 '/v2/user/analytics/{storeId}/reports/bychannel/export'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink2[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink3', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink2[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink3', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:
@@ -5212,7 +5212,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByProductRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\BeezUPCommonLink3
      */
     public function exportStoreReportByProduct($store_id, $format, $request)
     {
@@ -5229,7 +5229,7 @@ class BeezUPApi
      * @param string $format  (required)
      * @param \Swagger\Client\Model\ReportByProductRequest $request  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\BeezUPCommonLink2[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\BeezUPCommonLink3, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportStoreReportByProductWithHttpInfo($store_id, $format, $request)
     {
@@ -5297,15 +5297,15 @@ class BeezUPApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\BeezUPCommonLink2[]',
+                '\Swagger\Client\Model\BeezUPCommonLink3',
                 '/v2/user/analytics/{storeId}/reports/byproduct/export'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink2[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\BeezUPCommonLink3', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink2[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonLink3', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:
@@ -8297,7 +8297,7 @@ class BeezUPApi
      *
      * @param string $store_id Your store identifier (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\Rules
+     * @return \Swagger\Client\Model\Rulelist
      */
     public function getRules($store_id)
     {
@@ -8312,7 +8312,7 @@ class BeezUPApi
      *
      * @param string $store_id Your store identifier (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\Rules, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\Rulelist, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRulesWithHttpInfo($store_id)
     {
@@ -8363,15 +8363,15 @@ class BeezUPApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\Rules',
+                '\Swagger\Client\Model\Rulelist',
                 '/v2/user/analytics/{storeId}/rules'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\Rules', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\Rulelist', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Rules', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Rulelist', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:
