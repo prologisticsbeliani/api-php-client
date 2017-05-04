@@ -210,6 +210,9 @@ class ChannelCatalog implements ArrayAccess
         if ($this->container['channel_image_url'] === null) {
             $invalid_properties[] = "'channel_image_url' can't be null";
         }
+        if ($this->container['product_count'] === null) {
+            $invalid_properties[] = "'product_count' can't be null";
+        }
         if ($this->container['enabled'] === null) {
             $invalid_properties[] = "'enabled' can't be null";
         }
@@ -253,6 +256,9 @@ class ChannelCatalog implements ArrayAccess
             return false;
         }
         if ($this->container['channel_image_url'] === null) {
+            return false;
+        }
+        if ($this->container['product_count'] === null) {
             return false;
         }
         if ($this->container['enabled'] === null) {

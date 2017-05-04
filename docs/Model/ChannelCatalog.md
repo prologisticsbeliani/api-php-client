@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **channel_id** | [**\Swagger\Client\Model\BeezUPCommonChannelId**](BeezUPCommonChannelId.md) |  | 
 **channel_name** | [**\Swagger\Client\Model\BeezUPCommonChannelName**](BeezUPCommonChannelName.md) |  | 
 **channel_image_url** | [**\Swagger\Client\Model\BeezUPCommonHttpUrl**](BeezUPCommonHttpUrl.md) |  | 
-**product_count** | **int** | The product count exported considering category mapping. Not all filters have been applied. | [optional] 
+**product_count** | **int** | The product count exported considering category mapping. Not all filters have been applied. | 
 **enabled** | **bool** | Indicates if the channel catalog is active | 
 **is_marketplace** | **bool** | Indicates if this channel catalog is related to a marketplace | 
 **channel_catalog_id** | [**\Swagger\Client\Model\BeezUPCommonChannelCatalogId**](BeezUPCommonChannelCatalogId.md) |  | 
