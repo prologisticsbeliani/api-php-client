@@ -4182,7 +4182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRules**
-> \Swagger\Client\Model\Rulelist getRules($store_id)
+> \Swagger\Client\Model\RuleList getRules($store_id)
 
 Gets the list of rules for a given store
 
@@ -4216,7 +4216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Rulelist**](../Model/Rulelist.md)
+[**\Swagger\Client\Model\RuleList**](../Model/RuleList.md)
 
 ### Authorization
 

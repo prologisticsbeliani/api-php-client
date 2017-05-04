@@ -8297,7 +8297,7 @@ class BeezUPApi
      *
      * @param string $store_id Your store identifier (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\Rulelist
+     * @return \Swagger\Client\Model\RuleList
      */
     public function getRules($store_id)
     {
@@ -8312,7 +8312,7 @@ class BeezUPApi
      *
      * @param string $store_id Your store identifier (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\Rulelist, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\RuleList, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRulesWithHttpInfo($store_id)
     {
@@ -8363,15 +8363,15 @@ class BeezUPApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\Rulelist',
+                '\Swagger\Client\Model\RuleList',
                 '/v2/user/analytics/{storeId}/rules'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\Rulelist', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\RuleList', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Rulelist', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\RuleList', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 0:
