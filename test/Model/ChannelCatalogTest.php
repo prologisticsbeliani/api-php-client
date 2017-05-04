@@ -107,6 +107,14 @@ class ChannelCatalogTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "product_count"
+     */
+    public function testPropertyProductCount()
+    {
+
+    }
+
+    /**
      * Test attribute "enabled"
      */
     public function testPropertyEnabled()

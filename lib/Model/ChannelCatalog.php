@@ -57,6 +57,7 @@ class ChannelCatalog implements ArrayAccess
         'channel_id' => '\Swagger\Client\Model\BeezUPCommonChannelId',
         'channel_name' => '\Swagger\Client\Model\BeezUPCommonChannelName',
         'channel_image_url' => '\Swagger\Client\Model\BeezUPCommonHttpUrl',
+        'product_count' => 'int',
         'enabled' => 'bool',
         'is_marketplace' => 'bool',
         'channel_catalog_id' => '\Swagger\Client\Model\BeezUPCommonChannelCatalogId',
@@ -83,6 +84,7 @@ class ChannelCatalog implements ArrayAccess
         'channel_id' => 'channelId',
         'channel_name' => 'channelName',
         'channel_image_url' => 'channelImageUrl',
+        'product_count' => 'productCount',
         'enabled' => 'enabled',
         'is_marketplace' => 'isMarketplace',
         'channel_catalog_id' => 'channelCatalogId',
@@ -105,6 +107,7 @@ class ChannelCatalog implements ArrayAccess
         'channel_id' => 'setChannelId',
         'channel_name' => 'setChannelName',
         'channel_image_url' => 'setChannelImageUrl',
+        'product_count' => 'setProductCount',
         'enabled' => 'setEnabled',
         'is_marketplace' => 'setIsMarketplace',
         'channel_catalog_id' => 'setChannelCatalogId',
@@ -127,6 +130,7 @@ class ChannelCatalog implements ArrayAccess
         'channel_id' => 'getChannelId',
         'channel_name' => 'getChannelName',
         'channel_image_url' => 'getChannelImageUrl',
+        'product_count' => 'getProductCount',
         'enabled' => 'getEnabled',
         'is_marketplace' => 'getIsMarketplace',
         'channel_catalog_id' => 'getChannelCatalogId',
@@ -174,6 +178,7 @@ class ChannelCatalog implements ArrayAccess
         $this->container['channel_id'] = isset($data['channel_id']) ? $data['channel_id'] : null;
         $this->container['channel_name'] = isset($data['channel_name']) ? $data['channel_name'] : null;
         $this->container['channel_image_url'] = isset($data['channel_image_url']) ? $data['channel_image_url'] : null;
+        $this->container['product_count'] = isset($data['product_count']) ? $data['product_count'] : null;
         $this->container['enabled'] = isset($data['enabled']) ? $data['enabled'] : null;
         $this->container['is_marketplace'] = isset($data['is_marketplace']) ? $data['is_marketplace'] : null;
         $this->container['channel_catalog_id'] = isset($data['channel_catalog_id']) ? $data['channel_catalog_id'] : null;
@@ -205,11 +210,29 @@ class ChannelCatalog implements ArrayAccess
         if ($this->container['channel_image_url'] === null) {
             $invalid_properties[] = "'channel_image_url' can't be null";
         }
+        if ($this->container['enabled'] === null) {
+            $invalid_properties[] = "'enabled' can't be null";
+        }
+        if ($this->container['is_marketplace'] === null) {
+            $invalid_properties[] = "'is_marketplace' can't be null";
+        }
         if ($this->container['channel_catalog_id'] === null) {
             $invalid_properties[] = "'channel_catalog_id' can't be null";
         }
         if ($this->container['store_id'] === null) {
             $invalid_properties[] = "'store_id' can't be null";
+        }
+        if ($this->container['general_settings'] === null) {
+            $invalid_properties[] = "'general_settings' can't be null";
+        }
+        if ($this->container['cost_settings'] === null) {
+            $invalid_properties[] = "'cost_settings' can't be null";
+        }
+        if ($this->container['status'] === null) {
+            $invalid_properties[] = "'status' can't be null";
+        }
+        if ($this->container['links'] === null) {
+            $invalid_properties[] = "'links' can't be null";
         }
         return $invalid_properties;
     }
@@ -232,10 +255,28 @@ class ChannelCatalog implements ArrayAccess
         if ($this->container['channel_image_url'] === null) {
             return false;
         }
+        if ($this->container['enabled'] === null) {
+            return false;
+        }
+        if ($this->container['is_marketplace'] === null) {
+            return false;
+        }
         if ($this->container['channel_catalog_id'] === null) {
             return false;
         }
         if ($this->container['store_id'] === null) {
+            return false;
+        }
+        if ($this->container['general_settings'] === null) {
+            return false;
+        }
+        if ($this->container['cost_settings'] === null) {
+            return false;
+        }
+        if ($this->container['status'] === null) {
+            return false;
+        }
+        if ($this->container['links'] === null) {
             return false;
         }
         return true;
@@ -301,6 +342,27 @@ class ChannelCatalog implements ArrayAccess
     public function setChannelImageUrl($channel_image_url)
     {
         $this->container['channel_image_url'] = $channel_image_url;
+
+        return $this;
+    }
+
+    /**
+     * Gets product_count
+     * @return int
+     */
+    public function getProductCount()
+    {
+        return $this->container['product_count'];
+    }
+
+    /**
+     * Sets product_count
+     * @param int $product_count The product count exported considering category mapping. Not all filters have been applied.
+     * @return $this
+     */
+    public function setProductCount($product_count)
+    {
+        $this->container['product_count'] = $product_count;
 
         return $this;
     }
