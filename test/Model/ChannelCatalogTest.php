@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * ChannelCatalogTest Class Doc Comment
  *
  * @category    Class */
-// * @description The channel catalog
+// * @description ChannelCatalog
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
@@ -83,6 +83,30 @@ class ChannelCatalogTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "channel_id"
+     */
+    public function testPropertyChannelId()
+    {
+
+    }
+
+    /**
+     * Test attribute "channel_name"
+     */
+    public function testPropertyChannelName()
+    {
+
+    }
+
+    /**
+     * Test attribute "channel_image_url"
+     */
+    public function testPropertyChannelImageUrl()
+    {
+
+    }
+
+    /**
      * Test attribute "enabled"
      */
     public function testPropertyEnabled()
@@ -102,22 +126,6 @@ class ChannelCatalogTest extends \PHPUnit_Framework_TestCase
      * Test attribute "channel_catalog_id"
      */
     public function testPropertyChannelCatalogId()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_id"
-     */
-    public function testPropertyChannelId()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_name"
-     */
-    public function testPropertyChannelName()
     {
 
     }

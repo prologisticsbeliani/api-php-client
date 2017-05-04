@@ -35,7 +35,6 @@ use \ArrayAccess;
  * ChannelCatalog Class Doc Comment
  *
  * @category    Class
- * @description The channel catalog
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -55,11 +54,12 @@ class ChannelCatalog implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'channel_id' => '\Swagger\Client\Model\BeezUPCommonChannelId',
+        'channel_name' => '\Swagger\Client\Model\BeezUPCommonChannelName',
+        'channel_image_url' => '\Swagger\Client\Model\BeezUPCommonHttpUrl',
         'enabled' => 'bool',
         'is_marketplace' => 'bool',
         'channel_catalog_id' => '\Swagger\Client\Model\BeezUPCommonChannelCatalogId',
-        'channel_id' => '\Swagger\Client\Model\BeezUPCommonChannelId',
-        'channel_name' => '\Swagger\Client\Model\BeezUPCommonChannelName',
         'store_id' => '\Swagger\Client\Model\BeezUPCommonStoreId',
         'general_settings' => '\Swagger\Client\Model\GeneralSettings',
         'cost_settings' => '\Swagger\Client\Model\CostSettings',
@@ -80,11 +80,12 @@ class ChannelCatalog implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'channel_id' => 'channelId',
+        'channel_name' => 'channelName',
+        'channel_image_url' => 'channelImageUrl',
         'enabled' => 'enabled',
         'is_marketplace' => 'isMarketplace',
         'channel_catalog_id' => 'channelCatalogId',
-        'channel_id' => 'channelId',
-        'channel_name' => 'channelName',
         'store_id' => 'storeId',
         'general_settings' => 'generalSettings',
         'cost_settings' => 'costSettings',
@@ -101,11 +102,12 @@ class ChannelCatalog implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'channel_id' => 'setChannelId',
+        'channel_name' => 'setChannelName',
+        'channel_image_url' => 'setChannelImageUrl',
         'enabled' => 'setEnabled',
         'is_marketplace' => 'setIsMarketplace',
         'channel_catalog_id' => 'setChannelCatalogId',
-        'channel_id' => 'setChannelId',
-        'channel_name' => 'setChannelName',
         'store_id' => 'setStoreId',
         'general_settings' => 'setGeneralSettings',
         'cost_settings' => 'setCostSettings',
@@ -122,11 +124,12 @@ class ChannelCatalog implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'channel_id' => 'getChannelId',
+        'channel_name' => 'getChannelName',
+        'channel_image_url' => 'getChannelImageUrl',
         'enabled' => 'getEnabled',
         'is_marketplace' => 'getIsMarketplace',
         'channel_catalog_id' => 'getChannelCatalogId',
-        'channel_id' => 'getChannelId',
-        'channel_name' => 'getChannelName',
         'store_id' => 'getStoreId',
         'general_settings' => 'getGeneralSettings',
         'cost_settings' => 'getCostSettings',
@@ -168,11 +171,12 @@ class ChannelCatalog implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['channel_id'] = isset($data['channel_id']) ? $data['channel_id'] : null;
+        $this->container['channel_name'] = isset($data['channel_name']) ? $data['channel_name'] : null;
+        $this->container['channel_image_url'] = isset($data['channel_image_url']) ? $data['channel_image_url'] : null;
         $this->container['enabled'] = isset($data['enabled']) ? $data['enabled'] : null;
         $this->container['is_marketplace'] = isset($data['is_marketplace']) ? $data['is_marketplace'] : null;
         $this->container['channel_catalog_id'] = isset($data['channel_catalog_id']) ? $data['channel_catalog_id'] : null;
-        $this->container['channel_id'] = isset($data['channel_id']) ? $data['channel_id'] : null;
-        $this->container['channel_name'] = isset($data['channel_name']) ? $data['channel_name'] : null;
         $this->container['store_id'] = isset($data['store_id']) ? $data['store_id'] : null;
         $this->container['general_settings'] = isset($data['general_settings']) ? $data['general_settings'] : null;
         $this->container['cost_settings'] = isset($data['cost_settings']) ? $data['cost_settings'] : null;
@@ -192,11 +196,17 @@ class ChannelCatalog implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['channel_catalog_id'] === null) {
-            $invalid_properties[] = "'channel_catalog_id' can't be null";
-        }
         if ($this->container['channel_id'] === null) {
             $invalid_properties[] = "'channel_id' can't be null";
+        }
+        if ($this->container['channel_name'] === null) {
+            $invalid_properties[] = "'channel_name' can't be null";
+        }
+        if ($this->container['channel_image_url'] === null) {
+            $invalid_properties[] = "'channel_image_url' can't be null";
+        }
+        if ($this->container['channel_catalog_id'] === null) {
+            $invalid_properties[] = "'channel_catalog_id' can't be null";
         }
         if ($this->container['store_id'] === null) {
             $invalid_properties[] = "'store_id' can't be null";
@@ -213,10 +223,16 @@ class ChannelCatalog implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['channel_catalog_id'] === null) {
+        if ($this->container['channel_id'] === null) {
             return false;
         }
-        if ($this->container['channel_id'] === null) {
+        if ($this->container['channel_name'] === null) {
+            return false;
+        }
+        if ($this->container['channel_image_url'] === null) {
+            return false;
+        }
+        if ($this->container['channel_catalog_id'] === null) {
             return false;
         }
         if ($this->container['store_id'] === null) {
@@ -225,6 +241,69 @@ class ChannelCatalog implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets channel_id
+     * @return \Swagger\Client\Model\BeezUPCommonChannelId
+     */
+    public function getChannelId()
+    {
+        return $this->container['channel_id'];
+    }
+
+    /**
+     * Sets channel_id
+     * @param \Swagger\Client\Model\BeezUPCommonChannelId $channel_id
+     * @return $this
+     */
+    public function setChannelId($channel_id)
+    {
+        $this->container['channel_id'] = $channel_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets channel_name
+     * @return \Swagger\Client\Model\BeezUPCommonChannelName
+     */
+    public function getChannelName()
+    {
+        return $this->container['channel_name'];
+    }
+
+    /**
+     * Sets channel_name
+     * @param \Swagger\Client\Model\BeezUPCommonChannelName $channel_name
+     * @return $this
+     */
+    public function setChannelName($channel_name)
+    {
+        $this->container['channel_name'] = $channel_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets channel_image_url
+     * @return \Swagger\Client\Model\BeezUPCommonHttpUrl
+     */
+    public function getChannelImageUrl()
+    {
+        return $this->container['channel_image_url'];
+    }
+
+    /**
+     * Sets channel_image_url
+     * @param \Swagger\Client\Model\BeezUPCommonHttpUrl $channel_image_url
+     * @return $this
+     */
+    public function setChannelImageUrl($channel_image_url)
+    {
+        $this->container['channel_image_url'] = $channel_image_url;
+
+        return $this;
+    }
 
     /**
      * Gets enabled
@@ -285,48 +364,6 @@ class ChannelCatalog implements ArrayAccess
     public function setChannelCatalogId($channel_catalog_id)
     {
         $this->container['channel_catalog_id'] = $channel_catalog_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets channel_id
-     * @return \Swagger\Client\Model\BeezUPCommonChannelId
-     */
-    public function getChannelId()
-    {
-        return $this->container['channel_id'];
-    }
-
-    /**
-     * Sets channel_id
-     * @param \Swagger\Client\Model\BeezUPCommonChannelId $channel_id
-     * @return $this
-     */
-    public function setChannelId($channel_id)
-    {
-        $this->container['channel_id'] = $channel_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets channel_name
-     * @return \Swagger\Client\Model\BeezUPCommonChannelName
-     */
-    public function getChannelName()
-    {
-        return $this->container['channel_name'];
-    }
-
-    /**
-     * Sets channel_name
-     * @param \Swagger\Client\Model\BeezUPCommonChannelName $channel_name
-     * @return $this
-     */
-    public function setChannelName($channel_name)
-    {
-        $this->container['channel_name'] = $channel_name;
 
         return $this;
     }

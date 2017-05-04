@@ -3,11 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**channel_id** | [**\Swagger\Client\Model\BeezUPCommonChannelId**](BeezUPCommonChannelId.md) |  | 
+**channel_name** | [**\Swagger\Client\Model\BeezUPCommonChannelName**](BeezUPCommonChannelName.md) |  | 
+**channel_image_url** | [**\Swagger\Client\Model\BeezUPCommonHttpUrl**](BeezUPCommonHttpUrl.md) |  | 
 **enabled** | **bool** | Indicates if the channel catalog is active | [optional] 
 **is_marketplace** | **bool** | Indicates if this channel catalog is related to a marketplace | [optional] 
 **channel_catalog_id** | [**\Swagger\Client\Model\BeezUPCommonChannelCatalogId**](BeezUPCommonChannelCatalogId.md) |  | 
-**channel_id** | [**\Swagger\Client\Model\BeezUPCommonChannelId**](BeezUPCommonChannelId.md) |  | 
-**channel_name** | [**\Swagger\Client\Model\BeezUPCommonChannelName**](BeezUPCommonChannelName.md) |  | [optional] 
 **store_id** | [**\Swagger\Client\Model\BeezUPCommonStoreId**](BeezUPCommonStoreId.md) |  | 
 **general_settings** | [**\Swagger\Client\Model\GeneralSettings**](GeneralSettings.md) |  | [optional] 
 **cost_settings** | [**\Swagger\Client\Model\CostSettings**](CostSettings.md) |  | [optional] 
