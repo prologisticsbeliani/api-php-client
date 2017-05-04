@@ -91,14 +91,6 @@ class BeezUPCommonPaginationResultTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "links"
-     */
-    public function testPropertyLinks()
-    {
-
-    }
-
-    /**
      * Test attribute "page_count"
      */
     public function testPropertyPageCount()
@@ -110,6 +102,14 @@ class BeezUPCommonPaginationResultTest extends \PHPUnit_Framework_TestCase
      * Test attribute "total_entry_count"
      */
     public function testPropertyTotalEntryCount()
+    {
+
+    }
+
+    /**
+     * Test attribute "links"
+     */
+    public function testPropertyLinks()
     {
 
     }

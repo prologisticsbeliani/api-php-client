@@ -55,9 +55,9 @@ class BeezUPCommonPaginationResult implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'entry_count' => 'int',
-        'links' => '\Swagger\Client\Model\BeezUPCommonPaginationResultLinks',
         'page_count' => 'int',
-        'total_entry_count' => 'int'
+        'total_entry_count' => 'int',
+        'links' => '\Swagger\Client\Model\BeezUPCommonPaginationResultLinks'
     ];
 
     public static function swaggerTypes()
@@ -71,9 +71,9 @@ class BeezUPCommonPaginationResult implements ArrayAccess
      */
     protected static $attributeMap = [
         'entry_count' => 'entryCount',
-        'links' => 'links',
         'page_count' => 'pageCount',
-        'total_entry_count' => 'totalEntryCount'
+        'total_entry_count' => 'totalEntryCount',
+        'links' => 'links'
     ];
 
 
@@ -83,9 +83,9 @@ class BeezUPCommonPaginationResult implements ArrayAccess
      */
     protected static $setters = [
         'entry_count' => 'setEntryCount',
-        'links' => 'setLinks',
         'page_count' => 'setPageCount',
-        'total_entry_count' => 'setTotalEntryCount'
+        'total_entry_count' => 'setTotalEntryCount',
+        'links' => 'setLinks'
     ];
 
 
@@ -95,9 +95,9 @@ class BeezUPCommonPaginationResult implements ArrayAccess
      */
     protected static $getters = [
         'entry_count' => 'getEntryCount',
-        'links' => 'getLinks',
         'page_count' => 'getPageCount',
-        'total_entry_count' => 'getTotalEntryCount'
+        'total_entry_count' => 'getTotalEntryCount',
+        'links' => 'getLinks'
     ];
 
     public static function attributeMap()
@@ -132,9 +132,9 @@ class BeezUPCommonPaginationResult implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['entry_count'] = isset($data['entry_count']) ? $data['entry_count'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
         $this->container['page_count'] = isset($data['page_count']) ? $data['page_count'] : null;
         $this->container['total_entry_count'] = isset($data['total_entry_count']) ? $data['total_entry_count'] : null;
+        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
     }
 
     /**
@@ -210,27 +210,6 @@ class BeezUPCommonPaginationResult implements ArrayAccess
     }
 
     /**
-     * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonPaginationResultLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonPaginationResultLinks $links
-     * @return $this
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
-
-        return $this;
-    }
-
-    /**
      * Gets page_count
      * @return int
      */
@@ -278,6 +257,27 @@ class BeezUPCommonPaginationResult implements ArrayAccess
         }
 
         $this->container['total_entry_count'] = $total_entry_count;
+
+        return $this;
+    }
+
+    /**
+     * Gets links
+     * @return \Swagger\Client\Model\BeezUPCommonPaginationResultLinks
+     */
+    public function getLinks()
+    {
+        return $this->container['links'];
+    }
+
+    /**
+     * Sets links
+     * @param \Swagger\Client\Model\BeezUPCommonPaginationResultLinks $links
+     * @return $this
+     */
+    public function setLinks($links)
+    {
+        $this->container['links'] = $links;
 
         return $this;
     }

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**doc_url** | **string** | The documentation related to this operation. | [optional] 
+**doc_url** | [**\Swagger\Client\Model\BeezUPCommonDocUrl**](BeezUPCommonDocUrl.md) |  | [optional] 
 **code** | **string** | the error code. The error code can be a pattern containing the argument&#39;s name | 
 **message** | **string** | The error message | 
 **culture_name** | **string** | If the error is translated, the culture name will be indicated | [optional] 

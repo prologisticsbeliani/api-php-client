@@ -54,7 +54,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'doc_url' => 'string',
+        'doc_url' => '\Swagger\Client\Model\BeezUPCommonDocUrl',
         'code' => 'string',
         'message' => 'string',
         'culture_name' => 'string',
@@ -181,7 +181,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
 
     /**
      * Gets doc_url
-     * @return string
+     * @return \Swagger\Client\Model\BeezUPCommonDocUrl
      */
     public function getDocUrl()
     {
@@ -190,7 +190,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
 
     /**
      * Sets doc_url
-     * @param string $doc_url The documentation related to this operation.
+     * @param \Swagger\Client\Model\BeezUPCommonDocUrl $doc_url
      * @return $this
      */
     public function setDocUrl($doc_url)
