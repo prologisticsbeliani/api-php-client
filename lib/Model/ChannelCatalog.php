@@ -67,7 +67,7 @@ class ChannelCatalog implements ArrayAccess
         'column_mappings' => '\Swagger\Client\Model\ColumnMappingWithNameList',
         'exclusion_filters' => '\Swagger\Client\Model\ExclusionFilters',
         'export_url' => '\Swagger\Client\Model\BeezUPCommonHttpUrl',
-        'status' => '\Swagger\Client\Model\ChannelCatalogStatus',
+        'state' => '\Swagger\Client\Model\ChannelCatalogState',
         'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
     ];
 
@@ -94,7 +94,7 @@ class ChannelCatalog implements ArrayAccess
         'column_mappings' => 'columnMappings',
         'exclusion_filters' => 'exclusionFilters',
         'export_url' => 'exportUrl',
-        'status' => 'status',
+        'state' => 'state',
         'links' => 'links'
     ];
 
@@ -117,7 +117,7 @@ class ChannelCatalog implements ArrayAccess
         'column_mappings' => 'setColumnMappings',
         'exclusion_filters' => 'setExclusionFilters',
         'export_url' => 'setExportUrl',
-        'status' => 'setStatus',
+        'state' => 'setState',
         'links' => 'setLinks'
     ];
 
@@ -140,7 +140,7 @@ class ChannelCatalog implements ArrayAccess
         'column_mappings' => 'getColumnMappings',
         'exclusion_filters' => 'getExclusionFilters',
         'export_url' => 'getExportUrl',
-        'status' => 'getStatus',
+        'state' => 'getState',
         'links' => 'getLinks'
     ];
 
@@ -188,7 +188,7 @@ class ChannelCatalog implements ArrayAccess
         $this->container['column_mappings'] = isset($data['column_mappings']) ? $data['column_mappings'] : null;
         $this->container['exclusion_filters'] = isset($data['exclusion_filters']) ? $data['exclusion_filters'] : null;
         $this->container['export_url'] = isset($data['export_url']) ? $data['export_url'] : null;
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['state'] = isset($data['state']) ? $data['state'] : null;
         $this->container['links'] = isset($data['links']) ? $data['links'] : null;
     }
 
@@ -228,8 +228,8 @@ class ChannelCatalog implements ArrayAccess
         if ($this->container['cost_settings'] === null) {
             $invalid_properties[] = "'cost_settings' can't be null";
         }
-        if ($this->container['status'] === null) {
-            $invalid_properties[] = "'status' can't be null";
+        if ($this->container['state'] === null) {
+            $invalid_properties[] = "'state' can't be null";
         }
         if ($this->container['links'] === null) {
             $invalid_properties[] = "'links' can't be null";
@@ -273,7 +273,7 @@ class ChannelCatalog implements ArrayAccess
         if ($this->container['cost_settings'] === null) {
             return false;
         }
-        if ($this->container['status'] === null) {
+        if ($this->container['state'] === null) {
             return false;
         }
         if ($this->container['links'] === null) {
@@ -557,22 +557,22 @@ class ChannelCatalog implements ArrayAccess
     }
 
     /**
-     * Gets status
-     * @return \Swagger\Client\Model\ChannelCatalogStatus
+     * Gets state
+     * @return \Swagger\Client\Model\ChannelCatalogState
      */
-    public function getStatus()
+    public function getState()
     {
-        return $this->container['status'];
+        return $this->container['state'];
     }
 
     /**
-     * Sets status
-     * @param \Swagger\Client\Model\ChannelCatalogStatus $status
+     * Sets state
+     * @param \Swagger\Client\Model\ChannelCatalogState $state
      * @return $this
      */
-    public function setStatus($status)
+    public function setState($state)
     {
-        $this->container['status'] = $status;
+        $this->container['state'] = $state;
 
         return $this;
     }

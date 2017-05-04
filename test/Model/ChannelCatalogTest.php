@@ -187,9 +187,9 @@ class ChannelCatalogTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "status"
+     * Test attribute "state"
      */
-    public function testPropertyStatus()
+    public function testPropertyState()
     {
 
     }

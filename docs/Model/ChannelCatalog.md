@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **column_mappings** | [**\Swagger\Client\Model\ColumnMappingWithNameList**](ColumnMappingWithNameList.md) |  | [optional] 
 **exclusion_filters** | [**\Swagger\Client\Model\ExclusionFilters**](ExclusionFilters.md) |  | [optional] 
 **export_url** | [**\Swagger\Client\Model\BeezUPCommonHttpUrl**](BeezUPCommonHttpUrl.md) |  | [optional] 
-**status** | [**\Swagger\Client\Model\ChannelCatalogStatus**](ChannelCatalogStatus.md) |  | 
+**state** | [**\Swagger\Client\Model\ChannelCatalogState**](ChannelCatalogState.md) |  | 
 **links** | [**\Swagger\Client\Model\BeezUPCommonLink2[]**](BeezUPCommonLink2.md) | Indicates the actions you can do on a channel catalog | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
