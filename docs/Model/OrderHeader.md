@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **order_merchant_e_commerce_software_name** | [**\Swagger\Client\Model\OrderMerchantECommerceSoftwareName**](OrderMerchantECommerceSoftwareName.md) |  | [optional] 
 **order_merchant_e_commerce_software_version** | [**\Swagger\Client\Model\OrderMerchantECommerceSoftwareVersion**](OrderMerchantECommerceSoftwareVersion.md) |  | [optional] 
 **order_purchase_utc_date** | [**\DateTime**](\DateTime.md) | The purchase date of this order | 
-**order_last_modification_utc_date** | [**\DateTime**](\DateTime.md) | The last modification UTC date done by BeezUP of this order. | 
-**order_marketplace_last_modification_utc_date** | [**\DateTime**](\DateTime.md) | The last modification UTC date done by the marketplace on this order. | 
+**order_last_modification_utc_date** | [**\DateTime**](\DateTime.md) | The last modification UTC date done by BeezUP of this order | 
+**order_marketplace_last_modification_utc_date** | [**\DateTime**](\DateTime.md) | The last modification UTC date done by the marketplace on this order | 
 **order_buyer_name** | [**\Swagger\Client\Model\OrderBuyerName**](OrderBuyerName.md) |  | [optional] 
 **order_total_price** | **float** | The total price of this order (corresponding to the amount paid by the customer) | [optional] 
 **order_currency_code** | [**\Swagger\Client\Model\BeezUPCommonCurrencyCode**](BeezUPCommonCurrencyCode.md) |  | [optional] 

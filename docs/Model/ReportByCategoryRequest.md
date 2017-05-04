@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **category_filter** | [**\Swagger\Client\Model\ReportCategoryFilter**](ReportCategoryFilter.md) |  | [optional] 
 **indicator_filters** | [**\Swagger\Client\Model\ReportIndicatorFilter[]**](ReportIndicatorFilter.md) |  | [optional] 
 **advanced_filters** | [**\Swagger\Client\Model\ReportAdvancedFilters**](ReportAdvancedFilters.md) |  | 
+**page_size** | [**\Swagger\Client\Model\PageSize**](PageSize.md) |  | [optional] 
+**page_number** | [**\Swagger\Client\Model\PageNumber**](PageNumber.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

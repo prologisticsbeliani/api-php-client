@@ -55,7 +55,7 @@ class BeezUPCommonPaginationResult implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'entry_count' => 'int',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]',
+        'links' => '\Swagger\Client\Model\BeezUPCommonPaginationResultLinks',
         'page_count' => 'int',
         'total_entry_count' => 'int'
     ];
@@ -211,7 +211,7 @@ class BeezUPCommonPaginationResult implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\BeezUPCommonPaginationResultLinks
      */
     public function getLinks()
     {
@@ -220,7 +220,7 @@ class BeezUPCommonPaginationResult implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links The navigation links 'first', 'last', 'next', 'previous'
+     * @param \Swagger\Client\Model\BeezUPCommonPaginationResultLinks $links
      * @return $this
      */
     public function setLinks($links)

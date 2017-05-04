@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * ColumnConfigurationTest Class Doc Comment
  *
  * @category    Class */
-// * @description Indicates the configuration applied on the column (catalog or custom) during the importation process. You have to define the BeezUP Column Name property OR the custom configuration property.
+// * @description Indicates the configuration applied on the column (catalog or custom) during the importation process.
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
@@ -91,9 +91,49 @@ class ColumnConfigurationTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "custom_configuration"
+     * Test attribute "column_importance"
      */
-    public function testPropertyCustomConfiguration()
+    public function testPropertyColumnImportance()
+    {
+
+    }
+
+    /**
+     * Test attribute "column_data_type"
+     */
+    public function testPropertyColumnDataType()
+    {
+
+    }
+
+    /**
+     * Test attribute "column_culture_name"
+     */
+    public function testPropertyColumnCultureName()
+    {
+
+    }
+
+    /**
+     * Test attribute "column_format"
+     */
+    public function testPropertyColumnFormat()
+    {
+
+    }
+
+    /**
+     * Test attribute "can_be_truncated"
+     */
+    public function testPropertyCanBeTruncated()
+    {
+
+    }
+
+    /**
+     * Test attribute "display_group_name"
+     */
+    public function testPropertyDisplayGroupName()
     {
 
     }

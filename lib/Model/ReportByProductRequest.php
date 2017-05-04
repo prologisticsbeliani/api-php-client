@@ -60,6 +60,8 @@ class ReportByProductRequest implements ArrayAccess
         'category_filter' => '\Swagger\Client\Model\ReportCategoryFilter',
         'indicator_filters' => '\Swagger\Client\Model\ReportIndicatorFilter[]',
         'advanced_filters' => '\Swagger\Client\Model\ReportAdvancedFilters',
+        'page_size' => '\Swagger\Client\Model\PageSize',
+        'page_number' => '\Swagger\Client\Model\PageNumber',
         'product_columns_to_display' => '\Swagger\Client\Model\BeezUPCommonCatalogColumnId[]',
         'product_state' => '\Swagger\Client\Model\ProductStateFilter',
         'product_filters' => '\Swagger\Client\Model\ProductFilters'
@@ -81,6 +83,8 @@ class ReportByProductRequest implements ArrayAccess
         'category_filter' => 'categoryFilter',
         'indicator_filters' => 'indicatorFilters',
         'advanced_filters' => 'advancedFilters',
+        'page_size' => 'pageSize',
+        'page_number' => 'pageNumber',
         'product_columns_to_display' => 'productColumnsToDisplay',
         'product_state' => 'productState',
         'product_filters' => 'productFilters'
@@ -98,6 +102,8 @@ class ReportByProductRequest implements ArrayAccess
         'category_filter' => 'setCategoryFilter',
         'indicator_filters' => 'setIndicatorFilters',
         'advanced_filters' => 'setAdvancedFilters',
+        'page_size' => 'setPageSize',
+        'page_number' => 'setPageNumber',
         'product_columns_to_display' => 'setProductColumnsToDisplay',
         'product_state' => 'setProductState',
         'product_filters' => 'setProductFilters'
@@ -115,6 +121,8 @@ class ReportByProductRequest implements ArrayAccess
         'category_filter' => 'getCategoryFilter',
         'indicator_filters' => 'getIndicatorFilters',
         'advanced_filters' => 'getAdvancedFilters',
+        'page_size' => 'getPageSize',
+        'page_number' => 'getPageNumber',
         'product_columns_to_display' => 'getProductColumnsToDisplay',
         'product_state' => 'getProductState',
         'product_filters' => 'getProductFilters'
@@ -157,6 +165,8 @@ class ReportByProductRequest implements ArrayAccess
         $this->container['category_filter'] = isset($data['category_filter']) ? $data['category_filter'] : null;
         $this->container['indicator_filters'] = isset($data['indicator_filters']) ? $data['indicator_filters'] : null;
         $this->container['advanced_filters'] = isset($data['advanced_filters']) ? $data['advanced_filters'] : null;
+        $this->container['page_size'] = isset($data['page_size']) ? $data['page_size'] : null;
+        $this->container['page_number'] = isset($data['page_number']) ? $data['page_number'] : null;
         $this->container['product_columns_to_display'] = isset($data['product_columns_to_display']) ? $data['product_columns_to_display'] : null;
         $this->container['product_state'] = isset($data['product_state']) ? $data['product_state'] : null;
         $this->container['product_filters'] = isset($data['product_filters']) ? $data['product_filters'] : null;
@@ -333,6 +343,48 @@ class ReportByProductRequest implements ArrayAccess
     public function setAdvancedFilters($advanced_filters)
     {
         $this->container['advanced_filters'] = $advanced_filters;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_size
+     * @return \Swagger\Client\Model\PageSize
+     */
+    public function getPageSize()
+    {
+        return $this->container['page_size'];
+    }
+
+    /**
+     * Sets page_size
+     * @param \Swagger\Client\Model\PageSize $page_size
+     * @return $this
+     */
+    public function setPageSize($page_size)
+    {
+        $this->container['page_size'] = $page_size;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_number
+     * @return \Swagger\Client\Model\PageNumber
+     */
+    public function getPageNumber()
+    {
+        return $this->container['page_number'];
+    }
+
+    /**
+     * Sets page_number
+     * @param \Swagger\Client\Model\PageNumber $page_number
+     * @return $this
+     */
+    public function setPageNumber($page_number)
+    {
+        $this->container['page_number'] = $page_number;
 
         return $this;
     }

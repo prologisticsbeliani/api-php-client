@@ -59,7 +59,9 @@ class ReportByCategoryRequest implements ArrayAccess
         'end_period_utc_date' => '\DateTime',
         'category_filter' => '\Swagger\Client\Model\ReportCategoryFilter',
         'indicator_filters' => '\Swagger\Client\Model\ReportIndicatorFilter[]',
-        'advanced_filters' => '\Swagger\Client\Model\ReportAdvancedFilters'
+        'advanced_filters' => '\Swagger\Client\Model\ReportAdvancedFilters',
+        'page_size' => '\Swagger\Client\Model\PageSize',
+        'page_number' => '\Swagger\Client\Model\PageNumber'
     ];
 
     public static function swaggerTypes()
@@ -77,7 +79,9 @@ class ReportByCategoryRequest implements ArrayAccess
         'end_period_utc_date' => 'endPeriodUtcDate',
         'category_filter' => 'categoryFilter',
         'indicator_filters' => 'indicatorFilters',
-        'advanced_filters' => 'advancedFilters'
+        'advanced_filters' => 'advancedFilters',
+        'page_size' => 'pageSize',
+        'page_number' => 'pageNumber'
     ];
 
 
@@ -91,7 +95,9 @@ class ReportByCategoryRequest implements ArrayAccess
         'end_period_utc_date' => 'setEndPeriodUtcDate',
         'category_filter' => 'setCategoryFilter',
         'indicator_filters' => 'setIndicatorFilters',
-        'advanced_filters' => 'setAdvancedFilters'
+        'advanced_filters' => 'setAdvancedFilters',
+        'page_size' => 'setPageSize',
+        'page_number' => 'setPageNumber'
     ];
 
 
@@ -105,7 +111,9 @@ class ReportByCategoryRequest implements ArrayAccess
         'end_period_utc_date' => 'getEndPeriodUtcDate',
         'category_filter' => 'getCategoryFilter',
         'indicator_filters' => 'getIndicatorFilters',
-        'advanced_filters' => 'getAdvancedFilters'
+        'advanced_filters' => 'getAdvancedFilters',
+        'page_size' => 'getPageSize',
+        'page_number' => 'getPageNumber'
     ];
 
     public static function attributeMap()
@@ -145,6 +153,8 @@ class ReportByCategoryRequest implements ArrayAccess
         $this->container['category_filter'] = isset($data['category_filter']) ? $data['category_filter'] : null;
         $this->container['indicator_filters'] = isset($data['indicator_filters']) ? $data['indicator_filters'] : null;
         $this->container['advanced_filters'] = isset($data['advanced_filters']) ? $data['advanced_filters'] : null;
+        $this->container['page_size'] = isset($data['page_size']) ? $data['page_size'] : null;
+        $this->container['page_number'] = isset($data['page_number']) ? $data['page_number'] : null;
     }
 
     /**
@@ -312,6 +322,48 @@ class ReportByCategoryRequest implements ArrayAccess
     public function setAdvancedFilters($advanced_filters)
     {
         $this->container['advanced_filters'] = $advanced_filters;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_size
+     * @return \Swagger\Client\Model\PageSize
+     */
+    public function getPageSize()
+    {
+        return $this->container['page_size'];
+    }
+
+    /**
+     * Sets page_size
+     * @param \Swagger\Client\Model\PageSize $page_size
+     * @return $this
+     */
+    public function setPageSize($page_size)
+    {
+        $this->container['page_size'] = $page_size;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_number
+     * @return \Swagger\Client\Model\PageNumber
+     */
+    public function getPageNumber()
+    {
+        return $this->container['page_number'];
+    }
+
+    /**
+     * Sets page_number
+     * @param \Swagger\Client\Model\PageNumber $page_number
+     * @return $this
+     */
+    public function setPageNumber($page_number)
+    {
+        $this->container['page_number'] = $page_number;
 
         return $this;
     }

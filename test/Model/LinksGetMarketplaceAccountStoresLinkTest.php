@@ -83,6 +83,14 @@ class LinksGetMarketplaceAccountStoresLinkTest extends \PHPUnit_Framework_TestCa
     }
 
     /**
+     * Test attribute "doc_url"
+     */
+    public function testPropertyDocUrl()
+    {
+
+    }
+
+    /**
      * Test attribute "description"
      */
     public function testPropertyDescription()

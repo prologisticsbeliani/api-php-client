@@ -131,6 +131,22 @@ class ReportByProductRequestTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "page_size"
+     */
+    public function testPropertyPageSize()
+    {
+
+    }
+
+    /**
+     * Test attribute "page_number"
+     */
+    public function testPropertyPageNumber()
+    {
+
+    }
+
+    /**
      * Test attribute "product_columns_to_display"
      */
     public function testPropertyProductColumnsToDisplay()

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **product_sku** | **string** | The product SKU | 
 **product_title** | **string** | The product tile | 
 **product_image_url** | **string** | The product image Url | 
-**product_active** | **bool** | Indicates if the product still exists in your catalog | 
+**product_active** | **bool** | Indicates if the product still exists in your catalog | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

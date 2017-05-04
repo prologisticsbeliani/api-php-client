@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * DateSearchTypeTest Class Doc Comment
  *
  * @category    Class */
-// * @description Indicates on which date you want to make the filter.
+// * @description Indicates on which date you want to make the filter
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team

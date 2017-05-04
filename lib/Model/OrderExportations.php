@@ -35,7 +35,7 @@ use \ArrayAccess;
  * OrderExportations Class Doc Comment
  *
  * @category    Class
- * @description The list of orders exportation
+ * @description The list of Order report exportations
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

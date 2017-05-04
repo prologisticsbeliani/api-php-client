@@ -178,9 +178,6 @@ class TrackedOrderProduct implements ArrayAccess
         if ($this->container['product_image_url'] === null) {
             $invalid_properties[] = "'product_image_url' can't be null";
         }
-        if ($this->container['product_active'] === null) {
-            $invalid_properties[] = "'product_active' can't be null";
-        }
         if ($this->container['unit_price'] === null) {
             $invalid_properties[] = "'unit_price' can't be null";
         }
@@ -212,9 +209,6 @@ class TrackedOrderProduct implements ArrayAccess
             return false;
         }
         if ($this->container['product_image_url'] === null) {
-            return false;
-        }
-        if ($this->container['product_active'] === null) {
             return false;
         }
         if ($this->container['unit_price'] === null) {

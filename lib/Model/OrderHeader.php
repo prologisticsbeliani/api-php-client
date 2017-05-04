@@ -578,7 +578,7 @@ class OrderHeader implements ArrayAccess
 
     /**
      * Sets order_last_modification_utc_date
-     * @param \DateTime $order_last_modification_utc_date The last modification UTC date done by BeezUP of this order.
+     * @param \DateTime $order_last_modification_utc_date The last modification UTC date done by BeezUP of this order
      * @return $this
      */
     public function setOrderLastModificationUtcDate($order_last_modification_utc_date)
@@ -599,7 +599,7 @@ class OrderHeader implements ArrayAccess
 
     /**
      * Sets order_marketplace_last_modification_utc_date
-     * @param \DateTime $order_marketplace_last_modification_utc_date The last modification UTC date done by the marketplace on this order.
+     * @param \DateTime $order_marketplace_last_modification_utc_date The last modification UTC date done by the marketplace on this order
      * @return $this
      */
     public function setOrderMarketplaceLastModificationUtcDate($order_marketplace_last_modification_utc_date)

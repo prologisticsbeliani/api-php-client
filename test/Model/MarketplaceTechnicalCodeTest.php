@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * MarketplaceTechnicalCodeTest Class Doc Comment
  *
  * @category    Class */
-// * @description The technical code of the marketplace.
+// * @description The technical code of the marketplace
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team

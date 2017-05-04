@@ -164,9 +164,6 @@ class BeezUPCommonProductBasicInfo implements ArrayAccess
         if ($this->container['product_image_url'] === null) {
             $invalid_properties[] = "'product_image_url' can't be null";
         }
-        if ($this->container['product_active'] === null) {
-            $invalid_properties[] = "'product_active' can't be null";
-        }
         return $invalid_properties;
     }
 
@@ -189,9 +186,6 @@ class BeezUPCommonProductBasicInfo implements ArrayAccess
             return false;
         }
         if ($this->container['product_image_url'] === null) {
-            return false;
-        }
-        if ($this->container['product_active'] === null) {
             return false;
         }
         return true;

@@ -83,6 +83,14 @@ class LinksChangePasswordLinkTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "doc_url"
+     */
+    public function testPropertyDocUrl()
+    {
+
+    }
+
+    /**
      * Test attribute "description"
      */
     public function testPropertyDescription()

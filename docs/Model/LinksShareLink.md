@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**doc_url** | [**\Swagger\Client\Model\BeezUPCommonDocUrl**](BeezUPCommonDocUrl.md) |  | [optional] 
 **description** | **string** | The description of the link | [optional] 
 **href** | [**\Swagger\Client\Model\BeezUPCommonHref**](BeezUPCommonHref.md) |  | [optional] 
 **operation_id** | [**\Swagger\Client\Model\BeezUPCommonOperationId**](BeezUPCommonOperationId.md) |  | [optional] 

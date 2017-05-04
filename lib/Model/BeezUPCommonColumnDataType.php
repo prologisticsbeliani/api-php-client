@@ -50,6 +50,7 @@ class BeezUPCommonColumnDataType {
     const SPECIAL_INT = 'SpecialInt';
     const IN_STOCK = 'InStock';
     const UNKNOWN = 'Unknown';
+    const IMAGE_URL = 'ImageUrl';
     
 
     

@@ -55,7 +55,12 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'sku' => 'string',
-        'title' => 'string'
+        'title' => 'string',
+        'overrided' => 'bool',
+        'disabled' => 'bool',
+        'category_mapped' => 'bool',
+        'excluded' => 'bool',
+        'active' => 'bool'
     ];
 
     public static function swaggerTypes()
@@ -69,7 +74,12 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
      */
     protected static $attributeMap = [
         'sku' => 'sku',
-        'title' => 'title'
+        'title' => 'title',
+        'overrided' => 'overrided',
+        'disabled' => 'disabled',
+        'category_mapped' => 'categoryMapped',
+        'excluded' => 'excluded',
+        'active' => 'active'
     ];
 
 
@@ -79,7 +89,12 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
      */
     protected static $setters = [
         'sku' => 'setSku',
-        'title' => 'setTitle'
+        'title' => 'setTitle',
+        'overrided' => 'setOverrided',
+        'disabled' => 'setDisabled',
+        'category_mapped' => 'setCategoryMapped',
+        'excluded' => 'setExcluded',
+        'active' => 'setActive'
     ];
 
 
@@ -89,7 +104,12 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
      */
     protected static $getters = [
         'sku' => 'getSku',
-        'title' => 'getTitle'
+        'title' => 'getTitle',
+        'overrided' => 'getOverrided',
+        'disabled' => 'getDisabled',
+        'category_mapped' => 'getCategoryMapped',
+        'excluded' => 'getExcluded',
+        'active' => 'getActive'
     ];
 
     public static function attributeMap()
@@ -125,6 +145,11 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
     {
         $this->container['sku'] = isset($data['sku']) ? $data['sku'] : null;
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
+        $this->container['overrided'] = isset($data['overrided']) ? $data['overrided'] : null;
+        $this->container['disabled'] = isset($data['disabled']) ? $data['disabled'] : null;
+        $this->container['category_mapped'] = isset($data['category_mapped']) ? $data['category_mapped'] : null;
+        $this->container['excluded'] = isset($data['excluded']) ? $data['excluded'] : null;
+        $this->container['active'] = isset($data['active']) ? $data['active'] : null;
     }
 
     /**
@@ -163,7 +188,7 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
 
     /**
      * Sets sku
-     * @param string $sku The product sku to search
+     * @param string $sku Search by product sku. If null the filter will not be taken in account.
      * @return $this
      */
     public function setSku($sku)
@@ -184,12 +209,117 @@ class GetChannelCatalogProductInfoListRequest implements ArrayAccess
 
     /**
      * Sets title
-     * @param string $title The  product title to search
+     * @param string $title Search by product title. If null the filter will not be taken in account.
      * @return $this
      */
     public function setTitle($title)
     {
         $this->container['title'] = $title;
+
+        return $this;
+    }
+
+    /**
+     * Gets overrided
+     * @return bool
+     */
+    public function getOverrided()
+    {
+        return $this->container['overrided'];
+    }
+
+    /**
+     * Sets overrided
+     * @param bool $overrided Search overrided products. If null the filter will not be taken in account.
+     * @return $this
+     */
+    public function setOverrided($overrided)
+    {
+        $this->container['overrided'] = $overrided;
+
+        return $this;
+    }
+
+    /**
+     * Gets disabled
+     * @return bool
+     */
+    public function getDisabled()
+    {
+        return $this->container['disabled'];
+    }
+
+    /**
+     * Sets disabled
+     * @param bool $disabled Search disabled products. If null the filter will not be taken in account.
+     * @return $this
+     */
+    public function setDisabled($disabled)
+    {
+        $this->container['disabled'] = $disabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets category_mapped
+     * @return bool
+     */
+    public function getCategoryMapped()
+    {
+        return $this->container['category_mapped'];
+    }
+
+    /**
+     * Sets category_mapped
+     * @param bool $category_mapped Search product with category mapped with the channel. If null the filter will not be taken in account.
+     * @return $this
+     */
+    public function setCategoryMapped($category_mapped)
+    {
+        $this->container['category_mapped'] = $category_mapped;
+
+        return $this;
+    }
+
+    /**
+     * Gets excluded
+     * @return bool
+     */
+    public function getExcluded()
+    {
+        return $this->container['excluded'];
+    }
+
+    /**
+     * Sets excluded
+     * @param bool $excluded Search excluded products by at least an exclusion filter. If null the filter will not be taken in account.
+     * @return $this
+     */
+    public function setExcluded($excluded)
+    {
+        $this->container['excluded'] = $excluded;
+
+        return $this;
+    }
+
+    /**
+     * Gets active
+     * @return bool
+     */
+    public function getActive()
+    {
+        return $this->container['active'];
+    }
+
+    /**
+     * Sets active
+     * @param bool $active If false, search for product absent from the current catalog. If null the filter will not be taken in account.
+     * @return $this
+     */
+    public function setActive($active)
+    {
+        $this->container['active'] = $active;
 
         return $this;
     }

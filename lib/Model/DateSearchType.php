@@ -35,7 +35,7 @@ use \ArrayAccess;
  * DateSearchType Class Doc Comment
  *
  * @category    Class
- * @description Indicates on which date you want to make the filter.
+ * @description Indicates on which date you want to make the filter
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

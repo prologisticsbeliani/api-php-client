@@ -35,7 +35,7 @@ use \ArrayAccess;
  * BeezUPOrderId Class Doc Comment
  *
  * @category    Class
- * @description The order BeezUP identifier
+ * @description The BeezUP Order identifier
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

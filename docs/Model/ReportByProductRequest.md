@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **category_filter** | [**\Swagger\Client\Model\ReportCategoryFilter**](ReportCategoryFilter.md) |  | [optional] 
 **indicator_filters** | [**\Swagger\Client\Model\ReportIndicatorFilter[]**](ReportIndicatorFilter.md) |  | [optional] 
 **advanced_filters** | [**\Swagger\Client\Model\ReportAdvancedFilters**](ReportAdvancedFilters.md) |  | 
+**page_size** | [**\Swagger\Client\Model\PageSize**](PageSize.md) |  | [optional] 
+**page_number** | [**\Swagger\Client\Model\PageNumber**](PageNumber.md) |  | [optional] 
 **product_columns_to_display** | [**\Swagger\Client\Model\BeezUPCommonCatalogColumnId[]**](BeezUPCommonCatalogColumnId.md) |  | [optional] 
 **product_state** | [**\Swagger\Client\Model\ProductStateFilter**](ProductStateFilter.md) |  | 
 **product_filters** | [**\Swagger\Client\Model\ProductFilters**](ProductFilters.md) |  | [optional] 

@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **product_sku** | **string** | The product SKU | 
 **product_title** | **string** | The product tile | 
 **product_image_url** | **string** | The product image Url | 
-**product_active** | **bool** | Indicates if the product still exists in your catalog | 
-**overrides** | [**\Swagger\Client\Model\ProductOverrides**](ProductOverrides.md) |  | 
+**product_active** | **bool** | Indicates if the product still exists in your catalog | [optional] 
+**overrides** | [**\Swagger\Client\Model\ProductOverridesWithCatalogValues**](ProductOverridesWithCatalogValues.md) |  | 
 **disabled** | **bool** | Indicates if the product has been disabled or not | [default to false]
 **category_mapped** | **bool** | Indicates if the product&#39;s category has been mapped to a channel category | 
 **excluded** | **bool** | Indicates if the product has been excluded by a exclusion filter | [default to false]

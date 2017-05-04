@@ -59,7 +59,7 @@ class ChannelCatalogProductInfo implements ArrayAccess
         'product_title' => 'string',
         'product_image_url' => 'string',
         'product_active' => 'bool',
-        'overrides' => '\Swagger\Client\Model\ProductOverrides',
+        'overrides' => '\Swagger\Client\Model\ProductOverridesWithCatalogValues',
         'disabled' => 'bool',
         'category_mapped' => 'bool',
         'excluded' => 'bool',
@@ -193,9 +193,6 @@ class ChannelCatalogProductInfo implements ArrayAccess
         if ($this->container['product_image_url'] === null) {
             $invalid_properties[] = "'product_image_url' can't be null";
         }
-        if ($this->container['product_active'] === null) {
-            $invalid_properties[] = "'product_active' can't be null";
-        }
         if ($this->container['overrides'] === null) {
             $invalid_properties[] = "'overrides' can't be null";
         }
@@ -233,9 +230,6 @@ class ChannelCatalogProductInfo implements ArrayAccess
             return false;
         }
         if ($this->container['product_image_url'] === null) {
-            return false;
-        }
-        if ($this->container['product_active'] === null) {
             return false;
         }
         if ($this->container['overrides'] === null) {
@@ -364,7 +358,7 @@ class ChannelCatalogProductInfo implements ArrayAccess
 
     /**
      * Gets overrides
-     * @return \Swagger\Client\Model\ProductOverrides
+     * @return \Swagger\Client\Model\ProductOverridesWithCatalogValues
      */
     public function getOverrides()
     {
@@ -373,7 +367,7 @@ class ChannelCatalogProductInfo implements ArrayAccess
 
     /**
      * Sets overrides
-     * @param \Swagger\Client\Model\ProductOverrides $overrides
+     * @param \Swagger\Client\Model\ProductOverridesWithCatalogValues $overrides
      * @return $this
      */
     public function setOverrides($overrides)

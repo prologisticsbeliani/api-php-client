@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * OrderExportationsTest Class Doc Comment
  *
  * @category    Class */
-// * @description The list of orders exportation
+// * @description The list of Order report exportations
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team

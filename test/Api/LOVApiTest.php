@@ -98,26 +98,4 @@ class LOVApiTest extends \PHPUnit_Framework_TestCase
 
     }
 
-    /**
-     * Test case for getUserListNames
-     *
-     * Get all list names.
-     *
-     */
-    public function testGetUserListNames()
-    {
-
-    }
-
-    /**
-     * Test case for getUserListOfValues
-     *
-     * Get the list of values related to this list name.
-     *
-     */
-    public function testGetUserListOfValues()
-    {
-
-    }
-
 }

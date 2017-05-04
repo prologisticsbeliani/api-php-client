@@ -88,17 +88,6 @@ class SecurityApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for logout
-     *
-     * Log out the current user from go2.
-     *
-     */
-    public function testLogout()
-    {
-
-    }
-
-    /**
      * Test case for lostPassword
      *
      * Lost password.

@@ -54,6 +54,7 @@ class LinksCreateStoreLink implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'doc_url' => '\Swagger\Client\Model\BeezUPCommonDocUrl',
         'description' => 'string',
         'href' => '\Swagger\Client\Model\BeezUPCommonHref',
         'operation_id' => '\Swagger\Client\Model\BeezUPCommonOperationId',
@@ -73,6 +74,7 @@ class LinksCreateStoreLink implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'doc_url' => 'docUrl',
         'description' => 'description',
         'href' => 'href',
         'operation_id' => 'operationId',
@@ -88,6 +90,7 @@ class LinksCreateStoreLink implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'doc_url' => 'setDocUrl',
         'description' => 'setDescription',
         'href' => 'setHref',
         'operation_id' => 'setOperationId',
@@ -103,6 +106,7 @@ class LinksCreateStoreLink implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'doc_url' => 'getDocUrl',
         'description' => 'getDescription',
         'href' => 'getHref',
         'operation_id' => 'getOperationId',
@@ -143,6 +147,7 @@ class LinksCreateStoreLink implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['doc_url'] = isset($data['doc_url']) ? $data['doc_url'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['href'] = isset($data['href']) ? $data['href'] : null;
         $this->container['operation_id'] = isset($data['operation_id']) ? $data['operation_id'] : null;
@@ -176,6 +181,27 @@ class LinksCreateStoreLink implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets doc_url
+     * @return \Swagger\Client\Model\BeezUPCommonDocUrl
+     */
+    public function getDocUrl()
+    {
+        return $this->container['doc_url'];
+    }
+
+    /**
+     * Sets doc_url
+     * @param \Swagger\Client\Model\BeezUPCommonDocUrl $doc_url
+     * @return $this
+     */
+    public function setDocUrl($doc_url)
+    {
+        $this->container['doc_url'] = $doc_url;
+
+        return $this;
+    }
 
     /**
      * Gets description

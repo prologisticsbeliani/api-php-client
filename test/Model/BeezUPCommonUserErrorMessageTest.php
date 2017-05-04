@@ -83,6 +83,14 @@ class BeezUPCommonUserErrorMessageTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "doc_url"
+     */
+    public function testPropertyDocUrl()
+    {
+
+    }
+
+    /**
      * Test attribute "code"
      */
     public function testPropertyCode()

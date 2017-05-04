@@ -54,6 +54,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'doc_url' => 'string',
         'code' => 'string',
         'message' => 'string',
         'culture_name' => 'string',
@@ -70,6 +71,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'doc_url' => 'docUrl',
         'code' => 'code',
         'message' => 'message',
         'culture_name' => 'cultureName',
@@ -82,6 +84,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'doc_url' => 'setDocUrl',
         'code' => 'setCode',
         'message' => 'setMessage',
         'culture_name' => 'setCultureName',
@@ -94,6 +97,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'doc_url' => 'getDocUrl',
         'code' => 'getCode',
         'message' => 'getMessage',
         'culture_name' => 'getCultureName',
@@ -131,6 +135,7 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['doc_url'] = isset($data['doc_url']) ? $data['doc_url'] : null;
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['culture_name'] = isset($data['culture_name']) ? $data['culture_name'] : null;
@@ -173,6 +178,27 @@ class BeezUPCommonUserErrorMessage implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets doc_url
+     * @return string
+     */
+    public function getDocUrl()
+    {
+        return $this->container['doc_url'];
+    }
+
+    /**
+     * Sets doc_url
+     * @param string $doc_url The documentation related to this operation.
+     * @return $this
+     */
+    public function setDocUrl($doc_url)
+    {
+        $this->container['doc_url'] = $doc_url;
+
+        return $this;
+    }
 
     /**
      * Gets code

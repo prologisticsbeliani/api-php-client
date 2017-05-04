@@ -83,6 +83,14 @@ class LinksGetChannelCatalogMarketplacePropertiesLinkTest extends \PHPUnit_Frame
     }
 
     /**
+     * Test attribute "doc_url"
+     */
+    public function testPropertyDocUrl()
+    {
+
+    }
+
+    /**
      * Test attribute "description"
      */
     public function testPropertyDescription()

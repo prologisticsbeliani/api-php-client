@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * PageSizeTest Class Doc Comment
  *
  * @category    Class */
-// * @description Indicate the order count per page
+// * @description Indicate the item count per page
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team

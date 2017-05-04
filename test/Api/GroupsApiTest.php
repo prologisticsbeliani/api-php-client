@@ -98,26 +98,4 @@ class GroupsApiTest extends \PHPUnit_Framework_TestCase
 
     }
 
-    /**
-     * Test case for getUserListGroup
-     *
-     * Get list of values related to this group name.
-     *
-     */
-    public function testGetUserListGroup()
-    {
-
-    }
-
-    /**
-     * Test case for getUserListGroupNames
-     *
-     * Get list of group of list name.
-     *
-     */
-    public function testGetUserListGroupNames()
-    {
-
-    }
-
 }

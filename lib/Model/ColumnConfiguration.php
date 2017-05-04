@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ColumnConfiguration Class Doc Comment
  *
  * @category    Class
- * @description Indicates the configuration applied on the column (catalog or custom) during the importation process. You have to define the BeezUP Column Name property OR the custom configuration property.
+ * @description Indicates the configuration applied on the column (catalog or custom) during the importation process.
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -56,7 +56,12 @@ class ColumnConfiguration implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'beez_up_column_name' => '\Swagger\Client\Model\BeezUPCommonBeezUPColumnName',
-        'custom_configuration' => '\Swagger\Client\Model\ColumnCustomConfiguration'
+        'column_importance' => '\Swagger\Client\Model\BeezUPCommonColumnImportance',
+        'column_data_type' => '\Swagger\Client\Model\BeezUPCommonColumnDataType',
+        'column_culture_name' => '\Swagger\Client\Model\ColumnCultureName',
+        'column_format' => '\Swagger\Client\Model\ColumnFormat',
+        'can_be_truncated' => '\Swagger\Client\Model\CanBeTruncated',
+        'display_group_name' => '\Swagger\Client\Model\DisplayGroupName'
     ];
 
     public static function swaggerTypes()
@@ -70,7 +75,12 @@ class ColumnConfiguration implements ArrayAccess
      */
     protected static $attributeMap = [
         'beez_up_column_name' => 'beezUPColumnName',
-        'custom_configuration' => 'customConfiguration'
+        'column_importance' => 'columnImportance',
+        'column_data_type' => 'columnDataType',
+        'column_culture_name' => 'columnCultureName',
+        'column_format' => 'columnFormat',
+        'can_be_truncated' => 'canBeTruncated',
+        'display_group_name' => 'displayGroupName'
     ];
 
 
@@ -80,7 +90,12 @@ class ColumnConfiguration implements ArrayAccess
      */
     protected static $setters = [
         'beez_up_column_name' => 'setBeezUpColumnName',
-        'custom_configuration' => 'setCustomConfiguration'
+        'column_importance' => 'setColumnImportance',
+        'column_data_type' => 'setColumnDataType',
+        'column_culture_name' => 'setColumnCultureName',
+        'column_format' => 'setColumnFormat',
+        'can_be_truncated' => 'setCanBeTruncated',
+        'display_group_name' => 'setDisplayGroupName'
     ];
 
 
@@ -90,7 +105,12 @@ class ColumnConfiguration implements ArrayAccess
      */
     protected static $getters = [
         'beez_up_column_name' => 'getBeezUpColumnName',
-        'custom_configuration' => 'getCustomConfiguration'
+        'column_importance' => 'getColumnImportance',
+        'column_data_type' => 'getColumnDataType',
+        'column_culture_name' => 'getColumnCultureName',
+        'column_format' => 'getColumnFormat',
+        'can_be_truncated' => 'getCanBeTruncated',
+        'display_group_name' => 'getDisplayGroupName'
     ];
 
     public static function attributeMap()
@@ -125,7 +145,12 @@ class ColumnConfiguration implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['beez_up_column_name'] = isset($data['beez_up_column_name']) ? $data['beez_up_column_name'] : null;
-        $this->container['custom_configuration'] = isset($data['custom_configuration']) ? $data['custom_configuration'] : null;
+        $this->container['column_importance'] = isset($data['column_importance']) ? $data['column_importance'] : null;
+        $this->container['column_data_type'] = isset($data['column_data_type']) ? $data['column_data_type'] : null;
+        $this->container['column_culture_name'] = isset($data['column_culture_name']) ? $data['column_culture_name'] : null;
+        $this->container['column_format'] = isset($data['column_format']) ? $data['column_format'] : null;
+        $this->container['can_be_truncated'] = isset($data['can_be_truncated']) ? $data['can_be_truncated'] : null;
+        $this->container['display_group_name'] = isset($data['display_group_name']) ? $data['display_group_name'] : null;
     }
 
     /**
@@ -137,6 +162,12 @@ class ColumnConfiguration implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['column_importance'] === null) {
+            $invalid_properties[] = "'column_importance' can't be null";
+        }
+        if ($this->container['column_data_type'] === null) {
+            $invalid_properties[] = "'column_data_type' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -149,6 +180,12 @@ class ColumnConfiguration implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['column_importance'] === null) {
+            return false;
+        }
+        if ($this->container['column_data_type'] === null) {
+            return false;
+        }
         return true;
     }
 
@@ -175,22 +212,127 @@ class ColumnConfiguration implements ArrayAccess
     }
 
     /**
-     * Gets custom_configuration
-     * @return \Swagger\Client\Model\ColumnCustomConfiguration
+     * Gets column_importance
+     * @return \Swagger\Client\Model\BeezUPCommonColumnImportance
      */
-    public function getCustomConfiguration()
+    public function getColumnImportance()
     {
-        return $this->container['custom_configuration'];
+        return $this->container['column_importance'];
     }
 
     /**
-     * Sets custom_configuration
-     * @param \Swagger\Client\Model\ColumnCustomConfiguration $custom_configuration
+     * Sets column_importance
+     * @param \Swagger\Client\Model\BeezUPCommonColumnImportance $column_importance
      * @return $this
      */
-    public function setCustomConfiguration($custom_configuration)
+    public function setColumnImportance($column_importance)
     {
-        $this->container['custom_configuration'] = $custom_configuration;
+        $this->container['column_importance'] = $column_importance;
+
+        return $this;
+    }
+
+    /**
+     * Gets column_data_type
+     * @return \Swagger\Client\Model\BeezUPCommonColumnDataType
+     */
+    public function getColumnDataType()
+    {
+        return $this->container['column_data_type'];
+    }
+
+    /**
+     * Sets column_data_type
+     * @param \Swagger\Client\Model\BeezUPCommonColumnDataType $column_data_type
+     * @return $this
+     */
+    public function setColumnDataType($column_data_type)
+    {
+        $this->container['column_data_type'] = $column_data_type;
+
+        return $this;
+    }
+
+    /**
+     * Gets column_culture_name
+     * @return \Swagger\Client\Model\ColumnCultureName
+     */
+    public function getColumnCultureName()
+    {
+        return $this->container['column_culture_name'];
+    }
+
+    /**
+     * Sets column_culture_name
+     * @param \Swagger\Client\Model\ColumnCultureName $column_culture_name
+     * @return $this
+     */
+    public function setColumnCultureName($column_culture_name)
+    {
+        $this->container['column_culture_name'] = $column_culture_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets column_format
+     * @return \Swagger\Client\Model\ColumnFormat
+     */
+    public function getColumnFormat()
+    {
+        return $this->container['column_format'];
+    }
+
+    /**
+     * Sets column_format
+     * @param \Swagger\Client\Model\ColumnFormat $column_format
+     * @return $this
+     */
+    public function setColumnFormat($column_format)
+    {
+        $this->container['column_format'] = $column_format;
+
+        return $this;
+    }
+
+    /**
+     * Gets can_be_truncated
+     * @return \Swagger\Client\Model\CanBeTruncated
+     */
+    public function getCanBeTruncated()
+    {
+        return $this->container['can_be_truncated'];
+    }
+
+    /**
+     * Sets can_be_truncated
+     * @param \Swagger\Client\Model\CanBeTruncated $can_be_truncated
+     * @return $this
+     */
+    public function setCanBeTruncated($can_be_truncated)
+    {
+        $this->container['can_be_truncated'] = $can_be_truncated;
+
+        return $this;
+    }
+
+    /**
+     * Gets display_group_name
+     * @return \Swagger\Client\Model\DisplayGroupName
+     */
+    public function getDisplayGroupName()
+    {
+        return $this->container['display_group_name'];
+    }
+
+    /**
+     * Sets display_group_name
+     * @param \Swagger\Client\Model\DisplayGroupName $display_group_name
+     * @return $this
+     */
+    public function setDisplayGroupName($display_group_name)
+    {
+        $this->container['display_group_name'] = $display_group_name;
 
         return $this;
     }

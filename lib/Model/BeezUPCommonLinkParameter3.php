@@ -54,7 +54,7 @@ class BeezUPCommonLinkParameter3 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'value' => 'string',
+        'value' => 'object',
         'required' => 'bool',
         'in' => 'string',
         'type' => 'string',
@@ -246,7 +246,7 @@ class BeezUPCommonLinkParameter3 implements ArrayAccess
 
     /**
      * Gets value
-     * @return string
+     * @return object
      */
     public function getValue()
     {
@@ -255,7 +255,7 @@ class BeezUPCommonLinkParameter3 implements ArrayAccess
 
     /**
      * Sets value
-     * @param string $value The value of the parameter
+     * @param object $value The value of the parameter. It can be an integer a string or an object.
      * @return $this
      */
     public function setValue($value)

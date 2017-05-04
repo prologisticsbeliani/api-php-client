@@ -98,4 +98,44 @@ class GetChannelCatalogProductInfoListRequestTest extends \PHPUnit_Framework_Tes
 
     }
 
+    /**
+     * Test attribute "overrided"
+     */
+    public function testPropertyOverrided()
+    {
+
+    }
+
+    /**
+     * Test attribute "disabled"
+     */
+    public function testPropertyDisabled()
+    {
+
+    }
+
+    /**
+     * Test attribute "category_mapped"
+     */
+    public function testPropertyCategoryMapped()
+    {
+
+    }
+
+    /**
+     * Test attribute "excluded"
+     */
+    public function testPropertyExcluded()
+    {
+
+    }
+
+    /**
+     * Test attribute "active"
+     */
+    public function testPropertyActive()
+    {
+
+    }
+
 }
