@@ -91,14 +91,6 @@ class CreditCardInfoWithCardTypeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "card_verification_code"
-     */
-    public function testPropertyCardVerificationCode()
-    {
-
-    }
-
-    /**
      * Test attribute "expiration_month"
      */
     public function testPropertyExpirationMonth()

@@ -55,7 +55,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'card_number' => '\Swagger\Client\Model\CardNumber',
-        'card_verification_code' => '\Swagger\Client\Model\CardVerificationCode',
         'expiration_month' => '\Swagger\Client\Model\ExpirationMonth',
         'expiration_year' => '\Swagger\Client\Model\ExpirationYear',
         'card_type' => 'string'
@@ -72,7 +71,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
      */
     protected static $attributeMap = [
         'card_number' => 'cardNumber',
-        'card_verification_code' => 'cardVerificationCode',
         'expiration_month' => 'expirationMonth',
         'expiration_year' => 'expirationYear',
         'card_type' => 'cardType'
@@ -85,7 +83,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
      */
     protected static $setters = [
         'card_number' => 'setCardNumber',
-        'card_verification_code' => 'setCardVerificationCode',
         'expiration_month' => 'setExpirationMonth',
         'expiration_year' => 'setExpirationYear',
         'card_type' => 'setCardType'
@@ -98,7 +95,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
      */
     protected static $getters = [
         'card_number' => 'getCardNumber',
-        'card_verification_code' => 'getCardVerificationCode',
         'expiration_month' => 'getExpirationMonth',
         'expiration_year' => 'getExpirationYear',
         'card_type' => 'getCardType'
@@ -136,7 +132,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['card_number'] = isset($data['card_number']) ? $data['card_number'] : null;
-        $this->container['card_verification_code'] = isset($data['card_verification_code']) ? $data['card_verification_code'] : null;
         $this->container['expiration_month'] = isset($data['expiration_month']) ? $data['expiration_month'] : null;
         $this->container['expiration_year'] = isset($data['expiration_year']) ? $data['expiration_year'] : null;
         $this->container['card_type'] = isset($data['card_type']) ? $data['card_type'] : null;
@@ -153,9 +148,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
 
         if ($this->container['card_number'] === null) {
             $invalid_properties[] = "'card_number' can't be null";
-        }
-        if ($this->container['card_verification_code'] === null) {
-            $invalid_properties[] = "'card_verification_code' can't be null";
         }
         if ($this->container['expiration_month'] === null) {
             $invalid_properties[] = "'expiration_month' can't be null";
@@ -179,9 +171,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
     {
 
         if ($this->container['card_number'] === null) {
-            return false;
-        }
-        if ($this->container['card_verification_code'] === null) {
             return false;
         }
         if ($this->container['expiration_month'] === null) {
@@ -214,27 +203,6 @@ class CreditCardInfoWithCardType implements ArrayAccess
     public function setCardNumber($card_number)
     {
         $this->container['card_number'] = $card_number;
-
-        return $this;
-    }
-
-    /**
-     * Gets card_verification_code
-     * @return \Swagger\Client\Model\CardVerificationCode
-     */
-    public function getCardVerificationCode()
-    {
-        return $this->container['card_verification_code'];
-    }
-
-    /**
-     * Sets card_verification_code
-     * @param \Swagger\Client\Model\CardVerificationCode $card_verification_code
-     * @return $this
-     */
-    public function setCardVerificationCode($card_verification_code)
-    {
-        $this->container['card_verification_code'] = $card_verification_code;
 
         return $this;
     }
