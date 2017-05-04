@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelCatalogStatusTest
+ * CategoryMappingStateTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ChannelCatalogStatusTest Class Doc Comment
+ * CategoryMappingStateTest Class Doc Comment
  *
  * @category    Class */
-// * @description Channel Catalog Status
+// * @description The category mapping state of the channel catalog
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
+class CategoryMappingStateTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,41 +75,33 @@ class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ChannelCatalogStatus"
+     * Test "CategoryMappingState"
      */
-    public function testChannelCatalogStatus()
+    public function testCategoryMappingState()
     {
 
     }
 
     /**
-     * Test attribute "exported_product_count"
+     * Test attribute "status"
      */
-    public function testPropertyExportedProductCount()
+    public function testPropertyStatus()
     {
 
     }
 
     /**
-     * Test attribute "column_mapping_status"
+     * Test attribute "uncategorized_product_count"
      */
-    public function testPropertyColumnMappingStatus()
+    public function testPropertyUncategorizedProductCount()
     {
 
     }
 
     /**
-     * Test attribute "category_mapping_state"
+     * Test attribute "categorized_without_cost_product_count"
      */
-    public function testPropertyCategoryMappingState()
-    {
-
-    }
-
-    /**
-     * Test attribute "api_setting_status"
-     */
-    public function testPropertyApiSettingStatus()
+    public function testPropertyCategorizedWithoutCostProductCount()
     {
 
     }
