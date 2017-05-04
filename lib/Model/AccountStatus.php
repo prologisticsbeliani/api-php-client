@@ -35,7 +35,7 @@ use \ArrayAccess;
  * AccountStatus Class Doc Comment
  *
  * @category    Class
- * @description The account status * Active:  When the account is active * SystemBlocked:  When all stores on the account are blocked by the system * UserBlocked: When all stores on the account are blocked on GO not on the system
+ * @description The account status * Active:  When the account is active * SystemBlocked:  When all stores on the account are blocked by the system * UserBlocked: When all stores on the account are blocked on GO not on the system * NotActivated: When the email is not verified
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -44,6 +44,7 @@ class AccountStatus {
     const ACTIVE = 'Active';
     const SYSTEM_BLOCKED = 'SystemBlocked';
     const USER_BLOCKED = 'UserBlocked';
+    const NOT_ACTIVATED = 'NotActivated';
     
 
     

@@ -35,7 +35,7 @@ use \ArrayAccess;
  * StoreStatus Class Doc Comment
  *
  * @category    Class
- * @description The store status * Active:  When the store is active * SystemBlocked:  When the store is blocked by the system * UserBlocked: When the store is blocked on GO not on the system * NotActivated: When the email is not verified
+ * @description The store status * Active:  When the store is active * SystemBlocked:  When the store is blocked by the system * UserBlocked: When the store is blocked on GO not on the system
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

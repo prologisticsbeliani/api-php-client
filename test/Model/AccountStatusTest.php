@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * AccountStatusTest Class Doc Comment
  *
  * @category    Class */
-// * @description The account status * Active:  When the account is active * SystemBlocked:  When all stores on the account are blocked by the system * UserBlocked: When all stores on the account are blocked on GO not on the system
+// * @description The account status * Active:  When the account is active * SystemBlocked:  When all stores on the account are blocked by the system * UserBlocked: When all stores on the account are blocked on GO not on the system * NotActivated: When the email is not verified
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
