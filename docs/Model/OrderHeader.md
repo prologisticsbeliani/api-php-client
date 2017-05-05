@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **order_currency_code** | [**\Swagger\Client\Model\BeezUPCommonCurrencyCode**](BeezUPCommonCurrencyCode.md) |  | [optional] 
 **processing** | [**\Swagger\Client\Model\Processing**](Processing.md) |  | 
 **etag** | [**\Swagger\Client\Model\Etag**](Etag.md) |  | 
-**links** | [**\Swagger\Client\Model\BeezUPCommonLink2[]**](BeezUPCommonLink2.md) |  | 
+**links** | [**\Swagger\Client\Model\DefinitionsOrderHeaderLinks**](DefinitionsOrderHeaderLinks.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

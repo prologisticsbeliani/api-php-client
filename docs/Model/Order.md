@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **order_currency_code** | [**\Swagger\Client\Model\BeezUPCommonCurrencyCode**](BeezUPCommonCurrencyCode.md) |  | [optional] 
 **processing** | [**\Swagger\Client\Model\Processing**](Processing.md) |  | 
 **etag** | [**\Swagger\Client\Model\Etag**](Etag.md) |  | 
-**links** | [**\Swagger\Client\Model\BeezUPCommonLink2[]**](BeezUPCommonLink2.md) |  | 
+**links** | [**\Swagger\Client\Model\DefinitionsOrderHeaderLinks**](DefinitionsOrderHeaderLinks.md) |  | 
 **order_market_place_channel** | **string** | Useful to identify the origin of the order. For example in Amazon. | [optional] 
 **order_total_tax** | **float** | The total tax of this order | [optional] 
 **order_total_commission** | **float** | The total commission of this order | [optional] 
@@ -65,7 +65,7 @@ Name | Type | Description | Notes
 **order_order_source_uri** | **string** | Technical information: The url to the source of this order. We received this information from the marketplace. | [optional] 
 **order_order_items_source_uri** | **string** | Technical information: The url to the source of this order items. We received this information from the marketplace. | [optional] 
 **order_items** | [**\Swagger\Client\Model\OrderItem[]**](OrderItem.md) |  | 
-**transition_links** | [**\Swagger\Client\Model\BeezUPCommonLink2[]**](BeezUPCommonLink2.md) |  | 
+**transition_links** | [**\Swagger\Client\Model\OrderTransitionLinks**](OrderTransitionLinks.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

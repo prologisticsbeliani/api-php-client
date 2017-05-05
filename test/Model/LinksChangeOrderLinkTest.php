@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelCatalogStatusTest
+ * LinksChangeOrderLinkTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ChannelCatalogStatusTest Class Doc Comment
+ * LinksChangeOrderLinkTest Class Doc Comment
  *
  * @category    Class */
-// * @description Channel Catalog Status
+// * @description LinksChangeOrderLink
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
+class LinksChangeOrderLinkTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,41 +75,73 @@ class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ChannelCatalogStatus"
+     * Test "LinksChangeOrderLink"
      */
-    public function testChannelCatalogStatus()
+    public function testLinksChangeOrderLink()
     {
 
     }
 
     /**
-     * Test attribute "exported_product_count"
+     * Test attribute "doc_url"
      */
-    public function testPropertyExportedProductCount()
+    public function testPropertyDocUrl()
     {
 
     }
 
     /**
-     * Test attribute "column_mapping_status"
+     * Test attribute "description"
      */
-    public function testPropertyColumnMappingStatus()
+    public function testPropertyDescription()
     {
 
     }
 
     /**
-     * Test attribute "category_mapping_status"
+     * Test attribute "href"
      */
-    public function testPropertyCategoryMappingStatus()
+    public function testPropertyHref()
     {
 
     }
 
     /**
-     * Test attribute "api_setting_status"
+     * Test attribute "operation_id"
      */
-    public function testPropertyApiSettingStatus()
+    public function testPropertyOperationId()
+    {
+
+    }
+
+    /**
+     * Test attribute "method"
+     */
+    public function testPropertyMethod()
+    {
+
+    }
+
+    /**
+     * Test attribute "parameters"
+     */
+    public function testPropertyParameters()
+    {
+
+    }
+
+    /**
+     * Test attribute "templated"
+     */
+    public function testPropertyTemplated()
+    {
+
+    }
+
+    /**
+     * Test attribute "info"
+     */
+    public function testPropertyInfo()
     {
 
     }

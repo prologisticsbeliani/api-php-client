@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **last_name** | **string** | Your friend&#39;s user last name | 
 **first_name** | **string** | Your friend&#39;s user first name | 
 **email** | [**\Swagger\Client\Model\FriendEmail**](FriendEmail.md) |  | 
-**profile_picture_url** | [**\Swagger\Client\Model\FriendProfilePictureUrl**](FriendProfilePictureUrl.md) |  | 
+**profile_picture_url** | [**\Swagger\Client\Model\FriendProfilePictureUrl**](FriendProfilePictureUrl.md) |  | [optional] 
 **country_iso_code_alpha3** | [**\Swagger\Client\Model\FriendCountryIsoCodeAlpha3**](FriendCountryIsoCodeAlpha3.md) |  | 
 **company** | **string** | Your friend&#39;s user company name | 
 **what_i_do** | **string** | Your friend&#39;s user occupation in his company | 

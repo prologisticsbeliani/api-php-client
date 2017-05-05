@@ -74,7 +74,7 @@ class OrderHeader implements ArrayAccess
         'order_currency_code' => '\Swagger\Client\Model\BeezUPCommonCurrencyCode',
         'processing' => '\Swagger\Client\Model\Processing',
         'etag' => '\Swagger\Client\Model\Etag',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'links' => '\Swagger\Client\Model\DefinitionsOrderHeaderLinks'
     ];
 
     public static function swaggerTypes()
@@ -716,7 +716,7 @@ class OrderHeader implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\DefinitionsOrderHeaderLinks
      */
     public function getLinks()
     {
@@ -725,7 +725,7 @@ class OrderHeader implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links
+     * @param \Swagger\Client\Model\DefinitionsOrderHeaderLinks $links
      * @return $this
      */
     public function setLinks($links)

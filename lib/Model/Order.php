@@ -73,7 +73,7 @@ class Order implements ArrayAccess
         'order_currency_code' => '\Swagger\Client\Model\BeezUPCommonCurrencyCode',
         'processing' => '\Swagger\Client\Model\Processing',
         'etag' => '\Swagger\Client\Model\Etag',
-        'links' => '\Swagger\Client\Model\BeezUPCommonLink2[]',
+        'links' => '\Swagger\Client\Model\DefinitionsOrderHeaderLinks',
         'order_market_place_channel' => 'string',
         'order_total_tax' => 'float',
         'order_total_commission' => 'float',
@@ -116,7 +116,7 @@ class Order implements ArrayAccess
         'order_order_source_uri' => 'string',
         'order_order_items_source_uri' => 'string',
         'order_items' => '\Swagger\Client\Model\OrderItem[]',
-        'transition_links' => '\Swagger\Client\Model\BeezUPCommonLink2[]'
+        'transition_links' => '\Swagger\Client\Model\OrderTransitionLinks'
     ];
 
     public static function swaggerTypes()
@@ -942,7 +942,7 @@ class Order implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\DefinitionsOrderHeaderLinks
      */
     public function getLinks()
     {
@@ -951,7 +951,7 @@ class Order implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $links
+     * @param \Swagger\Client\Model\DefinitionsOrderHeaderLinks $links
      * @return $this
      */
     public function setLinks($links)
@@ -1845,7 +1845,7 @@ class Order implements ArrayAccess
 
     /**
      * Gets transition_links
-     * @return \Swagger\Client\Model\BeezUPCommonLink2[]
+     * @return \Swagger\Client\Model\OrderTransitionLinks
      */
     public function getTransitionLinks()
     {
@@ -1854,7 +1854,7 @@ class Order implements ArrayAccess
 
     /**
      * Sets transition_links
-     * @param \Swagger\Client\Model\BeezUPCommonLink2[] $transition_links
+     * @param \Swagger\Client\Model\OrderTransitionLinks $transition_links
      * @return $this
      */
     public function setTransitionLinks($transition_links)

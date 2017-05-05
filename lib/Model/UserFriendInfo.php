@@ -178,9 +178,6 @@ class UserFriendInfo implements ArrayAccess
         if ($this->container['email'] === null) {
             $invalid_properties[] = "'email' can't be null";
         }
-        if ($this->container['profile_picture_url'] === null) {
-            $invalid_properties[] = "'profile_picture_url' can't be null";
-        }
         if ($this->container['country_iso_code_alpha3'] === null) {
             $invalid_properties[] = "'country_iso_code_alpha3' can't be null";
         }
@@ -212,9 +209,6 @@ class UserFriendInfo implements ArrayAccess
             return false;
         }
         if ($this->container['email'] === null) {
-            return false;
-        }
-        if ($this->container['profile_picture_url'] === null) {
             return false;
         }
         if ($this->container['country_iso_code_alpha3'] === null) {
