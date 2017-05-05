@@ -59,6 +59,7 @@ class ChannelHeader implements ArrayAccess
         'channel_name' => '\Swagger\Client\Model\BeezUPCommonChannelName',
         'channel_logo_url' => '\Swagger\Client\Model\BeezUPCommonHttpUrl',
         'description_available' => 'bool',
+        'is_marketplace' => 'bool',
         'links' => '\Swagger\Client\Model\ChannelHeaderLinks'
     ];
 
@@ -76,6 +77,7 @@ class ChannelHeader implements ArrayAccess
         'channel_name' => 'channelName',
         'channel_logo_url' => 'channelLogoUrl',
         'description_available' => 'descriptionAvailable',
+        'is_marketplace' => 'isMarketplace',
         'links' => 'links'
     ];
 
@@ -89,6 +91,7 @@ class ChannelHeader implements ArrayAccess
         'channel_name' => 'setChannelName',
         'channel_logo_url' => 'setChannelLogoUrl',
         'description_available' => 'setDescriptionAvailable',
+        'is_marketplace' => 'setIsMarketplace',
         'links' => 'setLinks'
     ];
 
@@ -102,6 +105,7 @@ class ChannelHeader implements ArrayAccess
         'channel_name' => 'getChannelName',
         'channel_logo_url' => 'getChannelLogoUrl',
         'description_available' => 'getDescriptionAvailable',
+        'is_marketplace' => 'getIsMarketplace',
         'links' => 'getLinks'
     ];
 
@@ -140,6 +144,7 @@ class ChannelHeader implements ArrayAccess
         $this->container['channel_name'] = isset($data['channel_name']) ? $data['channel_name'] : null;
         $this->container['channel_logo_url'] = isset($data['channel_logo_url']) ? $data['channel_logo_url'] : null;
         $this->container['description_available'] = isset($data['description_available']) ? $data['description_available'] : false;
+        $this->container['is_marketplace'] = isset($data['is_marketplace']) ? $data['is_marketplace'] : false;
         $this->container['links'] = isset($data['links']) ? $data['links'] : null;
     }
 
@@ -163,6 +168,9 @@ class ChannelHeader implements ArrayAccess
         }
         if ($this->container['description_available'] === null) {
             $invalid_properties[] = "'description_available' can't be null";
+        }
+        if ($this->container['is_marketplace'] === null) {
+            $invalid_properties[] = "'is_marketplace' can't be null";
         }
         if ($this->container['links'] === null) {
             $invalid_properties[] = "'links' can't be null";
@@ -189,6 +197,9 @@ class ChannelHeader implements ArrayAccess
             return false;
         }
         if ($this->container['description_available'] === null) {
+            return false;
+        }
+        if ($this->container['is_marketplace'] === null) {
             return false;
         }
         if ($this->container['links'] === null) {
@@ -278,6 +289,27 @@ class ChannelHeader implements ArrayAccess
     public function setDescriptionAvailable($description_available)
     {
         $this->container['description_available'] = $description_available;
+
+        return $this;
+    }
+
+    /**
+     * Gets is_marketplace
+     * @return bool
+     */
+    public function getIsMarketplace()
+    {
+        return $this->container['is_marketplace'];
+    }
+
+    /**
+     * Sets is_marketplace
+     * @param bool $is_marketplace Indicates if the channel is a marketplace
+     * @return $this
+     */
+    public function setIsMarketplace($is_marketplace)
+    {
+        $this->container['is_marketplace'] = $is_marketplace;
 
         return $this;
     }

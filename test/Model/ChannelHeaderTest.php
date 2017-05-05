@@ -115,6 +115,14 @@ class ChannelHeaderTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "is_marketplace"
+     */
+    public function testPropertyIsMarketplace()
+    {
+
+    }
+
+    /**
      * Test attribute "links"
      */
     public function testPropertyLinks()
