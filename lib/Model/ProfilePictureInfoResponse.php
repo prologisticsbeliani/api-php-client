@@ -55,7 +55,7 @@ class ProfilePictureInfoResponse implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'links' => '\Swagger\Client\Model\ProfilePictureInfoResponseLinks',
-        'profile_picture_info' => '\Swagger\Client\Model\ProfilePictureInfo'
+        'profile_picture_info' => '\Swagger\Client\Model\ProfilePictureInfoWithDefault'
     ];
 
     public static function swaggerTypes()
@@ -136,6 +136,12 @@ class ProfilePictureInfoResponse implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['links'] === null) {
+            $invalid_properties[] = "'links' can't be null";
+        }
+        if ($this->container['profile_picture_info'] === null) {
+            $invalid_properties[] = "'profile_picture_info' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -148,6 +154,12 @@ class ProfilePictureInfoResponse implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['links'] === null) {
+            return false;
+        }
+        if ($this->container['profile_picture_info'] === null) {
+            return false;
+        }
         return true;
     }
 
@@ -175,7 +187,7 @@ class ProfilePictureInfoResponse implements ArrayAccess
 
     /**
      * Gets profile_picture_info
-     * @return \Swagger\Client\Model\ProfilePictureInfo
+     * @return \Swagger\Client\Model\ProfilePictureInfoWithDefault
      */
     public function getProfilePictureInfo()
     {
@@ -184,7 +196,7 @@ class ProfilePictureInfoResponse implements ArrayAccess
 
     /**
      * Sets profile_picture_info
-     * @param \Swagger\Client\Model\ProfilePictureInfo $profile_picture_info
+     * @param \Swagger\Client\Model\ProfilePictureInfoWithDefault $profile_picture_info
      * @return $this
      */
     public function setProfilePictureInfo($profile_picture_info)

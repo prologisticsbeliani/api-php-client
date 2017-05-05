@@ -1,6 +1,6 @@
 <?php
 /**
- * ProfilePictureInfoResponseLinks
+ * ProfilePictureInfoWithDefault
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * ProfilePictureInfoResponseLinks Class Doc Comment
+ * ProfilePictureInfoWithDefault Class Doc Comment
  *
  * @category    Class
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ProfilePictureInfoResponseLinks implements ArrayAccess
+class ProfilePictureInfoWithDefault implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,15 +47,16 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'profilePictureInfoResponseLinks';
+    protected static $swaggerModelName = 'profilePictureInfoWithDefault';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\LinksGetProfilePictureInfoLink',
-        'save' => '\Swagger\Client\Model\LinksSaveProfilePictureInfoLink'
+        'profile_picture_url' => '\Swagger\Client\Model\ProfilePictureUrl',
+        'use_gravatar_profile_picture' => '\Swagger\Client\Model\UseGravatarProfilePicture',
+        'default_picture_url' => '\Swagger\Client\Model\ProfilePictureUrl'
     ];
 
     public static function swaggerTypes()
@@ -68,8 +69,9 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'self' => 'self',
-        'save' => 'save'
+        'profile_picture_url' => 'profilePictureUrl',
+        'use_gravatar_profile_picture' => 'useGravatarProfilePicture',
+        'default_picture_url' => 'defaultPictureUrl'
     ];
 
 
@@ -78,8 +80,9 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'self' => 'setSelf',
-        'save' => 'setSave'
+        'profile_picture_url' => 'setProfilePictureUrl',
+        'use_gravatar_profile_picture' => 'setUseGravatarProfilePicture',
+        'default_picture_url' => 'setDefaultPictureUrl'
     ];
 
 
@@ -88,8 +91,9 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'self' => 'getSelf',
-        'save' => 'getSave'
+        'profile_picture_url' => 'getProfilePictureUrl',
+        'use_gravatar_profile_picture' => 'getUseGravatarProfilePicture',
+        'default_picture_url' => 'getDefaultPictureUrl'
     ];
 
     public static function attributeMap()
@@ -123,8 +127,9 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['self'] = isset($data['self']) ? $data['self'] : null;
-        $this->container['save'] = isset($data['save']) ? $data['save'] : null;
+        $this->container['profile_picture_url'] = isset($data['profile_picture_url']) ? $data['profile_picture_url'] : null;
+        $this->container['use_gravatar_profile_picture'] = isset($data['use_gravatar_profile_picture']) ? $data['use_gravatar_profile_picture'] : null;
+        $this->container['default_picture_url'] = isset($data['default_picture_url']) ? $data['default_picture_url'] : null;
     }
 
     /**
@@ -136,11 +141,11 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['self'] === null) {
-            $invalid_properties[] = "'self' can't be null";
+        if ($this->container['use_gravatar_profile_picture'] === null) {
+            $invalid_properties[] = "'use_gravatar_profile_picture' can't be null";
         }
-        if ($this->container['save'] === null) {
-            $invalid_properties[] = "'save' can't be null";
+        if ($this->container['default_picture_url'] === null) {
+            $invalid_properties[] = "'default_picture_url' can't be null";
         }
         return $invalid_properties;
     }
@@ -154,10 +159,10 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['self'] === null) {
+        if ($this->container['use_gravatar_profile_picture'] === null) {
             return false;
         }
-        if ($this->container['save'] === null) {
+        if ($this->container['default_picture_url'] === null) {
             return false;
         }
         return true;
@@ -165,43 +170,64 @@ class ProfilePictureInfoResponseLinks implements ArrayAccess
 
 
     /**
-     * Gets self
-     * @return \Swagger\Client\Model\LinksGetProfilePictureInfoLink
+     * Gets profile_picture_url
+     * @return \Swagger\Client\Model\ProfilePictureUrl
      */
-    public function getSelf()
+    public function getProfilePictureUrl()
     {
-        return $this->container['self'];
+        return $this->container['profile_picture_url'];
     }
 
     /**
-     * Sets self
-     * @param \Swagger\Client\Model\LinksGetProfilePictureInfoLink $self
+     * Sets profile_picture_url
+     * @param \Swagger\Client\Model\ProfilePictureUrl $profile_picture_url
      * @return $this
      */
-    public function setSelf($self)
+    public function setProfilePictureUrl($profile_picture_url)
     {
-        $this->container['self'] = $self;
+        $this->container['profile_picture_url'] = $profile_picture_url;
 
         return $this;
     }
 
     /**
-     * Gets save
-     * @return \Swagger\Client\Model\LinksSaveProfilePictureInfoLink
+     * Gets use_gravatar_profile_picture
+     * @return \Swagger\Client\Model\UseGravatarProfilePicture
      */
-    public function getSave()
+    public function getUseGravatarProfilePicture()
     {
-        return $this->container['save'];
+        return $this->container['use_gravatar_profile_picture'];
     }
 
     /**
-     * Sets save
-     * @param \Swagger\Client\Model\LinksSaveProfilePictureInfoLink $save
+     * Sets use_gravatar_profile_picture
+     * @param \Swagger\Client\Model\UseGravatarProfilePicture $use_gravatar_profile_picture
      * @return $this
      */
-    public function setSave($save)
+    public function setUseGravatarProfilePicture($use_gravatar_profile_picture)
     {
-        $this->container['save'] = $save;
+        $this->container['use_gravatar_profile_picture'] = $use_gravatar_profile_picture;
+
+        return $this;
+    }
+
+    /**
+     * Gets default_picture_url
+     * @return \Swagger\Client\Model\ProfilePictureUrl
+     */
+    public function getDefaultPictureUrl()
+    {
+        return $this->container['default_picture_url'];
+    }
+
+    /**
+     * Sets default_picture_url
+     * @param \Swagger\Client\Model\ProfilePictureUrl $default_picture_url
+     * @return $this
+     */
+    public function setDefaultPictureUrl($default_picture_url)
+    {
+        $this->container['default_picture_url'] = $default_picture_url;
 
         return $this;
     }
