@@ -1,6 +1,6 @@
 <?php
 /**
- * OrderLinksTest
+ * LinksGetOrderHistoryLinkTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * OrderLinksTest Class Doc Comment
+ * LinksGetOrderHistoryLinkTest Class Doc Comment
  *
  * @category    Class */
-// * @description OrderLinks
+// * @description LinksGetOrderHistoryLink
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class OrderLinksTest extends \PHPUnit_Framework_TestCase
+class LinksGetOrderHistoryLinkTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,25 +75,73 @@ class OrderLinksTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "OrderLinks"
+     * Test "LinksGetOrderHistoryLink"
      */
-    public function testOrderLinks()
+    public function testLinksGetOrderHistoryLink()
     {
 
     }
 
     /**
-     * Test attribute "self"
+     * Test attribute "doc_url"
      */
-    public function testPropertySelf()
+    public function testPropertyDocUrl()
     {
 
     }
 
     /**
-     * Test attribute "history"
+     * Test attribute "description"
      */
-    public function testPropertyHistory()
+    public function testPropertyDescription()
+    {
+
+    }
+
+    /**
+     * Test attribute "href"
+     */
+    public function testPropertyHref()
+    {
+
+    }
+
+    /**
+     * Test attribute "operation_id"
+     */
+    public function testPropertyOperationId()
+    {
+
+    }
+
+    /**
+     * Test attribute "method"
+     */
+    public function testPropertyMethod()
+    {
+
+    }
+
+    /**
+     * Test attribute "parameters"
+     */
+    public function testPropertyParameters()
+    {
+
+    }
+
+    /**
+     * Test attribute "templated"
+     */
+    public function testPropertyTemplated()
+    {
+
+    }
+
+    /**
+     * Test attribute "info"
+     */
+    public function testPropertyInfo()
     {
 
     }

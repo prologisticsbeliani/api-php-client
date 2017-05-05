@@ -54,7 +54,8 @@ class OrderLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\DefinitionsLinksGetOrderLink'
+        'self' => '\Swagger\Client\Model\DefinitionsLinksGetOrderLink',
+        'history' => '\Swagger\Client\Model\DefinitionsLinksGetOrderHistoryLink'
     ];
 
     public static function swaggerTypes()
@@ -67,7 +68,8 @@ class OrderLinks implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'self' => 'self'
+        'self' => 'self',
+        'history' => 'history'
     ];
 
 
@@ -76,7 +78,8 @@ class OrderLinks implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'self' => 'setSelf'
+        'self' => 'setSelf',
+        'history' => 'setHistory'
     ];
 
 
@@ -85,7 +88,8 @@ class OrderLinks implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'self' => 'getSelf'
+        'self' => 'getSelf',
+        'history' => 'getHistory'
     ];
 
     public static function attributeMap()
@@ -120,6 +124,7 @@ class OrderLinks implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['self'] = isset($data['self']) ? $data['self'] : null;
+        $this->container['history'] = isset($data['history']) ? $data['history'] : null;
     }
 
     /**
@@ -170,6 +175,27 @@ class OrderLinks implements ArrayAccess
     public function setSelf($self)
     {
         $this->container['self'] = $self;
+
+        return $this;
+    }
+
+    /**
+     * Gets history
+     * @return \Swagger\Client\Model\DefinitionsLinksGetOrderHistoryLink
+     */
+    public function getHistory()
+    {
+        return $this->container['history'];
+    }
+
+    /**
+     * Sets history
+     * @param \Swagger\Client\Model\DefinitionsLinksGetOrderHistoryLink $history
+     * @return $this
+     */
+    public function setHistory($history)
+    {
+        $this->container['history'] = $history;
 
         return $this;
     }
