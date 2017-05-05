@@ -83,22 +83,6 @@ class AccountInfoTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "info"
-     */
-    public function testPropertyInfo()
-    {
-
-    }
-
-    /**
-     * Test attribute "links"
-     */
-    public function testPropertyLinks()
-    {
-
-    }
-
-    /**
      * Test attribute "user_id"
      */
     public function testPropertyUserId()
@@ -139,9 +123,25 @@ class AccountInfoTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "profile_picture_info"
+     * Test attribute "profile_picture_url"
      */
-    public function testPropertyProfilePictureInfo()
+    public function testPropertyProfilePictureUrl()
+    {
+
+    }
+
+    /**
+     * Test attribute "links"
+     */
+    public function testPropertyLinks()
+    {
+
+    }
+
+    /**
+     * Test attribute "info"
+     */
+    public function testPropertyInfo()
     {
 
     }

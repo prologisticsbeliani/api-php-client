@@ -48,7 +48,7 @@ class AccountInfoLinks implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'accountInfo_links';
+    protected static $swaggerModelName = 'accountInfoLinks';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

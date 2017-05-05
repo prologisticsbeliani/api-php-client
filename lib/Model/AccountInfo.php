@@ -54,14 +54,14 @@ class AccountInfo implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'info' => '\Swagger\Client\Model\BeezUPCommonInfoSummaries',
-        'links' => '\Swagger\Client\Model\AccountInfoLinks',
         'user_id' => '\Swagger\Client\Model\BeezUPCommonUserId',
         'email' => '\Swagger\Client\Model\BeezUPCommonEmail',
         'personal_info' => '\Swagger\Client\Model\PersonalInfo',
         'status' => '\Swagger\Client\Model\AccountStatus',
         'company_info' => '\Swagger\Client\Model\CompanyInfo',
-        'profile_picture_info' => '\Swagger\Client\Model\ProfilePictureInfo'
+        'profile_picture_url' => '\Swagger\Client\Model\ProfilePictureUrl',
+        'links' => '\Swagger\Client\Model\AccountInfoLinks',
+        'info' => '\Swagger\Client\Model\BeezUPCommonInfoSummaries'
     ];
 
     public static function swaggerTypes()
@@ -74,14 +74,14 @@ class AccountInfo implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'info' => 'info',
-        'links' => 'links',
         'user_id' => 'userId',
         'email' => 'email',
         'personal_info' => 'personalInfo',
         'status' => 'status',
         'company_info' => 'companyInfo',
-        'profile_picture_info' => 'profilePictureInfo'
+        'profile_picture_url' => 'profilePictureUrl',
+        'links' => 'links',
+        'info' => 'info'
     ];
 
 
@@ -90,14 +90,14 @@ class AccountInfo implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'info' => 'setInfo',
-        'links' => 'setLinks',
         'user_id' => 'setUserId',
         'email' => 'setEmail',
         'personal_info' => 'setPersonalInfo',
         'status' => 'setStatus',
         'company_info' => 'setCompanyInfo',
-        'profile_picture_info' => 'setProfilePictureInfo'
+        'profile_picture_url' => 'setProfilePictureUrl',
+        'links' => 'setLinks',
+        'info' => 'setInfo'
     ];
 
 
@@ -106,14 +106,14 @@ class AccountInfo implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'info' => 'getInfo',
-        'links' => 'getLinks',
         'user_id' => 'getUserId',
         'email' => 'getEmail',
         'personal_info' => 'getPersonalInfo',
         'status' => 'getStatus',
         'company_info' => 'getCompanyInfo',
-        'profile_picture_info' => 'getProfilePictureInfo'
+        'profile_picture_url' => 'getProfilePictureUrl',
+        'links' => 'getLinks',
+        'info' => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -147,14 +147,14 @@ class AccountInfo implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['info'] = isset($data['info']) ? $data['info'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
         $this->container['user_id'] = isset($data['user_id']) ? $data['user_id'] : null;
         $this->container['email'] = isset($data['email']) ? $data['email'] : null;
         $this->container['personal_info'] = isset($data['personal_info']) ? $data['personal_info'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['company_info'] = isset($data['company_info']) ? $data['company_info'] : null;
-        $this->container['profile_picture_info'] = isset($data['profile_picture_info']) ? $data['profile_picture_info'] : null;
+        $this->container['profile_picture_url'] = isset($data['profile_picture_url']) ? $data['profile_picture_url'] : null;
+        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
+        $this->container['info'] = isset($data['info']) ? $data['info'] : null;
     }
 
     /**
@@ -166,6 +166,27 @@ class AccountInfo implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['user_id'] === null) {
+            $invalid_properties[] = "'user_id' can't be null";
+        }
+        if ($this->container['email'] === null) {
+            $invalid_properties[] = "'email' can't be null";
+        }
+        if ($this->container['personal_info'] === null) {
+            $invalid_properties[] = "'personal_info' can't be null";
+        }
+        if ($this->container['status'] === null) {
+            $invalid_properties[] = "'status' can't be null";
+        }
+        if ($this->container['company_info'] === null) {
+            $invalid_properties[] = "'company_info' can't be null";
+        }
+        if ($this->container['profile_picture_url'] === null) {
+            $invalid_properties[] = "'profile_picture_url' can't be null";
+        }
+        if ($this->container['links'] === null) {
+            $invalid_properties[] = "'links' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -178,51 +199,30 @@ class AccountInfo implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['user_id'] === null) {
+            return false;
+        }
+        if ($this->container['email'] === null) {
+            return false;
+        }
+        if ($this->container['personal_info'] === null) {
+            return false;
+        }
+        if ($this->container['status'] === null) {
+            return false;
+        }
+        if ($this->container['company_info'] === null) {
+            return false;
+        }
+        if ($this->container['profile_picture_url'] === null) {
+            return false;
+        }
+        if ($this->container['links'] === null) {
+            return false;
+        }
         return true;
     }
 
-
-    /**
-     * Gets info
-     * @return \Swagger\Client\Model\BeezUPCommonInfoSummaries
-     */
-    public function getInfo()
-    {
-        return $this->container['info'];
-    }
-
-    /**
-     * Sets info
-     * @param \Swagger\Client\Model\BeezUPCommonInfoSummaries $info
-     * @return $this
-     */
-    public function setInfo($info)
-    {
-        $this->container['info'] = $info;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     * @return \Swagger\Client\Model\AccountInfoLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     * @param \Swagger\Client\Model\AccountInfoLinks $links
-     * @return $this
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
-
-        return $this;
-    }
 
     /**
      * Gets user_id
@@ -330,22 +330,64 @@ class AccountInfo implements ArrayAccess
     }
 
     /**
-     * Gets profile_picture_info
-     * @return \Swagger\Client\Model\ProfilePictureInfo
+     * Gets profile_picture_url
+     * @return \Swagger\Client\Model\ProfilePictureUrl
      */
-    public function getProfilePictureInfo()
+    public function getProfilePictureUrl()
     {
-        return $this->container['profile_picture_info'];
+        return $this->container['profile_picture_url'];
     }
 
     /**
-     * Sets profile_picture_info
-     * @param \Swagger\Client\Model\ProfilePictureInfo $profile_picture_info
+     * Sets profile_picture_url
+     * @param \Swagger\Client\Model\ProfilePictureUrl $profile_picture_url
      * @return $this
      */
-    public function setProfilePictureInfo($profile_picture_info)
+    public function setProfilePictureUrl($profile_picture_url)
     {
-        $this->container['profile_picture_info'] = $profile_picture_info;
+        $this->container['profile_picture_url'] = $profile_picture_url;
+
+        return $this;
+    }
+
+    /**
+     * Gets links
+     * @return \Swagger\Client\Model\AccountInfoLinks
+     */
+    public function getLinks()
+    {
+        return $this->container['links'];
+    }
+
+    /**
+     * Sets links
+     * @param \Swagger\Client\Model\AccountInfoLinks $links
+     * @return $this
+     */
+    public function setLinks($links)
+    {
+        $this->container['links'] = $links;
+
+        return $this;
+    }
+
+    /**
+     * Gets info
+     * @return \Swagger\Client\Model\BeezUPCommonInfoSummaries
+     */
+    public function getInfo()
+    {
+        return $this->container['info'];
+    }
+
+    /**
+     * Sets info
+     * @param \Swagger\Client\Model\BeezUPCommonInfoSummaries $info
+     * @return $this
+     */
+    public function setInfo($info)
+    {
+        $this->container['info'] = $info;
 
         return $this;
     }
