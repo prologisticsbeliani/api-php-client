@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelHeaderTest
+ * ChannelHeaderLinksTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ChannelHeaderTest Class Doc Comment
+ * ChannelHeaderLinksTest Class Doc Comment
  *
  * @category    Class */
-// * @description The available channel
+// * @description The links related to an available channel
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ChannelHeaderTest extends \PHPUnit_Framework_TestCase
+class ChannelHeaderLinksTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,49 +75,17 @@ class ChannelHeaderTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ChannelHeader"
+     * Test "ChannelHeaderLinks"
      */
-    public function testChannelHeader()
+    public function testChannelHeaderLinks()
     {
 
     }
 
     /**
-     * Test attribute "channel_id"
+     * Test attribute "self"
      */
-    public function testPropertyChannelId()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_name"
-     */
-    public function testPropertyChannelName()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_logo_url"
-     */
-    public function testPropertyChannelLogoUrl()
-    {
-
-    }
-
-    /**
-     * Test attribute "description_available"
-     */
-    public function testPropertyDescriptionAvailable()
-    {
-
-    }
-
-    /**
-     * Test attribute "links"
-     */
-    public function testPropertyLinks()
+    public function testPropertySelf()
     {
 
     }
