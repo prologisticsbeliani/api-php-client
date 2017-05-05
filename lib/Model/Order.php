@@ -1329,7 +1329,7 @@ class Order implements ArrayAccess
 
     /**
      * Sets order_shipping_address_country_iso_code_alpha2
-     * @param string $order_shipping_address_country_iso_code_alpha2 The shipping address country iso code alpha 2 (see http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Decoding_table for more details)
+     * @param string $order_shipping_address_country_iso_code_alpha2 The shipping address country iso code alpha 2 (see http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#/decoding_table for more details)
      * @return $this
      */
     public function setOrderShippingAddressCountryIsoCodeAlpha2($order_shipping_address_country_iso_code_alpha2)
@@ -1728,7 +1728,7 @@ class Order implements ArrayAccess
 
     /**
      * Sets order_buyer_address_country_iso_code_alpha2
-     * @param string $order_buyer_address_country_iso_code_alpha2 The Buyer address country iso code alpha 2 (see http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Decoding_table for more details)
+     * @param string $order_buyer_address_country_iso_code_alpha2 The Buyer address country iso code alpha 2 (see http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#/decoding_table for more details)
      * @return $this
      */
     public function setOrderBuyerAddressCountryIsoCodeAlpha2($order_buyer_address_country_iso_code_alpha2)

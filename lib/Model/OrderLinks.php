@@ -54,8 +54,8 @@ class OrderLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\DefinitionsLinksGetOrderLink',
-        'history' => '\Swagger\Client\Model\DefinitionsLinksGetOrderHistoryLink'
+        'self' => '\Swagger\Client\Model\LinksGetOrderLink',
+        'history' => '\Swagger\Client\Model\LinksGetOrderHistoryLink'
     ];
 
     public static function swaggerTypes()
@@ -160,7 +160,7 @@ class OrderLinks implements ArrayAccess
 
     /**
      * Gets self
-     * @return \Swagger\Client\Model\DefinitionsLinksGetOrderLink
+     * @return \Swagger\Client\Model\LinksGetOrderLink
      */
     public function getSelf()
     {
@@ -169,7 +169,7 @@ class OrderLinks implements ArrayAccess
 
     /**
      * Sets self
-     * @param \Swagger\Client\Model\DefinitionsLinksGetOrderLink $self
+     * @param \Swagger\Client\Model\LinksGetOrderLink $self
      * @return $this
      */
     public function setSelf($self)
@@ -181,7 +181,7 @@ class OrderLinks implements ArrayAccess
 
     /**
      * Gets history
-     * @return \Swagger\Client\Model\DefinitionsLinksGetOrderHistoryLink
+     * @return \Swagger\Client\Model\LinksGetOrderHistoryLink
      */
     public function getHistory()
     {
@@ -190,7 +190,7 @@ class OrderLinks implements ArrayAccess
 
     /**
      * Sets history
-     * @param \Swagger\Client\Model\DefinitionsLinksGetOrderHistoryLink $history
+     * @param \Swagger\Client\Model\LinksGetOrderHistoryLink $history
      * @return $this
      */
     public function setHistory($history)
