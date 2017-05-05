@@ -35,6 +35,7 @@ use \ArrayAccess;
  * ExportOrderListRequest Class Doc Comment
  *
  * @category    Class
+ * @description The message request to export order list. The store identifier is requested to regroup the exportations.
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -33,7 +33,7 @@ namespace Swagger\Client;
  * ExportOrderListRequestTest Class Doc Comment
  *
  * @category    Class */
-// * @description ExportOrderListRequest
+// * @description The message request to export order list. The store identifier is requested to regroup the exportations.
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team

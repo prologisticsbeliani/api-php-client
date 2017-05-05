@@ -137,6 +137,12 @@ class OrderExportations implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['pagination_result'] === null) {
+            $invalid_properties[] = "'pagination_result' can't be null";
+        }
+        if ($this->container['exportations'] === null) {
+            $invalid_properties[] = "'exportations' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -149,6 +155,12 @@ class OrderExportations implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['pagination_result'] === null) {
+            return false;
+        }
+        if ($this->container['exportations'] === null) {
+            return false;
+        }
         return true;
     }
 
