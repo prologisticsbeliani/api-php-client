@@ -114,4 +114,12 @@ class StoreHeaderLinksTest extends \PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Test attribute "share"
+     */
+    public function testPropertyShare()
+    {
+
+    }
+
 }

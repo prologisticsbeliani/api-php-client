@@ -58,7 +58,8 @@ class StoreHeaderLinks implements ArrayAccess
         'self' => '\Swagger\Client\Model\LinksGetStoreLink',
         'delete_store' => '\Swagger\Client\Model\LinksDeleteStoreLink',
         'update_store' => '\Swagger\Client\Model\LinksUpdateStoreLink',
-        'get_shares' => '\Swagger\Client\Model\LinksGetSharesLink'
+        'get_shares' => '\Swagger\Client\Model\LinksGetSharesLink',
+        'share' => '\Swagger\Client\Model\LinksShareLink'
     ];
 
     public static function swaggerTypes()
@@ -74,7 +75,8 @@ class StoreHeaderLinks implements ArrayAccess
         'self' => 'self',
         'delete_store' => 'deleteStore',
         'update_store' => 'updateStore',
-        'get_shares' => 'getShares'
+        'get_shares' => 'getShares',
+        'share' => 'share'
     ];
 
 
@@ -86,7 +88,8 @@ class StoreHeaderLinks implements ArrayAccess
         'self' => 'setSelf',
         'delete_store' => 'setDeleteStore',
         'update_store' => 'setUpdateStore',
-        'get_shares' => 'setGetShares'
+        'get_shares' => 'setGetShares',
+        'share' => 'setShare'
     ];
 
 
@@ -98,7 +101,8 @@ class StoreHeaderLinks implements ArrayAccess
         'self' => 'getSelf',
         'delete_store' => 'getDeleteStore',
         'update_store' => 'getUpdateStore',
-        'get_shares' => 'getGetShares'
+        'get_shares' => 'getGetShares',
+        'share' => 'getShare'
     ];
 
     public static function attributeMap()
@@ -136,6 +140,7 @@ class StoreHeaderLinks implements ArrayAccess
         $this->container['delete_store'] = isset($data['delete_store']) ? $data['delete_store'] : null;
         $this->container['update_store'] = isset($data['update_store']) ? $data['update_store'] : null;
         $this->container['get_shares'] = isset($data['get_shares']) ? $data['get_shares'] : null;
+        $this->container['share'] = isset($data['share']) ? $data['share'] : null;
     }
 
     /**
@@ -243,6 +248,27 @@ class StoreHeaderLinks implements ArrayAccess
     public function setGetShares($get_shares)
     {
         $this->container['get_shares'] = $get_shares;
+
+        return $this;
+    }
+
+    /**
+     * Gets share
+     * @return \Swagger\Client\Model\LinksShareLink
+     */
+    public function getShare()
+    {
+        return $this->container['share'];
+    }
+
+    /**
+     * Sets share
+     * @param \Swagger\Client\Model\LinksShareLink $share
+     * @return $this
+     */
+    public function setShare($share)
+    {
+        $this->container['share'] = $share;
 
         return $this;
     }
