@@ -1,6 +1,6 @@
 <?php
 /**
- * ProfilePictureInfoWithDefaultTest
+ * DefaultProfilePictureUrlTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ProfilePictureInfoWithDefaultTest Class Doc Comment
+ * DefaultProfilePictureUrlTest Class Doc Comment
  *
  * @category    Class */
-// * @description ProfilePictureInfoWithDefault
+// * @description Indicate the default url of your picture profil
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ProfilePictureInfoWithDefaultTest extends \PHPUnit_Framework_TestCase
+class DefaultProfilePictureUrlTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,33 +75,9 @@ class ProfilePictureInfoWithDefaultTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ProfilePictureInfoWithDefault"
+     * Test "DefaultProfilePictureUrl"
      */
-    public function testProfilePictureInfoWithDefault()
-    {
-
-    }
-
-    /**
-     * Test attribute "profile_picture_url"
-     */
-    public function testPropertyProfilePictureUrl()
-    {
-
-    }
-
-    /**
-     * Test attribute "use_gravatar_profile_picture"
-     */
-    public function testPropertyUseGravatarProfilePicture()
-    {
-
-    }
-
-    /**
-     * Test attribute "default_profile_picture_url"
-     */
-    public function testPropertyDefaultProfilePictureUrl()
+    public function testDefaultProfilePictureUrl()
     {
 
     }

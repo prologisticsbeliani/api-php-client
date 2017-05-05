@@ -83,17 +83,17 @@ class ProfilePictureInfoResponseTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "links"
+     * Test attribute "profile_picture_info"
      */
-    public function testPropertyLinks()
+    public function testPropertyProfilePictureInfo()
     {
 
     }
 
     /**
-     * Test attribute "profile_picture_info"
+     * Test attribute "links"
      */
-    public function testPropertyProfilePictureInfo()
+    public function testPropertyLinks()
     {
 
     }

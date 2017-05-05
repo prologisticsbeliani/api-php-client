@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ProfilePictureUrl Class Doc Comment
  *
  * @category    Class
- * @description Can be null if you choose to use gravatar picture profil, if not you must indicate the url of your picture profil.
+ * @description Indicate the url of your picture profil
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

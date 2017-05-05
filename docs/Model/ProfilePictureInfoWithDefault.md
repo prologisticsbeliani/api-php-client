@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **profile_picture_url** | [**\Swagger\Client\Model\ProfilePictureUrl**](ProfilePictureUrl.md) |  | [optional] 
 **use_gravatar_profile_picture** | [**\Swagger\Client\Model\UseGravatarProfilePicture**](UseGravatarProfilePicture.md) |  | 
-**default_picture_url** | [**\Swagger\Client\Model\ProfilePictureUrl**](ProfilePictureUrl.md) |  | 
+**default_profile_picture_url** | [**\Swagger\Client\Model\DefaultProfilePictureUrl**](DefaultProfilePictureUrl.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

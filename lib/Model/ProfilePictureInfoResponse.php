@@ -54,8 +54,8 @@ class ProfilePictureInfoResponse implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\Swagger\Client\Model\ProfilePictureInfoResponseLinks',
-        'profile_picture_info' => '\Swagger\Client\Model\ProfilePictureInfoWithDefault'
+        'profile_picture_info' => '\Swagger\Client\Model\ProfilePictureInfoWithDefault',
+        'links' => '\Swagger\Client\Model\ProfilePictureInfoResponseLinks'
     ];
 
     public static function swaggerTypes()
@@ -68,8 +68,8 @@ class ProfilePictureInfoResponse implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'links' => 'links',
-        'profile_picture_info' => 'profilePictureInfo'
+        'profile_picture_info' => 'profilePictureInfo',
+        'links' => 'links'
     ];
 
 
@@ -78,8 +78,8 @@ class ProfilePictureInfoResponse implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'links' => 'setLinks',
-        'profile_picture_info' => 'setProfilePictureInfo'
+        'profile_picture_info' => 'setProfilePictureInfo',
+        'links' => 'setLinks'
     ];
 
 
@@ -88,8 +88,8 @@ class ProfilePictureInfoResponse implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'links' => 'getLinks',
-        'profile_picture_info' => 'getProfilePictureInfo'
+        'profile_picture_info' => 'getProfilePictureInfo',
+        'links' => 'getLinks'
     ];
 
     public static function attributeMap()
@@ -123,8 +123,8 @@ class ProfilePictureInfoResponse implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
         $this->container['profile_picture_info'] = isset($data['profile_picture_info']) ? $data['profile_picture_info'] : null;
+        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
     }
 
     /**
@@ -136,11 +136,11 @@ class ProfilePictureInfoResponse implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['links'] === null) {
-            $invalid_properties[] = "'links' can't be null";
-        }
         if ($this->container['profile_picture_info'] === null) {
             $invalid_properties[] = "'profile_picture_info' can't be null";
+        }
+        if ($this->container['links'] === null) {
+            $invalid_properties[] = "'links' can't be null";
         }
         return $invalid_properties;
     }
@@ -154,36 +154,15 @@ class ProfilePictureInfoResponse implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['links'] === null) {
+        if ($this->container['profile_picture_info'] === null) {
             return false;
         }
-        if ($this->container['profile_picture_info'] === null) {
+        if ($this->container['links'] === null) {
             return false;
         }
         return true;
     }
 
-
-    /**
-     * Gets links
-     * @return \Swagger\Client\Model\ProfilePictureInfoResponseLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     * @param \Swagger\Client\Model\ProfilePictureInfoResponseLinks $links
-     * @return $this
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
-
-        return $this;
-    }
 
     /**
      * Gets profile_picture_info
@@ -202,6 +181,27 @@ class ProfilePictureInfoResponse implements ArrayAccess
     public function setProfilePictureInfo($profile_picture_info)
     {
         $this->container['profile_picture_info'] = $profile_picture_info;
+
+        return $this;
+    }
+
+    /**
+     * Gets links
+     * @return \Swagger\Client\Model\ProfilePictureInfoResponseLinks
+     */
+    public function getLinks()
+    {
+        return $this->container['links'];
+    }
+
+    /**
+     * Sets links
+     * @param \Swagger\Client\Model\ProfilePictureInfoResponseLinks $links
+     * @return $this
+     */
+    public function setLinks($links)
+    {
+        $this->container['links'] = $links;
 
         return $this;
     }
