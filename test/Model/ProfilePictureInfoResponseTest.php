@@ -1,6 +1,6 @@
 <?php
 /**
- * AccountInfoLinksTest
+ * ProfilePictureInfoResponseTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * AccountInfoLinksTest Class Doc Comment
+ * ProfilePictureInfoResponseTest Class Doc Comment
  *
  * @category    Class */
-// * @description The different actions you can make on this account
+// * @description ProfilePictureInfoResponse
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class AccountInfoLinksTest extends \PHPUnit_Framework_TestCase
+class ProfilePictureInfoResponseTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,65 +75,25 @@ class AccountInfoLinksTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "AccountInfoLinks"
+     * Test "ProfilePictureInfoResponse"
      */
-    public function testAccountInfoLinks()
+    public function testProfilePictureInfoResponse()
     {
 
     }
 
     /**
-     * Test attribute "save_personal_info"
+     * Test attribute "links"
      */
-    public function testPropertySavePersonalInfo()
+    public function testPropertyLinks()
     {
 
     }
 
     /**
-     * Test attribute "change_password"
+     * Test attribute "profile_picture_info"
      */
-    public function testPropertyChangePassword()
-    {
-
-    }
-
-    /**
-     * Test attribute "save_company_info"
-     */
-    public function testPropertySaveCompanyInfo()
-    {
-
-    }
-
-    /**
-     * Test attribute "get_profile_picture_info"
-     */
-    public function testPropertyGetProfilePictureInfo()
-    {
-
-    }
-
-    /**
-     * Test attribute "save_profile_picture_info"
-     */
-    public function testPropertySaveProfilePictureInfo()
-    {
-
-    }
-
-    /**
-     * Test attribute "get_credit_card_info"
-     */
-    public function testPropertyGetCreditCardInfo()
-    {
-
-    }
-
-    /**
-     * Test attribute "save_user_credit_card_link"
-     */
-    public function testPropertySaveUserCreditCardLink()
+    public function testPropertyProfilePictureInfo()
     {
 
     }

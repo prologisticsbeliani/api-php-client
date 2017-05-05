@@ -156,6 +156,7 @@ Class | Method | HTTP request | Description
 *BeezUPApi* | [**getOrderHistory**](docs/Api/BeezUPApi.md#getorderhistory) | **GET** /v2/user/marketplaces/orders/{marketplaceTechnicalCode}/{accountId}/{beezUPOrderId}/history | Get an Order&#39;s harvest and change history
 *BeezUPApi* | [**getOrderListFull**](docs/Api/BeezUPApi.md#getorderlistfull) | **POST** /v2/user/marketplaces/orders/list/full | Get a paginated list of all Orders with all Order and Order Item(s) properties
 *BeezUPApi* | [**getOrderListLight**](docs/Api/BeezUPApi.md#getorderlistlight) | **POST** /v2/user/marketplaces/orders/list/light | Get a paginated list of all Orders without details
+*BeezUPApi* | [**getProfilePictureInfo**](docs/Api/BeezUPApi.md#getprofilepictureinfo) | **GET** /v2/user/customer/account/profilePictureInfo | Get profile picture information
 *BeezUPApi* | [**getPublications**](docs/Api/BeezUPApi.md#getpublications) | **GET** /v2/user/marketplaces/channelcatalogs/publications/{marketplaceTechnicalCode}/{accountId}/history | Fetch the publication history for an account, sorted by descending start date
 *BeezUPApi* | [**getReportFilter**](docs/Api/BeezUPApi.md#getreportfilter) | **GET** /v2/user/analytics/{storeId}/reports/filters/{reportFilterId} | Get the report filter description
 *BeezUPApi* | [**getReportFilters**](docs/Api/BeezUPApi.md#getreportfilters) | **GET** /v2/user/analytics/{storeId}/reports/filters | Get report filter list for the given store
@@ -510,6 +511,7 @@ Class | Method | HTTP request | Description
  - [LinksGetCreditCardInfoLink](docs/Model/LinksGetCreditCardInfoLink.md)
  - [LinksGetMarketplaceAccountStoresLink](docs/Model/LinksGetMarketplaceAccountStoresLink.md)
  - [LinksGetOrderLink](docs/Model/LinksGetOrderLink.md)
+ - [LinksGetProfilePictureInfoLink](docs/Model/LinksGetProfilePictureInfoLink.md)
  - [LinksGetPublicationsLink](docs/Model/LinksGetPublicationsLink.md)
  - [LinksGetReportFilterLink](docs/Model/LinksGetReportFilterLink.md)
  - [LinksGetReportFiltersLink](docs/Model/LinksGetReportFiltersLink.md)
@@ -605,6 +607,8 @@ Class | Method | HTTP request | Description
  - [ProductValues](docs/Model/ProductValues.md)
  - [Products](docs/Model/Products.md)
  - [ProfilePictureInfo](docs/Model/ProfilePictureInfo.md)
+ - [ProfilePictureInfoResponse](docs/Model/ProfilePictureInfoResponse.md)
+ - [ProfilePictureInfoResponseLinks](docs/Model/ProfilePictureInfoResponseLinks.md)
  - [ProfilePictureUrl](docs/Model/ProfilePictureUrl.md)
  - [PromotionalCodeValidity](docs/Model/PromotionalCodeValidity.md)
  - [PublicationFeedReporting](docs/Model/PublicationFeedReporting.md)

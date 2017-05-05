@@ -1,6 +1,6 @@
 <?php
 /**
- * AccountInfoLinksTest
+ * LinksGetProfilePictureInfoLinkTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * AccountInfoLinksTest Class Doc Comment
+ * LinksGetProfilePictureInfoLinkTest Class Doc Comment
  *
  * @category    Class */
-// * @description The different actions you can make on this account
+// * @description LinksGetProfilePictureInfoLink
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class AccountInfoLinksTest extends \PHPUnit_Framework_TestCase
+class LinksGetProfilePictureInfoLinkTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,65 +75,73 @@ class AccountInfoLinksTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "AccountInfoLinks"
+     * Test "LinksGetProfilePictureInfoLink"
      */
-    public function testAccountInfoLinks()
+    public function testLinksGetProfilePictureInfoLink()
     {
 
     }
 
     /**
-     * Test attribute "save_personal_info"
+     * Test attribute "doc_url"
      */
-    public function testPropertySavePersonalInfo()
+    public function testPropertyDocUrl()
     {
 
     }
 
     /**
-     * Test attribute "change_password"
+     * Test attribute "description"
      */
-    public function testPropertyChangePassword()
+    public function testPropertyDescription()
     {
 
     }
 
     /**
-     * Test attribute "save_company_info"
+     * Test attribute "href"
      */
-    public function testPropertySaveCompanyInfo()
+    public function testPropertyHref()
     {
 
     }
 
     /**
-     * Test attribute "get_profile_picture_info"
+     * Test attribute "operation_id"
      */
-    public function testPropertyGetProfilePictureInfo()
+    public function testPropertyOperationId()
     {
 
     }
 
     /**
-     * Test attribute "save_profile_picture_info"
+     * Test attribute "method"
      */
-    public function testPropertySaveProfilePictureInfo()
+    public function testPropertyMethod()
     {
 
     }
 
     /**
-     * Test attribute "get_credit_card_info"
+     * Test attribute "parameters"
      */
-    public function testPropertyGetCreditCardInfo()
+    public function testPropertyParameters()
     {
 
     }
 
     /**
-     * Test attribute "save_user_credit_card_link"
+     * Test attribute "templated"
      */
-    public function testPropertySaveUserCreditCardLink()
+    public function testPropertyTemplated()
+    {
+
+    }
+
+    /**
+     * Test attribute "info"
+     */
+    public function testPropertyInfo()
     {
 
     }

@@ -924,6 +924,17 @@ class BeezUPApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for getProfilePictureInfo
+     *
+     * Get profile picture information.
+     *
+     */
+    public function testGetProfilePictureInfo()
+    {
+
+    }
+
+    /**
      * Test case for getPublications
      *
      * Fetch the publication history for an account, sorted by descending start date.

@@ -58,6 +58,7 @@ class AccountInfoLinks implements ArrayAccess
         'save_personal_info' => '\Swagger\Client\Model\LinksSavePersonalInfoLink',
         'change_password' => '\Swagger\Client\Model\LinksChangePasswordLink',
         'save_company_info' => '\Swagger\Client\Model\LinksSaveCompanyInfoLink',
+        'get_profile_picture_info' => '\Swagger\Client\Model\LinksGetProfilePictureInfoLink',
         'save_profile_picture_info' => '\Swagger\Client\Model\LinksSaveProfilePictureInfoLink',
         'get_credit_card_info' => '\Swagger\Client\Model\LinksGetCreditCardInfoLink',
         'save_user_credit_card_link' => '\Swagger\Client\Model\LinksSaveCreditCardInfoLink'
@@ -76,6 +77,7 @@ class AccountInfoLinks implements ArrayAccess
         'save_personal_info' => 'savePersonalInfo',
         'change_password' => 'changePassword',
         'save_company_info' => 'saveCompanyInfo',
+        'get_profile_picture_info' => 'getProfilePictureInfo',
         'save_profile_picture_info' => 'saveProfilePictureInfo',
         'get_credit_card_info' => 'getCreditCardInfo',
         'save_user_credit_card_link' => 'saveUserCreditCardLink'
@@ -90,6 +92,7 @@ class AccountInfoLinks implements ArrayAccess
         'save_personal_info' => 'setSavePersonalInfo',
         'change_password' => 'setChangePassword',
         'save_company_info' => 'setSaveCompanyInfo',
+        'get_profile_picture_info' => 'setGetProfilePictureInfo',
         'save_profile_picture_info' => 'setSaveProfilePictureInfo',
         'get_credit_card_info' => 'setGetCreditCardInfo',
         'save_user_credit_card_link' => 'setSaveUserCreditCardLink'
@@ -104,6 +107,7 @@ class AccountInfoLinks implements ArrayAccess
         'save_personal_info' => 'getSavePersonalInfo',
         'change_password' => 'getChangePassword',
         'save_company_info' => 'getSaveCompanyInfo',
+        'get_profile_picture_info' => 'getGetProfilePictureInfo',
         'save_profile_picture_info' => 'getSaveProfilePictureInfo',
         'get_credit_card_info' => 'getGetCreditCardInfo',
         'save_user_credit_card_link' => 'getSaveUserCreditCardLink'
@@ -143,6 +147,7 @@ class AccountInfoLinks implements ArrayAccess
         $this->container['save_personal_info'] = isset($data['save_personal_info']) ? $data['save_personal_info'] : null;
         $this->container['change_password'] = isset($data['change_password']) ? $data['change_password'] : null;
         $this->container['save_company_info'] = isset($data['save_company_info']) ? $data['save_company_info'] : null;
+        $this->container['get_profile_picture_info'] = isset($data['get_profile_picture_info']) ? $data['get_profile_picture_info'] : null;
         $this->container['save_profile_picture_info'] = isset($data['save_profile_picture_info']) ? $data['save_profile_picture_info'] : null;
         $this->container['get_credit_card_info'] = isset($data['get_credit_card_info']) ? $data['get_credit_card_info'] : null;
         $this->container['save_user_credit_card_link'] = isset($data['save_user_credit_card_link']) ? $data['save_user_credit_card_link'] : null;
@@ -232,6 +237,27 @@ class AccountInfoLinks implements ArrayAccess
     public function setSaveCompanyInfo($save_company_info)
     {
         $this->container['save_company_info'] = $save_company_info;
+
+        return $this;
+    }
+
+    /**
+     * Gets get_profile_picture_info
+     * @return \Swagger\Client\Model\LinksGetProfilePictureInfoLink
+     */
+    public function getGetProfilePictureInfo()
+    {
+        return $this->container['get_profile_picture_info'];
+    }
+
+    /**
+     * Sets get_profile_picture_info
+     * @param \Swagger\Client\Model\LinksGetProfilePictureInfoLink $get_profile_picture_info
+     * @return $this
+     */
+    public function setGetProfilePictureInfo($get_profile_picture_info)
+    {
+        $this->container['get_profile_picture_info'] = $get_profile_picture_info;
 
         return $this;
     }
