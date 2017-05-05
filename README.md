@@ -243,6 +243,8 @@ Class | Method | HTTP request | Description
 *GroupsApi* | [**getPublicListGroupNames**](docs/Api/GroupsApi.md#getpubliclistgroupnames) | **GET** /v2/public/lov/groups | Get list of group of list name
 *LOVApi* | [**getPublicListNames**](docs/Api/LOVApi.md#getpubliclistnames) | **GET** /v2/public/lov/ | Get all list names
 *LOVApi* | [**getPublicListOfValues**](docs/Api/LOVApi.md#getpubliclistofvalues) | **GET** /v2/public/lov/{listName} | Get the list of values related to this list name
+*PublicChannelsApi* | [**getChannels**](docs/Api/PublicChannelsApi.md#getchannels) | **GET** /BeezUP/public_channels/2.0/{countryIsoCode} | The channel list for one country
+*PublicChannelsApi* | [**getChannelsByCountry**](docs/Api/PublicChannelsApi.md#getchannelsbycountry) | **GET** /BeezUP/public_channels/2.0/ | The channel list regrouped by country
 *SecurityApi* | [**login**](docs/Api/SecurityApi.md#login) | **POST** /v2/public/security/login | Login
 *SecurityApi* | [**lostPassword**](docs/Api/SecurityApi.md#lostpassword) | **POST** /v2/public/security/lostpassword | Lost password
 *SecurityApi* | [**register**](docs/Api/SecurityApi.md#register) | **POST** /v2/public/security/register | User Registration
@@ -384,6 +386,7 @@ Class | Method | HTTP request | Description
  - [ChannelInfo](docs/Model/ChannelInfo.md)
  - [ChannelInfoDetails](docs/Model/ChannelInfoDetails.md)
  - [ChannelInfoKeyNumbers](docs/Model/ChannelInfoKeyNumbers.md)
+ - [ChannelInfoList](docs/Model/ChannelInfoList.md)
  - [ChannelInfoSalesContact](docs/Model/ChannelInfoSalesContact.md)
  - [ChannelInfoTechnicalContact](docs/Model/ChannelInfoTechnicalContact.md)
  - [ChannelRootCategory](docs/Model/ChannelRootCategory.md)
