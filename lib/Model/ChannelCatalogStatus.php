@@ -57,7 +57,7 @@ class ChannelCatalogStatus implements ArrayAccess
     protected static $swaggerTypes = [
         'exported_product_count' => 'int',
         'column_mapping_status' => '\Swagger\Client\Model\ColumnMappingStatus',
-        'category_mapping_state' => '\Swagger\Client\Model\CategoryMappingState',
+        'category_mapping_status' => '\Swagger\Client\Model\CategoryMappingStatus',
         'api_setting_status' => '\Swagger\Client\Model\ApiSettingStatus'
     ];
 
@@ -73,7 +73,7 @@ class ChannelCatalogStatus implements ArrayAccess
     protected static $attributeMap = [
         'exported_product_count' => 'exportedProductCount',
         'column_mapping_status' => 'columnMappingStatus',
-        'category_mapping_state' => 'categoryMappingState',
+        'category_mapping_status' => 'categoryMappingStatus',
         'api_setting_status' => 'apiSettingStatus'
     ];
 
@@ -85,7 +85,7 @@ class ChannelCatalogStatus implements ArrayAccess
     protected static $setters = [
         'exported_product_count' => 'setExportedProductCount',
         'column_mapping_status' => 'setColumnMappingStatus',
-        'category_mapping_state' => 'setCategoryMappingState',
+        'category_mapping_status' => 'setCategoryMappingStatus',
         'api_setting_status' => 'setApiSettingStatus'
     ];
 
@@ -97,7 +97,7 @@ class ChannelCatalogStatus implements ArrayAccess
     protected static $getters = [
         'exported_product_count' => 'getExportedProductCount',
         'column_mapping_status' => 'getColumnMappingStatus',
-        'category_mapping_state' => 'getCategoryMappingState',
+        'category_mapping_status' => 'getCategoryMappingStatus',
         'api_setting_status' => 'getApiSettingStatus'
     ];
 
@@ -134,7 +134,7 @@ class ChannelCatalogStatus implements ArrayAccess
     {
         $this->container['exported_product_count'] = isset($data['exported_product_count']) ? $data['exported_product_count'] : null;
         $this->container['column_mapping_status'] = isset($data['column_mapping_status']) ? $data['column_mapping_status'] : null;
-        $this->container['category_mapping_state'] = isset($data['category_mapping_state']) ? $data['category_mapping_state'] : null;
+        $this->container['category_mapping_status'] = isset($data['category_mapping_status']) ? $data['category_mapping_status'] : null;
         $this->container['api_setting_status'] = isset($data['api_setting_status']) ? $data['api_setting_status'] : null;
     }
 
@@ -152,6 +152,9 @@ class ChannelCatalogStatus implements ArrayAccess
         }
         if ($this->container['column_mapping_status'] === null) {
             $invalid_properties[] = "'column_mapping_status' can't be null";
+        }
+        if ($this->container['category_mapping_status'] === null) {
+            $invalid_properties[] = "'category_mapping_status' can't be null";
         }
         if ($this->container['api_setting_status'] === null) {
             $invalid_properties[] = "'api_setting_status' can't be null";
@@ -172,6 +175,9 @@ class ChannelCatalogStatus implements ArrayAccess
             return false;
         }
         if ($this->container['column_mapping_status'] === null) {
+            return false;
+        }
+        if ($this->container['category_mapping_status'] === null) {
             return false;
         }
         if ($this->container['api_setting_status'] === null) {
@@ -224,22 +230,22 @@ class ChannelCatalogStatus implements ArrayAccess
     }
 
     /**
-     * Gets category_mapping_state
-     * @return \Swagger\Client\Model\CategoryMappingState
+     * Gets category_mapping_status
+     * @return \Swagger\Client\Model\CategoryMappingStatus
      */
-    public function getCategoryMappingState()
+    public function getCategoryMappingStatus()
     {
-        return $this->container['category_mapping_state'];
+        return $this->container['category_mapping_status'];
     }
 
     /**
-     * Sets category_mapping_state
-     * @param \Swagger\Client\Model\CategoryMappingState $category_mapping_state
+     * Sets category_mapping_status
+     * @param \Swagger\Client\Model\CategoryMappingStatus $category_mapping_status
      * @return $this
      */
-    public function setCategoryMappingState($category_mapping_state)
+    public function setCategoryMappingStatus($category_mapping_status)
     {
-        $this->container['category_mapping_state'] = $category_mapping_state;
+        $this->container['category_mapping_status'] = $category_mapping_status;
 
         return $this;
     }

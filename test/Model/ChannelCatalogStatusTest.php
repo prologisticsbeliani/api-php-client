@@ -99,9 +99,9 @@ class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "category_mapping_state"
+     * Test attribute "category_mapping_status"
      */
-    public function testPropertyCategoryMappingState()
+    public function testPropertyCategoryMappingStatus()
     {
 
     }
