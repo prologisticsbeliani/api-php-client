@@ -64,7 +64,7 @@ class Rule implements ArrayAccess
         'enabled' => 'bool',
         'validity_start_utc_date' => '\DateTime',
         'validity_end_utc_date' => '\DateTime',
-        'links' => '\Swagger\Client\Model\DefinitionsRuleLinks'
+        'links' => '\Swagger\Client\Model\RuleLinks'
     ];
 
     public static function swaggerTypes()
@@ -451,7 +451,7 @@ class Rule implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\DefinitionsRuleLinks
+     * @return \Swagger\Client\Model\RuleLinks
      */
     public function getLinks()
     {
@@ -460,7 +460,7 @@ class Rule implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\DefinitionsRuleLinks $links
+     * @param \Swagger\Client\Model\RuleLinks $links
      * @return $this
      */
     public function setLinks($links)
