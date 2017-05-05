@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelCatalogStatusTest
+ * OrderLinksTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ChannelCatalogStatusTest Class Doc Comment
+ * OrderLinksTest Class Doc Comment
  *
  * @category    Class */
-// * @description Channel Catalog Status
+// * @description OrderLinks
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
+class OrderLinksTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,41 +75,17 @@ class ChannelCatalogStatusTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ChannelCatalogStatus"
+     * Test "OrderLinks"
      */
-    public function testChannelCatalogStatus()
+    public function testOrderLinks()
     {
 
     }
 
     /**
-     * Test attribute "exported_product_count"
+     * Test attribute "self"
      */
-    public function testPropertyExportedProductCount()
-    {
-
-    }
-
-    /**
-     * Test attribute "column_mapping_status"
-     */
-    public function testPropertyColumnMappingStatus()
-    {
-
-    }
-
-    /**
-     * Test attribute "category_mapping_status"
-     */
-    public function testPropertyCategoryMappingStatus()
-    {
-
-    }
-
-    /**
-     * Test attribute "api_setting_status"
-     */
-    public function testPropertyApiSettingStatus()
+    public function testPropertySelf()
     {
 
     }

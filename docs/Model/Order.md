@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **order_currency_code** | [**\Swagger\Client\Model\BeezUPCommonCurrencyCode**](BeezUPCommonCurrencyCode.md) |  | [optional] 
 **processing** | [**\Swagger\Client\Model\Processing**](Processing.md) |  | 
 **etag** | [**\Swagger\Client\Model\Etag**](Etag.md) |  | 
-**links** | [**\Swagger\Client\Model\DefinitionsOrderHeaderLinks**](DefinitionsOrderHeaderLinks.md) |  | 
+**links** | [**\Swagger\Client\Model\OrderLinks**](OrderLinks.md) |  | 
 **order_market_place_channel** | **string** | Useful to identify the origin of the order. For example in Amazon. | [optional] 
 **order_total_tax** | **float** | The total tax of this order | [optional] 
 **order_total_commission** | **float** | The total commission of this order | [optional] 

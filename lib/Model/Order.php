@@ -73,7 +73,7 @@ class Order implements ArrayAccess
         'order_currency_code' => '\Swagger\Client\Model\BeezUPCommonCurrencyCode',
         'processing' => '\Swagger\Client\Model\Processing',
         'etag' => '\Swagger\Client\Model\Etag',
-        'links' => '\Swagger\Client\Model\DefinitionsOrderHeaderLinks',
+        'links' => '\Swagger\Client\Model\OrderLinks',
         'order_market_place_channel' => 'string',
         'order_total_tax' => 'float',
         'order_total_commission' => 'float',
@@ -942,7 +942,7 @@ class Order implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\DefinitionsOrderHeaderLinks
+     * @return \Swagger\Client\Model\OrderLinks
      */
     public function getLinks()
     {
@@ -951,7 +951,7 @@ class Order implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\DefinitionsOrderHeaderLinks $links
+     * @param \Swagger\Client\Model\OrderLinks $links
      * @return $this
      */
     public function setLinks($links)
