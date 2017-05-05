@@ -91,9 +91,9 @@ class ProfilePictureInfoWithDefaultTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "use_gravatar_profile_picture"
+     * Test attribute "profile_picture_selected"
      */
-    public function testPropertyUseGravatarProfilePicture()
+    public function testPropertyProfilePictureSelected()
     {
 
     }

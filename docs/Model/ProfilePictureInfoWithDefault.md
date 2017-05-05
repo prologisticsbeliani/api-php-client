@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **profile_picture_url** | [**\Swagger\Client\Model\ProfilePictureUrl**](ProfilePictureUrl.md) |  | [optional] 
-**use_gravatar_profile_picture** | [**\Swagger\Client\Model\UseGravatarProfilePicture**](UseGravatarProfilePicture.md) |  | 
+**profile_picture_selected** | [**\Swagger\Client\Model\ProfilePictureSelected**](ProfilePictureSelected.md) |  | 
 **initials_profile_picture_url** | [**\Swagger\Client\Model\InitialsProfilePictureUrl**](InitialsProfilePictureUrl.md) |  | 
 **gravatar_profile_picture_url** | [**\Swagger\Client\Model\GravatarProfilePictureUrl**](GravatarProfilePictureUrl.md) |  | 
 

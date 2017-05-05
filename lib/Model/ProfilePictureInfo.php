@@ -55,7 +55,7 @@ class ProfilePictureInfo implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'profile_picture_url' => '\Swagger\Client\Model\ProfilePictureUrl',
-        'use_gravatar_profile_picture' => '\Swagger\Client\Model\UseGravatarProfilePicture'
+        'profile_picture_selected' => '\Swagger\Client\Model\ProfilePictureSelected'
     ];
 
     public static function swaggerTypes()
@@ -69,7 +69,7 @@ class ProfilePictureInfo implements ArrayAccess
      */
     protected static $attributeMap = [
         'profile_picture_url' => 'profilePictureUrl',
-        'use_gravatar_profile_picture' => 'useGravatarProfilePicture'
+        'profile_picture_selected' => 'profilePictureSelected'
     ];
 
 
@@ -79,7 +79,7 @@ class ProfilePictureInfo implements ArrayAccess
      */
     protected static $setters = [
         'profile_picture_url' => 'setProfilePictureUrl',
-        'use_gravatar_profile_picture' => 'setUseGravatarProfilePicture'
+        'profile_picture_selected' => 'setProfilePictureSelected'
     ];
 
 
@@ -89,7 +89,7 @@ class ProfilePictureInfo implements ArrayAccess
      */
     protected static $getters = [
         'profile_picture_url' => 'getProfilePictureUrl',
-        'use_gravatar_profile_picture' => 'getUseGravatarProfilePicture'
+        'profile_picture_selected' => 'getProfilePictureSelected'
     ];
 
     public static function attributeMap()
@@ -124,7 +124,7 @@ class ProfilePictureInfo implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['profile_picture_url'] = isset($data['profile_picture_url']) ? $data['profile_picture_url'] : null;
-        $this->container['use_gravatar_profile_picture'] = isset($data['use_gravatar_profile_picture']) ? $data['use_gravatar_profile_picture'] : null;
+        $this->container['profile_picture_selected'] = isset($data['profile_picture_selected']) ? $data['profile_picture_selected'] : null;
     }
 
     /**
@@ -136,8 +136,8 @@ class ProfilePictureInfo implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['use_gravatar_profile_picture'] === null) {
-            $invalid_properties[] = "'use_gravatar_profile_picture' can't be null";
+        if ($this->container['profile_picture_selected'] === null) {
+            $invalid_properties[] = "'profile_picture_selected' can't be null";
         }
         return $invalid_properties;
     }
@@ -151,7 +151,7 @@ class ProfilePictureInfo implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['use_gravatar_profile_picture'] === null) {
+        if ($this->container['profile_picture_selected'] === null) {
             return false;
         }
         return true;
@@ -180,22 +180,22 @@ class ProfilePictureInfo implements ArrayAccess
     }
 
     /**
-     * Gets use_gravatar_profile_picture
-     * @return \Swagger\Client\Model\UseGravatarProfilePicture
+     * Gets profile_picture_selected
+     * @return \Swagger\Client\Model\ProfilePictureSelected
      */
-    public function getUseGravatarProfilePicture()
+    public function getProfilePictureSelected()
     {
-        return $this->container['use_gravatar_profile_picture'];
+        return $this->container['profile_picture_selected'];
     }
 
     /**
-     * Sets use_gravatar_profile_picture
-     * @param \Swagger\Client\Model\UseGravatarProfilePicture $use_gravatar_profile_picture
+     * Sets profile_picture_selected
+     * @param \Swagger\Client\Model\ProfilePictureSelected $profile_picture_selected
      * @return $this
      */
-    public function setUseGravatarProfilePicture($use_gravatar_profile_picture)
+    public function setProfilePictureSelected($profile_picture_selected)
     {
-        $this->container['use_gravatar_profile_picture'] = $use_gravatar_profile_picture;
+        $this->container['profile_picture_selected'] = $profile_picture_selected;
 
         return $this;
     }

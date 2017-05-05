@@ -1,6 +1,6 @@
 <?php
 /**
- * ProfilePictureInfoTest
+ * ProfilePictureSelectedTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ProfilePictureInfoTest Class Doc Comment
+ * ProfilePictureSelectedTest Class Doc Comment
  *
  * @category    Class */
-// * @description ProfilePictureInfo
+// * @description Your profile picture choice about usage of gravatar picture, initials picture or uploaded picture.
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ProfilePictureInfoTest extends \PHPUnit_Framework_TestCase
+class ProfilePictureSelectedTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,25 +75,9 @@ class ProfilePictureInfoTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ProfilePictureInfo"
+     * Test "ProfilePictureSelected"
      */
-    public function testProfilePictureInfo()
-    {
-
-    }
-
-    /**
-     * Test attribute "profile_picture_url"
-     */
-    public function testPropertyProfilePictureUrl()
-    {
-
-    }
-
-    /**
-     * Test attribute "profile_picture_selected"
-     */
-    public function testPropertyProfilePictureSelected()
+    public function testProfilePictureSelected()
     {
 
     }
