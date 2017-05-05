@@ -162,6 +162,27 @@ class AccountInfoLinks implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['save_personal_info'] === null) {
+            $invalid_properties[] = "'save_personal_info' can't be null";
+        }
+        if ($this->container['change_password'] === null) {
+            $invalid_properties[] = "'change_password' can't be null";
+        }
+        if ($this->container['save_company_info'] === null) {
+            $invalid_properties[] = "'save_company_info' can't be null";
+        }
+        if ($this->container['get_profile_picture_info'] === null) {
+            $invalid_properties[] = "'get_profile_picture_info' can't be null";
+        }
+        if ($this->container['save_profile_picture_info'] === null) {
+            $invalid_properties[] = "'save_profile_picture_info' can't be null";
+        }
+        if ($this->container['get_credit_card_info'] === null) {
+            $invalid_properties[] = "'get_credit_card_info' can't be null";
+        }
+        if ($this->container['save_user_credit_card_link'] === null) {
+            $invalid_properties[] = "'save_user_credit_card_link' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -174,6 +195,27 @@ class AccountInfoLinks implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['save_personal_info'] === null) {
+            return false;
+        }
+        if ($this->container['change_password'] === null) {
+            return false;
+        }
+        if ($this->container['save_company_info'] === null) {
+            return false;
+        }
+        if ($this->container['get_profile_picture_info'] === null) {
+            return false;
+        }
+        if ($this->container['save_profile_picture_info'] === null) {
+            return false;
+        }
+        if ($this->container['get_credit_card_info'] === null) {
+            return false;
+        }
+        if ($this->container['save_user_credit_card_link'] === null) {
+            return false;
+        }
         return true;
     }
 
