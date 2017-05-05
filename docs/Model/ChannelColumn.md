@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **channel_column_id** | [**\Swagger\Client\Model\BeezUPCommonChannelColumnId**](BeezUPCommonChannelColumnId.md) |  | 
-**channel_column_name** | [**\Swagger\Client\Model\ChannelColumnName**](ChannelColumnName.md) |  | 
+**channel_column_name** | [**\Swagger\Client\Model\BeezUPCommonChannelColumnName**](BeezUPCommonChannelColumnName.md) |  | 
 **channel_column_description** | [**\Swagger\Client\Model\ChannelColumnDescription**](ChannelColumnDescription.md) |  | [optional] 
 **show_in_mapping** | [**\Swagger\Client\Model\ChannelColumnShowInMapping**](ChannelColumnShowInMapping.md) |  | 
 **position** | **int** | The position of the column starting from 1 | 

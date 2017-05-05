@@ -58,7 +58,8 @@ class ChannelHeader implements ArrayAccess
         'channel_id' => '\Swagger\Client\Model\BeezUPCommonChannelId',
         'channel_name' => '\Swagger\Client\Model\BeezUPCommonChannelName',
         'channel_logo_url' => '\Swagger\Client\Model\BeezUPCommonHttpUrl',
-        'links' => '\Swagger\Client\Model\AvailableChannelLink'
+        'description_available' => 'bool',
+        'links' => '\Swagger\Client\Model\ChannelHeaderLinks'
     ];
 
     public static function swaggerTypes()
@@ -74,6 +75,7 @@ class ChannelHeader implements ArrayAccess
         'channel_id' => 'channelId',
         'channel_name' => 'channelName',
         'channel_logo_url' => 'channelLogoUrl',
+        'description_available' => 'descriptionAvailable',
         'links' => 'links'
     ];
 
@@ -86,6 +88,7 @@ class ChannelHeader implements ArrayAccess
         'channel_id' => 'setChannelId',
         'channel_name' => 'setChannelName',
         'channel_logo_url' => 'setChannelLogoUrl',
+        'description_available' => 'setDescriptionAvailable',
         'links' => 'setLinks'
     ];
 
@@ -98,6 +101,7 @@ class ChannelHeader implements ArrayAccess
         'channel_id' => 'getChannelId',
         'channel_name' => 'getChannelName',
         'channel_logo_url' => 'getChannelLogoUrl',
+        'description_available' => 'getDescriptionAvailable',
         'links' => 'getLinks'
     ];
 
@@ -135,6 +139,7 @@ class ChannelHeader implements ArrayAccess
         $this->container['channel_id'] = isset($data['channel_id']) ? $data['channel_id'] : null;
         $this->container['channel_name'] = isset($data['channel_name']) ? $data['channel_name'] : null;
         $this->container['channel_logo_url'] = isset($data['channel_logo_url']) ? $data['channel_logo_url'] : null;
+        $this->container['description_available'] = isset($data['description_available']) ? $data['description_available'] : false;
         $this->container['links'] = isset($data['links']) ? $data['links'] : null;
     }
 
@@ -155,6 +160,9 @@ class ChannelHeader implements ArrayAccess
         }
         if ($this->container['channel_logo_url'] === null) {
             $invalid_properties[] = "'channel_logo_url' can't be null";
+        }
+        if ($this->container['description_available'] === null) {
+            $invalid_properties[] = "'description_available' can't be null";
         }
         if ($this->container['links'] === null) {
             $invalid_properties[] = "'links' can't be null";
@@ -178,6 +186,9 @@ class ChannelHeader implements ArrayAccess
             return false;
         }
         if ($this->container['channel_logo_url'] === null) {
+            return false;
+        }
+        if ($this->container['description_available'] === null) {
             return false;
         }
         if ($this->container['links'] === null) {
@@ -251,8 +262,29 @@ class ChannelHeader implements ArrayAccess
     }
 
     /**
+     * Gets description_available
+     * @return bool
+     */
+    public function getDescriptionAvailable()
+    {
+        return $this->container['description_available'];
+    }
+
+    /**
+     * Sets description_available
+     * @param bool $description_available Indicates if we have more detailed information about this channel
+     * @return $this
+     */
+    public function setDescriptionAvailable($description_available)
+    {
+        $this->container['description_available'] = $description_available;
+
+        return $this;
+    }
+
+    /**
      * Gets links
-     * @return \Swagger\Client\Model\AvailableChannelLink
+     * @return \Swagger\Client\Model\ChannelHeaderLinks
      */
     public function getLinks()
     {
@@ -261,7 +293,7 @@ class ChannelHeader implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\AvailableChannelLink $links
+     * @param \Swagger\Client\Model\ChannelHeaderLinks $links
      * @return $this
      */
     public function setLinks($links)

@@ -107,6 +107,14 @@ class ChannelHeaderTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "description_available"
+     */
+    public function testPropertyDescriptionAvailable()
+    {
+
+    }
+
+    /**
      * Test attribute "links"
      */
     public function testPropertyLinks()

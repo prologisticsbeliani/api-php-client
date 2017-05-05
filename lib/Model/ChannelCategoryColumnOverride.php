@@ -55,7 +55,7 @@ class ChannelCategoryColumnOverride implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'channel_column_id' => '\Swagger\Client\Model\BeezUPCommonChannelColumnId',
-        'channel_column_name' => '\Swagger\Client\Model\ChannelColumnName',
+        'channel_column_name' => '\Swagger\Client\Model\BeezUPCommonChannelColumnName',
         'channel_column_description' => '\Swagger\Client\Model\ChannelColumnDescription',
         'show_in_mapping' => '\Swagger\Client\Model\ChannelColumnShowInMapping',
         'configuration' => '\Swagger\Client\Model\ChannelColumnConfiguration',
@@ -219,7 +219,7 @@ class ChannelCategoryColumnOverride implements ArrayAccess
 
     /**
      * Gets channel_column_name
-     * @return \Swagger\Client\Model\ChannelColumnName
+     * @return \Swagger\Client\Model\BeezUPCommonChannelColumnName
      */
     public function getChannelColumnName()
     {
@@ -228,7 +228,7 @@ class ChannelCategoryColumnOverride implements ArrayAccess
 
     /**
      * Sets channel_column_name
-     * @param \Swagger\Client\Model\ChannelColumnName $channel_column_name
+     * @param \Swagger\Client\Model\BeezUPCommonChannelColumnName $channel_column_name
      * @return $this
      */
     public function setChannelColumnName($channel_column_name)
