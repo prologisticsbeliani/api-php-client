@@ -1,6 +1,6 @@
 <?php
 /**
- * ProfilePictureInfoWithDefaultTest
+ * GravatarProfilePictureUrlTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ProfilePictureInfoWithDefaultTest Class Doc Comment
+ * GravatarProfilePictureUrlTest Class Doc Comment
  *
  * @category    Class */
-// * @description ProfilePictureInfoWithDefault
+// * @description Indicate the url of your picture profil based on gravatar
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ProfilePictureInfoWithDefaultTest extends \PHPUnit_Framework_TestCase
+class GravatarProfilePictureUrlTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,41 +75,9 @@ class ProfilePictureInfoWithDefaultTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ProfilePictureInfoWithDefault"
+     * Test "GravatarProfilePictureUrl"
      */
-    public function testProfilePictureInfoWithDefault()
-    {
-
-    }
-
-    /**
-     * Test attribute "profile_picture_url"
-     */
-    public function testPropertyProfilePictureUrl()
-    {
-
-    }
-
-    /**
-     * Test attribute "use_gravatar_profile_picture"
-     */
-    public function testPropertyUseGravatarProfilePicture()
-    {
-
-    }
-
-    /**
-     * Test attribute "initials_profile_picture_url"
-     */
-    public function testPropertyInitialsProfilePictureUrl()
-    {
-
-    }
-
-    /**
-     * Test attribute "gravatar_profile_picture_url"
-     */
-    public function testPropertyGravatarProfilePictureUrl()
+    public function testGravatarProfilePictureUrl()
     {
 
     }
