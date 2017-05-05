@@ -7318,12 +7318,13 @@ class BeezUPApi
      *
      * @param int $page_number The page number you want to get (required)
      * @param int $page_size The count of Order report exportations you want to get (required)
+     * @param string $store_id The store identifier to regroup the order exportations (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\OrderExportations
      */
-    public function getOrderExportations($page_number, $page_size)
+    public function getOrderExportations($page_number, $page_size, $store_id)
     {
-        list($response) = $this->getOrderExportationsWithHttpInfo($page_number, $page_size);
+        list($response) = $this->getOrderExportationsWithHttpInfo($page_number, $page_size, $store_id);
         return $response;
     }
 
@@ -7334,10 +7335,11 @@ class BeezUPApi
      *
      * @param int $page_number The page number you want to get (required)
      * @param int $page_size The count of Order report exportations you want to get (required)
+     * @param string $store_id The store identifier to regroup the order exportations (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\OrderExportations, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getOrderExportationsWithHttpInfo($page_number, $page_size)
+    public function getOrderExportationsWithHttpInfo($page_number, $page_size, $store_id)
     {
         // verify the required parameter 'page_number' is set
         if ($page_number === null) {
@@ -7358,6 +7360,10 @@ class BeezUPApi
             throw new \InvalidArgumentException('invalid value for "$page_size" when calling BeezUPApi.getOrderExportations, must be bigger than or equal to 25.');
         }
 
+        // verify the required parameter 'store_id' is set
+        if ($store_id === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $store_id when calling getOrderExportations');
+        }
         // parse inputs
         $resourcePath = "/v2/user/marketplaces/orders/exportations";
         $httpBody = '';
@@ -7377,6 +7383,10 @@ class BeezUPApi
         // query params
         if ($page_size !== null) {
             $queryParams['pageSize'] = $this->apiClient->getSerializer()->toQueryValue($page_size);
+        }
+        // query params
+        if ($store_id !== null) {
+            $queryParams['storeId'] = $this->apiClient->getSerializer()->toQueryValue($store_id);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);

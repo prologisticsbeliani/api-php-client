@@ -83,6 +83,14 @@ class ExportOrderListRequestTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "store_id"
+     */
+    public function testPropertyStoreId()
+    {
+
+    }
+
+    /**
      * Test attribute "order_list_request"
      */
     public function testPropertyOrderListRequest()

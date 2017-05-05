@@ -3727,7 +3727,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderExportations**
-> \Swagger\Client\Model\OrderExportations getOrderExportations($page_number, $page_size)
+> \Swagger\Client\Model\OrderExportations getOrderExportations($page_number, $page_size, $store_id)
 
 Get a paginated list of Order report exportations
 
@@ -3744,9 +3744,10 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Ocp-Apim-Sub
 $api_instance = new Swagger\Client\Api\BeezUPApi();
 $page_number = 1; // int | The page number you want to get
 $page_size = 25; // int | The count of Order report exportations you want to get
+$store_id = "store_id_example"; // string | The store identifier to regroup the order exportations
 
 try {
-    $result = $api_instance->getOrderExportations($page_number, $page_size);
+    $result = $api_instance->getOrderExportations($page_number, $page_size, $store_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BeezUPApi->getOrderExportations: ', $e->getMessage(), PHP_EOL;
@@ -3760,6 +3761,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page_number** | **int**| The page number you want to get |
  **page_size** | **int**| The count of Order report exportations you want to get |
+ **store_id** | **string**| The store identifier to regroup the order exportations |
 
 ### Return type
 

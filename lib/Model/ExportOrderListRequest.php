@@ -54,6 +54,7 @@ class ExportOrderListRequest implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'store_id' => '\Swagger\Client\Model\BeezUPCommonStoreId',
         'order_list_request' => '\Swagger\Client\Model\OrderListRequest'
     ];
 
@@ -67,6 +68,7 @@ class ExportOrderListRequest implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'store_id' => 'storeId',
         'order_list_request' => 'orderListRequest'
     ];
 
@@ -76,6 +78,7 @@ class ExportOrderListRequest implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'store_id' => 'setStoreId',
         'order_list_request' => 'setOrderListRequest'
     ];
 
@@ -85,6 +88,7 @@ class ExportOrderListRequest implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'store_id' => 'getStoreId',
         'order_list_request' => 'getOrderListRequest'
     ];
 
@@ -119,6 +123,7 @@ class ExportOrderListRequest implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['store_id'] = isset($data['store_id']) ? $data['store_id'] : null;
         $this->container['order_list_request'] = isset($data['order_list_request']) ? $data['order_list_request'] : null;
     }
 
@@ -131,6 +136,9 @@ class ExportOrderListRequest implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['store_id'] === null) {
+            $invalid_properties[] = "'store_id' can't be null";
+        }
         if ($this->container['order_list_request'] === null) {
             $invalid_properties[] = "'order_list_request' can't be null";
         }
@@ -146,12 +154,36 @@ class ExportOrderListRequest implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['store_id'] === null) {
+            return false;
+        }
         if ($this->container['order_list_request'] === null) {
             return false;
         }
         return true;
     }
 
+
+    /**
+     * Gets store_id
+     * @return \Swagger\Client\Model\BeezUPCommonStoreId
+     */
+    public function getStoreId()
+    {
+        return $this->container['store_id'];
+    }
+
+    /**
+     * Sets store_id
+     * @param \Swagger\Client\Model\BeezUPCommonStoreId $store_id
+     * @return $this
+     */
+    public function setStoreId($store_id)
+    {
+        $this->container['store_id'] = $store_id;
+
+        return $this;
+    }
 
     /**
      * Gets order_list_request
