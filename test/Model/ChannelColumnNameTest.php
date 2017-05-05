@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelHeaderTest
+ * ChannelColumnNameTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * ChannelHeaderTest Class Doc Comment
+ * ChannelColumnNameTest Class Doc Comment
  *
  * @category    Class */
-// * @description The available channel
+// * @description The channel column name
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ChannelHeaderTest extends \PHPUnit_Framework_TestCase
+class ChannelColumnNameTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,41 +75,9 @@ class ChannelHeaderTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ChannelHeader"
+     * Test "ChannelColumnName"
      */
-    public function testChannelHeader()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_id"
-     */
-    public function testPropertyChannelId()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_name"
-     */
-    public function testPropertyChannelName()
-    {
-
-    }
-
-    /**
-     * Test attribute "channel_logo_url"
-     */
-    public function testPropertyChannelLogoUrl()
-    {
-
-    }
-
-    /**
-     * Test attribute "links"
-     */
-    public function testPropertyLinks()
+    public function testChannelColumnName()
     {
 
     }

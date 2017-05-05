@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelHeader
+ * ChannelColumnName
  *
  * PHP version 5
  *
@@ -32,15 +32,15 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * ChannelHeader Class Doc Comment
+ * ChannelColumnName Class Doc Comment
  *
  * @category    Class
- * @description The available channel
+ * @description The channel column name
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ChannelHeader implements ArrayAccess
+class ChannelColumnName implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,17 +48,14 @@ class ChannelHeader implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'channelHeader';
+    protected static $swaggerModelName = 'channelColumnName';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'channel_id' => '\Swagger\Client\Model\BeezUPCommonChannelId',
-        'channel_name' => '\Swagger\Client\Model\BeezUPCommonChannelName',
-        'channel_logo_url' => '\Swagger\Client\Model\BeezUPCommonHttpUrl',
-        'links' => '\Swagger\Client\Model\AvailableChannelLink'
+        
     ];
 
     public static function swaggerTypes()
@@ -71,10 +68,7 @@ class ChannelHeader implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'channel_id' => 'channelId',
-        'channel_name' => 'channelName',
-        'channel_logo_url' => 'channelLogoUrl',
-        'links' => 'links'
+        
     ];
 
 
@@ -83,10 +77,7 @@ class ChannelHeader implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'channel_id' => 'setChannelId',
-        'channel_name' => 'setChannelName',
-        'channel_logo_url' => 'setChannelLogoUrl',
-        'links' => 'setLinks'
+        
     ];
 
 
@@ -95,10 +86,7 @@ class ChannelHeader implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'channel_id' => 'getChannelId',
-        'channel_name' => 'getChannelName',
-        'channel_logo_url' => 'getChannelLogoUrl',
-        'links' => 'getLinks'
+        
     ];
 
     public static function attributeMap()
@@ -132,10 +120,6 @@ class ChannelHeader implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['channel_id'] = isset($data['channel_id']) ? $data['channel_id'] : null;
-        $this->container['channel_name'] = isset($data['channel_name']) ? $data['channel_name'] : null;
-        $this->container['channel_logo_url'] = isset($data['channel_logo_url']) ? $data['channel_logo_url'] : null;
-        $this->container['links'] = isset($data['links']) ? $data['links'] : null;
     }
 
     /**
@@ -147,18 +131,6 @@ class ChannelHeader implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['channel_id'] === null) {
-            $invalid_properties[] = "'channel_id' can't be null";
-        }
-        if ($this->container['channel_name'] === null) {
-            $invalid_properties[] = "'channel_name' can't be null";
-        }
-        if ($this->container['channel_logo_url'] === null) {
-            $invalid_properties[] = "'channel_logo_url' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalid_properties[] = "'links' can't be null";
-        }
         return $invalid_properties;
     }
 
@@ -171,105 +143,9 @@ class ChannelHeader implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['channel_id'] === null) {
-            return false;
-        }
-        if ($this->container['channel_name'] === null) {
-            return false;
-        }
-        if ($this->container['channel_logo_url'] === null) {
-            return false;
-        }
-        if ($this->container['links'] === null) {
-            return false;
-        }
         return true;
     }
 
-
-    /**
-     * Gets channel_id
-     * @return \Swagger\Client\Model\BeezUPCommonChannelId
-     */
-    public function getChannelId()
-    {
-        return $this->container['channel_id'];
-    }
-
-    /**
-     * Sets channel_id
-     * @param \Swagger\Client\Model\BeezUPCommonChannelId $channel_id
-     * @return $this
-     */
-    public function setChannelId($channel_id)
-    {
-        $this->container['channel_id'] = $channel_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets channel_name
-     * @return \Swagger\Client\Model\BeezUPCommonChannelName
-     */
-    public function getChannelName()
-    {
-        return $this->container['channel_name'];
-    }
-
-    /**
-     * Sets channel_name
-     * @param \Swagger\Client\Model\BeezUPCommonChannelName $channel_name
-     * @return $this
-     */
-    public function setChannelName($channel_name)
-    {
-        $this->container['channel_name'] = $channel_name;
-
-        return $this;
-    }
-
-    /**
-     * Gets channel_logo_url
-     * @return \Swagger\Client\Model\BeezUPCommonHttpUrl
-     */
-    public function getChannelLogoUrl()
-    {
-        return $this->container['channel_logo_url'];
-    }
-
-    /**
-     * Sets channel_logo_url
-     * @param \Swagger\Client\Model\BeezUPCommonHttpUrl $channel_logo_url
-     * @return $this
-     */
-    public function setChannelLogoUrl($channel_logo_url)
-    {
-        $this->container['channel_logo_url'] = $channel_logo_url;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     * @return \Swagger\Client\Model\AvailableChannelLink
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     * @param \Swagger\Client\Model\AvailableChannelLink $links
-     * @return $this
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset

@@ -56,6 +56,7 @@ Method | HTTP request | Description
 [**exportStoreReportByChannel**](BeezUPApi.md#exportStoreReportByChannel) | **POST** /v2/user/analytics/{storeId}/reports/bychannel/export | Export the report by channel
 [**exportStoreReportByProduct**](BeezUPApi.md#exportStoreReportByProduct) | **POST** /v2/user/analytics/{storeId}/reports/byproduct/export | Export the report by product
 [**getAutomaticTransitions**](BeezUPApi.md#getAutomaticTransitions) | **GET** /v2/user/marketplaces/orders/automaticTransitions | Get list of configured automatic Order status transitions
+[**getAvailableChannels**](BeezUPApi.md#getAvailableChannels) | **GET** /v2/user/channels/ | List all available channel for this store
 [**getBillingPeriods**](BeezUPApi.md#getBillingPeriods) | **GET** /v2/user/customer/billingPeriods | Get billing periods conditions
 [**getChannelCatalog**](BeezUPApi.md#getChannelCatalog) | **GET** /v2/user/channelCatalogs/{channelCatalogId} | Get the channel catalog information
 [**getChannelCatalogCategories**](BeezUPApi.md#getChannelCatalogCategories) | **GET** /v2/user/channelCatalogs/{channelCatalogId}/categoryMappings | Get channel catalog categories
@@ -70,7 +71,6 @@ Method | HTTP request | Description
 [**getChannelInfo**](BeezUPApi.md#getChannelInfo) | **GET** /v2/user/channels/{channelId} | Get channel information
 [**getContracts**](BeezUPApi.md#getContracts) | **GET** /v2/user/customer/contracts | Get contract list
 [**getCreditCardInfo**](BeezUPApi.md#getCreditCardInfo) | **GET** /v2/user/customer/account/creditCardInfo | Get credit card information
-[**getCurrentChannels**](BeezUPApi.md#getCurrentChannels) | **GET** /v2/user/channels/ | List all available channel for this store
 [**getFriendInfo**](BeezUPApi.md#getFriendInfo) | **GET** /v2/user/customer/friends/{userId} | Get friend information
 [**getInvoices**](BeezUPApi.md#getInvoices) | **GET** /v2/user/customer/invoices | Get all your invoices
 [**getMarketplaceAccountStores**](BeezUPApi.md#getMarketplaceAccountStores) | **GET** /v2/user/marketplaces/channelcatalogs/ | Get  you marketplace channel catalog list
@@ -2728,6 +2728,54 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
+# **getAvailableChannels**
+> \Swagger\Client\Model\ChannelHeader[] getAvailableChannels($store_id)
+
+List all available channel for this store
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: api_key
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Ocp-Apim-Subscription-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Ocp-Apim-Subscription-Key', 'Bearer');
+
+$api_instance = new Swagger\Client\Api\BeezUPApi();
+$store_id = "04730364-9826-4ff3-92e4-51fccd02bf10"; // string | The store identifier
+
+try {
+    $result = $api_instance->getAvailableChannels($store_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BeezUPApi->getAvailableChannels: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **store_id** | **string**| The store identifier |
+
+### Return type
+
+[**\Swagger\Client\Model\ChannelHeader[]**](../Model/ChannelHeader.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
 # **getBillingPeriods**
 > \Swagger\Client\Model\BillingPeriods getBillingPeriods()
 
@@ -3382,54 +3430,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**\Swagger\Client\Model\CreditCardInfoResponse**](../Model/CreditCardInfoResponse.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **getCurrentChannels**
-> \Swagger\Client\Model\ChannelHeader[] getCurrentChannels($store_id)
-
-List all available channel for this store
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-// Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Ocp-Apim-Subscription-Key', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Ocp-Apim-Subscription-Key', 'Bearer');
-
-$api_instance = new Swagger\Client\Api\BeezUPApi();
-$store_id = "04730364-9826-4ff3-92e4-51fccd02bf10"; // string | The store identifier
-
-try {
-    $result = $api_instance->getCurrentChannels($store_id);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling BeezUPApi->getCurrentChannels: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **store_id** | **string**| The store identifier |
-
-### Return type
-
-[**\Swagger\Client\Model\ChannelHeader[]**](../Model/ChannelHeader.md)
 
 ### Authorization
 

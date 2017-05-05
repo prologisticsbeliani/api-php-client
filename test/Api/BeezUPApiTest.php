@@ -649,6 +649,17 @@ class BeezUPApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for getAvailableChannels
+     *
+     * List all available channel for this store.
+     *
+     */
+    public function testGetAvailableChannels()
+    {
+
+    }
+
+    /**
      * Test case for getBillingPeriods
      *
      * Get billing periods conditions.
@@ -798,17 +809,6 @@ class BeezUPApiTest extends \PHPUnit_Framework_TestCase
      *
      */
     public function testGetCreditCardInfo()
-    {
-
-    }
-
-    /**
-     * Test case for getCurrentChannels
-     *
-     * List all available channel for this store.
-     *
-     */
-    public function testGetCurrentChannels()
     {
 
     }

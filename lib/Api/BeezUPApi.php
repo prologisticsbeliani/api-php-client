@@ -5399,6 +5399,92 @@ class BeezUPApi
     }
 
     /**
+     * Operation getAvailableChannels
+     *
+     * List all available channel for this store
+     *
+     * @param string $store_id The store identifier (required)
+     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\ChannelHeader[]
+     */
+    public function getAvailableChannels($store_id)
+    {
+        list($response) = $this->getAvailableChannelsWithHttpInfo($store_id);
+        return $response;
+    }
+
+    /**
+     * Operation getAvailableChannelsWithHttpInfo
+     *
+     * List all available channel for this store
+     *
+     * @param string $store_id The store identifier (required)
+     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return array of \Swagger\Client\Model\ChannelHeader[], HTTP status code, HTTP response headers (array of strings)
+     */
+    public function getAvailableChannelsWithHttpInfo($store_id)
+    {
+        // verify the required parameter 'store_id' is set
+        if ($store_id === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $store_id when calling getAvailableChannels');
+        }
+        // parse inputs
+        $resourcePath = "/v2/user/channels/";
+        $httpBody = '';
+        $queryParams = [];
+        $headerParams = [];
+        $formParams = [];
+        $_header_accept = $this->apiClient->selectHeaderAccept(['application/json']);
+        if (!is_null($_header_accept)) {
+            $headerParams['Accept'] = $_header_accept;
+        }
+        $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/json']);
+
+        // query params
+        if ($store_id !== null) {
+            $queryParams['storeId'] = $this->apiClient->getSerializer()->toQueryValue($store_id);
+        }
+        // default format to json
+        $resourcePath = str_replace("{format}", "json", $resourcePath);
+
+        
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            $httpBody = $_tempBody; // $_tempBody is the method argument, if present
+        } elseif (count($formParams) > 0) {
+            $httpBody = $formParams; // for HTTP post (form)
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->apiClient->getApiKeyWithPrefix('Ocp-Apim-Subscription-Key');
+        if (strlen($apiKey) !== 0) {
+            $headerParams['Ocp-Apim-Subscription-Key'] = $apiKey;
+        }
+        // make the API Call
+        try {
+            list($response, $statusCode, $httpHeader) = $this->apiClient->callApi(
+                $resourcePath,
+                'GET',
+                $queryParams,
+                $httpBody,
+                $headerParams,
+                '\Swagger\Client\Model\ChannelHeader[]',
+                '/v2/user/channels/'
+            );
+
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\ChannelHeader[]', $httpHeader), $statusCode, $httpHeader];
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ChannelHeader[]', $e->getResponseHeaders());
+                    $e->setResponseObject($data);
+                    break;
+            }
+
+            throw $e;
+        }
+    }
+
+    /**
      * Operation getBillingPeriods
      *
      * Get billing periods conditions
@@ -6656,92 +6742,6 @@ class BeezUPApi
                     break;
                 case 0:
                     $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\BeezUPCommonErrorResponseMessage', $e->getResponseHeaders());
-                    $e->setResponseObject($data);
-                    break;
-            }
-
-            throw $e;
-        }
-    }
-
-    /**
-     * Operation getCurrentChannels
-     *
-     * List all available channel for this store
-     *
-     * @param string $store_id The store identifier (required)
-     * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\ChannelHeader[]
-     */
-    public function getCurrentChannels($store_id)
-    {
-        list($response) = $this->getCurrentChannelsWithHttpInfo($store_id);
-        return $response;
-    }
-
-    /**
-     * Operation getCurrentChannelsWithHttpInfo
-     *
-     * List all available channel for this store
-     *
-     * @param string $store_id The store identifier (required)
-     * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\ChannelHeader[], HTTP status code, HTTP response headers (array of strings)
-     */
-    public function getCurrentChannelsWithHttpInfo($store_id)
-    {
-        // verify the required parameter 'store_id' is set
-        if ($store_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $store_id when calling getCurrentChannels');
-        }
-        // parse inputs
-        $resourcePath = "/v2/user/channels/";
-        $httpBody = '';
-        $queryParams = [];
-        $headerParams = [];
-        $formParams = [];
-        $_header_accept = $this->apiClient->selectHeaderAccept(['application/json']);
-        if (!is_null($_header_accept)) {
-            $headerParams['Accept'] = $_header_accept;
-        }
-        $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/json']);
-
-        // query params
-        if ($store_id !== null) {
-            $queryParams['storeId'] = $this->apiClient->getSerializer()->toQueryValue($store_id);
-        }
-        // default format to json
-        $resourcePath = str_replace("{format}", "json", $resourcePath);
-
-        
-        // for model (json/xml)
-        if (isset($_tempBody)) {
-            $httpBody = $_tempBody; // $_tempBody is the method argument, if present
-        } elseif (count($formParams) > 0) {
-            $httpBody = $formParams; // for HTTP post (form)
-        }
-        // this endpoint requires API key authentication
-        $apiKey = $this->apiClient->getApiKeyWithPrefix('Ocp-Apim-Subscription-Key');
-        if (strlen($apiKey) !== 0) {
-            $headerParams['Ocp-Apim-Subscription-Key'] = $apiKey;
-        }
-        // make the API Call
-        try {
-            list($response, $statusCode, $httpHeader) = $this->apiClient->callApi(
-                $resourcePath,
-                'GET',
-                $queryParams,
-                $httpBody,
-                $headerParams,
-                '\Swagger\Client\Model\ChannelHeader[]',
-                '/v2/user/channels/'
-            );
-
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\ChannelHeader[]', $httpHeader), $statusCode, $httpHeader];
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-                case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ChannelHeader[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
