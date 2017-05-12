@@ -54,7 +54,7 @@ class OrderHeaderLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\DefinitionsLinksGetOrderLink'
+        'self' => '\Swagger\Client\Model\LinksGetOrderLink'
     ];
 
     public static function swaggerTypes()
@@ -155,7 +155,7 @@ class OrderHeaderLinks implements ArrayAccess
 
     /**
      * Gets self
-     * @return \Swagger\Client\Model\DefinitionsLinksGetOrderLink
+     * @return \Swagger\Client\Model\LinksGetOrderLink
      */
     public function getSelf()
     {
@@ -164,7 +164,7 @@ class OrderHeaderLinks implements ArrayAccess
 
     /**
      * Sets self
-     * @param \Swagger\Client\Model\DefinitionsLinksGetOrderLink $self
+     * @param \Swagger\Client\Model\LinksGetOrderLink $self
      * @return $this
      */
     public function setSelf($self)
