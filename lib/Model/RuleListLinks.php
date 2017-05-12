@@ -55,10 +55,10 @@ class RuleListLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\DefinitionsLinksGetRulesLink',
-        'create' => '\Swagger\Client\Model\DefinitionsLinksCreateRuleLink',
-        'history' => '\Swagger\Client\Model\DefinitionsLinksGetRulesExecutionsLink',
-        'run' => '\Swagger\Client\Model\DefinitionsLinksRunRulesLink'
+        'self' => '\Swagger\Client\Model\LinksGetRulesLink',
+        'create' => '\Swagger\Client\Model\LinksCreateRuleLink',
+        'history' => '\Swagger\Client\Model\LinksGetRulesExecutionsLink',
+        'run' => '\Swagger\Client\Model\LinksRunRulesLink'
     ];
 
     public static function swaggerTypes()
@@ -165,7 +165,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Gets self
-     * @return \Swagger\Client\Model\DefinitionsLinksGetRulesLink
+     * @return \Swagger\Client\Model\LinksGetRulesLink
      */
     public function getSelf()
     {
@@ -174,7 +174,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Sets self
-     * @param \Swagger\Client\Model\DefinitionsLinksGetRulesLink $self
+     * @param \Swagger\Client\Model\LinksGetRulesLink $self
      * @return $this
      */
     public function setSelf($self)
@@ -186,7 +186,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Gets create
-     * @return \Swagger\Client\Model\DefinitionsLinksCreateRuleLink
+     * @return \Swagger\Client\Model\LinksCreateRuleLink
      */
     public function getCreate()
     {
@@ -195,7 +195,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Sets create
-     * @param \Swagger\Client\Model\DefinitionsLinksCreateRuleLink $create
+     * @param \Swagger\Client\Model\LinksCreateRuleLink $create
      * @return $this
      */
     public function setCreate($create)
@@ -207,7 +207,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Gets history
-     * @return \Swagger\Client\Model\DefinitionsLinksGetRulesExecutionsLink
+     * @return \Swagger\Client\Model\LinksGetRulesExecutionsLink
      */
     public function getHistory()
     {
@@ -216,7 +216,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Sets history
-     * @param \Swagger\Client\Model\DefinitionsLinksGetRulesExecutionsLink $history
+     * @param \Swagger\Client\Model\LinksGetRulesExecutionsLink $history
      * @return $this
      */
     public function setHistory($history)
@@ -228,7 +228,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Gets run
-     * @return \Swagger\Client\Model\DefinitionsLinksRunRulesLink
+     * @return \Swagger\Client\Model\LinksRunRulesLink
      */
     public function getRun()
     {
@@ -237,7 +237,7 @@ class RuleListLinks implements ArrayAccess
 
     /**
      * Sets run
-     * @param \Swagger\Client\Model\DefinitionsLinksRunRulesLink $run
+     * @param \Swagger\Client\Model\LinksRunRulesLink $run
      * @return $this
      */
     public function setRun($run)
