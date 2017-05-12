@@ -67,7 +67,7 @@ class RuleExecutionReporting implements ArrayAccess
         'user_id' => 'string',
         'execution_source' => '\Swagger\Client\Model\RuleExecutionReportingExecutionSource',
         'report_url' => 'string',
-        'links' => '\Swagger\Client\Model\RuleExecutionReportingLinks'
+        'links' => '\Swagger\Client\Model\DefinitionsRuleExecutionReportingLinks'
     ];
 
     public static function swaggerTypes()
@@ -511,7 +511,7 @@ class RuleExecutionReporting implements ArrayAccess
 
     /**
      * Gets links
-     * @return \Swagger\Client\Model\RuleExecutionReportingLinks
+     * @return \Swagger\Client\Model\DefinitionsRuleExecutionReportingLinks
      */
     public function getLinks()
     {
@@ -520,7 +520,7 @@ class RuleExecutionReporting implements ArrayAccess
 
     /**
      * Sets links
-     * @param \Swagger\Client\Model\RuleExecutionReportingLinks $links
+     * @param \Swagger\Client\Model\DefinitionsRuleExecutionReportingLinks $links
      * @return $this
      */
     public function setLinks($links)

@@ -55,15 +55,15 @@ class RuleLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\Swagger\Client\Model\LinksGetRuleLink',
-        'run' => '\Swagger\Client\Model\LinksRunRuleLink',
-        'delete' => '\Swagger\Client\Model\LinksDeleteRuleLink',
-        'moveup' => '\Swagger\Client\Model\LinksMoveUpRuleLink',
-        'movedown' => '\Swagger\Client\Model\LinksMoveDownRuleLink',
-        'enable' => '\Swagger\Client\Model\LinksEnableRuleLink',
-        'disable' => '\Swagger\Client\Model\LinksDisableRuleLink',
-        'update' => '\Swagger\Client\Model\LinksUpdateRuleLink',
-        'report_filter' => '\Swagger\Client\Model\LinksGetReportFilterLink'
+        'self' => '\Swagger\Client\Model\DefinitionsLinksGetRuleLink',
+        'run' => '\Swagger\Client\Model\DefinitionsLinksRunRuleLink',
+        'delete' => '\Swagger\Client\Model\DefinitionsLinksDeleteRuleLink',
+        'moveup' => '\Swagger\Client\Model\DefinitionsLinksMoveUpRuleLink',
+        'movedown' => '\Swagger\Client\Model\DefinitionsLinksMoveDownRuleLink',
+        'enable' => '\Swagger\Client\Model\DefinitionsLinksEnableRuleLink',
+        'disable' => '\Swagger\Client\Model\DefinitionsLinksDisableRuleLink',
+        'update' => '\Swagger\Client\Model\DefinitionsLinksUpdateRuleLink',
+        'report_filter' => '\Swagger\Client\Model\DefinitionsLinksGetReportFilterLink'
     ];
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets self
-     * @return \Swagger\Client\Model\LinksGetRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksGetRuleLink
      */
     public function getSelf()
     {
@@ -199,7 +199,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets self
-     * @param \Swagger\Client\Model\LinksGetRuleLink $self
+     * @param \Swagger\Client\Model\DefinitionsLinksGetRuleLink $self
      * @return $this
      */
     public function setSelf($self)
@@ -211,7 +211,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets run
-     * @return \Swagger\Client\Model\LinksRunRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksRunRuleLink
      */
     public function getRun()
     {
@@ -220,7 +220,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets run
-     * @param \Swagger\Client\Model\LinksRunRuleLink $run
+     * @param \Swagger\Client\Model\DefinitionsLinksRunRuleLink $run
      * @return $this
      */
     public function setRun($run)
@@ -232,7 +232,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets delete
-     * @return \Swagger\Client\Model\LinksDeleteRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksDeleteRuleLink
      */
     public function getDelete()
     {
@@ -241,7 +241,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets delete
-     * @param \Swagger\Client\Model\LinksDeleteRuleLink $delete
+     * @param \Swagger\Client\Model\DefinitionsLinksDeleteRuleLink $delete
      * @return $this
      */
     public function setDelete($delete)
@@ -253,7 +253,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets moveup
-     * @return \Swagger\Client\Model\LinksMoveUpRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksMoveUpRuleLink
      */
     public function getMoveup()
     {
@@ -262,7 +262,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets moveup
-     * @param \Swagger\Client\Model\LinksMoveUpRuleLink $moveup
+     * @param \Swagger\Client\Model\DefinitionsLinksMoveUpRuleLink $moveup
      * @return $this
      */
     public function setMoveup($moveup)
@@ -274,7 +274,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets movedown
-     * @return \Swagger\Client\Model\LinksMoveDownRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksMoveDownRuleLink
      */
     public function getMovedown()
     {
@@ -283,7 +283,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets movedown
-     * @param \Swagger\Client\Model\LinksMoveDownRuleLink $movedown
+     * @param \Swagger\Client\Model\DefinitionsLinksMoveDownRuleLink $movedown
      * @return $this
      */
     public function setMovedown($movedown)
@@ -295,7 +295,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets enable
-     * @return \Swagger\Client\Model\LinksEnableRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksEnableRuleLink
      */
     public function getEnable()
     {
@@ -304,7 +304,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets enable
-     * @param \Swagger\Client\Model\LinksEnableRuleLink $enable
+     * @param \Swagger\Client\Model\DefinitionsLinksEnableRuleLink $enable
      * @return $this
      */
     public function setEnable($enable)
@@ -316,7 +316,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets disable
-     * @return \Swagger\Client\Model\LinksDisableRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksDisableRuleLink
      */
     public function getDisable()
     {
@@ -325,7 +325,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets disable
-     * @param \Swagger\Client\Model\LinksDisableRuleLink $disable
+     * @param \Swagger\Client\Model\DefinitionsLinksDisableRuleLink $disable
      * @return $this
      */
     public function setDisable($disable)
@@ -337,7 +337,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets update
-     * @return \Swagger\Client\Model\LinksUpdateRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksUpdateRuleLink
      */
     public function getUpdate()
     {
@@ -346,7 +346,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets update
-     * @param \Swagger\Client\Model\LinksUpdateRuleLink $update
+     * @param \Swagger\Client\Model\DefinitionsLinksUpdateRuleLink $update
      * @return $this
      */
     public function setUpdate($update)
@@ -358,7 +358,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Gets report_filter
-     * @return \Swagger\Client\Model\LinksGetReportFilterLink
+     * @return \Swagger\Client\Model\DefinitionsLinksGetReportFilterLink
      */
     public function getReportFilter()
     {
@@ -367,7 +367,7 @@ class RuleLinks implements ArrayAccess
 
     /**
      * Sets report_filter
-     * @param \Swagger\Client\Model\LinksGetReportFilterLink $report_filter
+     * @param \Swagger\Client\Model\DefinitionsLinksGetReportFilterLink $report_filter
      * @return $this
      */
     public function setReportFilter($report_filter)

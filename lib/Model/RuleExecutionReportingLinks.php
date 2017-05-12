@@ -55,7 +55,7 @@ class RuleExecutionReportingLinks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'rule' => '\Swagger\Client\Model\LinksGetRuleLink'
+        'rule' => '\Swagger\Client\Model\DefinitionsLinksGetRuleLink'
     ];
 
     public static function swaggerTypes()
@@ -150,7 +150,7 @@ class RuleExecutionReportingLinks implements ArrayAccess
 
     /**
      * Gets rule
-     * @return \Swagger\Client\Model\LinksGetRuleLink
+     * @return \Swagger\Client\Model\DefinitionsLinksGetRuleLink
      */
     public function getRule()
     {
@@ -159,7 +159,7 @@ class RuleExecutionReportingLinks implements ArrayAccess
 
     /**
      * Sets rule
-     * @param \Swagger\Client\Model\LinksGetRuleLink $rule
+     * @param \Swagger\Client\Model\DefinitionsLinksGetRuleLink $rule
      * @return $this
      */
     public function setRule($rule)
