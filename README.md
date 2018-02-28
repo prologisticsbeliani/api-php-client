@@ -1,6 +1,11 @@
  # SwaggerClient-php
  ### The REST API of BeezUP system 
- Overview The REST APIs provide programmatic access to read and write BeezUP data.  Basically, with this API you will be able to do everything like you were with your browser on https://go.beezup.com !  The main features are: - Register and manage your account - Create and manage and share your stores with your friends/co-workers. - Import your product catalog and schedule the auto importation - Search the channels your want to use 
+ ##### Overview 
+ The REST APIs provide programmatic access to read and write BeezUP data.  Basically, with this API you will be able to do everything like you were with your browser on https://go.beezup.com !  
+The main features are: 
+ - Register and manage your account 
+ - Create and manage and share your stores with your friends/co-workers. 
+ - Import your product catalog and schedule the auto importation - Search the channels your want to use 
  - Configure your channels for your catalogs to export your product information:     
  - cost and general settings    
  - category and columns mappings     
