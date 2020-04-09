@@ -116,6 +116,7 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_address_country_iso_code_alpha2' => 'string',
         'order_buyer_phone' => 'string',
         'order_buyer_mobile_phone' => 'string',
+        'order_fulfilled_by' => 'string',
         'order_order_source_uri' => 'string',
         'order_order_items_source_uri' => 'string',
         'order_items' => '\Swagger\Client\Model\OrderItem[]',
@@ -187,6 +188,7 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_address_country_iso_code_alpha2' => null,
         'order_buyer_phone' => null,
         'order_buyer_mobile_phone' => null,
+        'order_fulfilled_by' => null,
         'order_order_source_uri' => 'uri',
         'order_order_items_source_uri' => 'uri',
         'order_items' => null,
@@ -280,6 +282,7 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_phone' => 'order_Buyer_Phone',
         'order_buyer_mobile_phone' => 'order_Buyer_MobilePhone',
         'order_order_source_uri' => 'order_OrderSourceUri',
+        'order_fulfilled_by' => 'order_FulfilledBy',
         'order_order_items_source_uri' => 'order_OrderItemsSourceUri',
         'order_items' => 'orderItems',
         'transition_links' => 'transitionLinks'
@@ -353,7 +356,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_order_source_uri' => 'setOrderOrderSourceUri',
         'order_order_items_source_uri' => 'setOrderOrderItemsSourceUri',
         'order_items' => 'setOrderItems',
-        'transition_links' => 'setTransitionLinks'
+        'transition_links' => 'setTransitionLinks',
+        'order_fulfilled_by' => 'setOrderFulfilledBy',
     ];
 
     /**
@@ -424,7 +428,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_order_source_uri' => 'getOrderOrderSourceUri',
         'order_order_items_source_uri' => 'getOrderOrderItemsSourceUri',
         'order_items' => 'getOrderItems',
-        'transition_links' => 'getTransitionLinks'
+        'transition_links' => 'getTransitionLinks',
+        'order_fulfilled_by' => 'getOrderFulfilledBy',
     ];
 
     /**
@@ -550,6 +555,8 @@ class Order implements ModelInterface, ArrayAccess
         $this->container['order_order_items_source_uri'] = isset($data['order_order_items_source_uri']) ? $data['order_order_items_source_uri'] : null;
         $this->container['order_items'] = isset($data['order_items']) ? $data['order_items'] : null;
         $this->container['transition_links'] = isset($data['transition_links']) ? $data['transition_links'] : null;
+        $this->container['order_fulfilled_by'] = isset($data['order_fulfilled_by']) ? $data['order_fulfilled_by'] : null;
+
     }
 
     /**
@@ -658,6 +665,35 @@ class Order implements ModelInterface, ArrayAccess
             return false;
         }
         return true;
+    }
+
+
+
+
+
+
+    /**
+     * Sets order_fulfilled_by
+     *
+     * @param string $order_fulfilled_by
+     *
+     * @return $this
+     */
+    public function setOrderFulfilledBy($order_fulfilled_by)
+    {
+        $this->container['order_fulfilled_by'] = $order_fulfilled_by;
+
+        return $this;
+    }
+
+    /**
+     * Gets order_fulfilled_by
+     *
+     * @return string
+     */
+    public function getOrderFulfilledBy()
+    {
+        return $this->container['order_fulfilled_by'];
     }
 
 
