@@ -164,9 +164,9 @@ class ChannelCatalogMarketplaceSetting implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values

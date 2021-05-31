@@ -58,7 +58,7 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+
     ];
 
     /**
@@ -67,7 +67,7 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        
+
     ];
 
     /**
@@ -97,7 +97,7 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+
     ];
 
     /**
@@ -106,7 +106,7 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+
     ];
 
     /**
@@ -115,7 +115,7 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+
     ];
 
     /**
@@ -159,9 +159,9 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values
@@ -187,9 +187,7 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
-
-        return $invalidProperties;
+        return [];
     }
 
     /**
@@ -200,10 +198,6 @@ class ChannelCatalogColumnMappingList implements ModelInterface, ArrayAccess
      */
     public function valid()
     {
-        if (!parent::valid()) {
-            return false;
-        }
-
         return true;
     }
 
