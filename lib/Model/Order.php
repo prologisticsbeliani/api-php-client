@@ -119,6 +119,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_fulfilled_by' => 'string',
         'order_order_source_uri' => 'string',
         'order_order_items_source_uri' => 'string',
+        'order_is_business' => 'bool',
+        'order_is_prime' => 'bool',
         'order_items' => '\Swagger\Client\Model\OrderItem[]',
         'transition_links' => '\Swagger\Client\Model\OrderTransitionLinks'
     ];
@@ -189,6 +191,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_phone' => null,
         'order_buyer_mobile_phone' => null,
         'order_fulfilled_by' => null,
+        'order_is_business' => null,
+        'order_is_prime' => null,
         'order_order_source_uri' => 'uri',
         'order_order_items_source_uri' => 'uri',
         'order_items' => null,
@@ -283,6 +287,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_mobile_phone' => 'order_Buyer_MobilePhone',
         'order_order_source_uri' => 'order_OrderSourceUri',
         'order_fulfilled_by' => 'order_FulfilledBy',
+        'order_is_business' => 'order_IsBusiness',
+        'order_is_prime' => 'order_IsPrime',
         'order_order_items_source_uri' => 'order_OrderItemsSourceUri',
         'order_items' => 'orderItems',
         'transition_links' => 'transitionLinks'
@@ -355,6 +361,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_mobile_phone' => 'setOrderBuyerMobilePhone',
         'order_order_source_uri' => 'setOrderOrderSourceUri',
         'order_order_items_source_uri' => 'setOrderOrderItemsSourceUri',
+        'order_is_business' => 'setOrderIsBusiness',
+        'order_is_prime' => 'setOrderIsPrime',
         'order_items' => 'setOrderItems',
         'transition_links' => 'setTransitionLinks',
         'order_fulfilled_by' => 'setOrderFulfilledBy',
@@ -427,6 +435,8 @@ class Order implements ModelInterface, ArrayAccess
         'order_buyer_mobile_phone' => 'getOrderBuyerMobilePhone',
         'order_order_source_uri' => 'getOrderOrderSourceUri',
         'order_order_items_source_uri' => 'getOrderOrderItemsSourceUri',
+        'order_is_business' => 'getOrderIsBusiness',
+        'order_is_prime' => 'getOrderIsPrime',
         'order_items' => 'getOrderItems',
         'transition_links' => 'getTransitionLinks',
         'order_fulfilled_by' => 'getOrderFulfilledBy',
@@ -556,6 +566,8 @@ class Order implements ModelInterface, ArrayAccess
         $this->container['order_items'] = isset($data['order_items']) ? $data['order_items'] : null;
         $this->container['transition_links'] = isset($data['transition_links']) ? $data['transition_links'] : null;
         $this->container['order_fulfilled_by'] = isset($data['order_fulfilled_by']) ? $data['order_fulfilled_by'] : null;
+        $this->container['order_is_business'] = isset($data['order_is_business']) ? $data['order_is_business'] : null;
+        $this->container['order_is_prime'] = isset($data['order_is_prime']) ? $data['order_is_prime'] : null;
 
     }
 
@@ -672,7 +684,59 @@ class Order implements ModelInterface, ArrayAccess
 
 
 
+    
+     /**
+     * Sets order_is_business
+     *
+     * @param string $order_is_business
+     *
+     * @return $this
+     */
+    public function setOrderIsBusiness($order_is_business)
+    {
+        $this->container['order_is_business'] = $order_is_business;
+
+        return $this;
+    }
+    
+        /**
+     * Gets order_is_business
+     *
+     * @return string
+     */
+    public function getOrderIsBusiness()
+    {
+        return $this->container['order_is_business'];
+    }
+    
+    
     /**
+     * Sets order_is_prime
+     *
+     * @param string $order_is_prime
+     *
+     * @return $this
+     */
+    public function setOrderIsPrime($order_is_prime)
+    {
+        $this->container['order_is_prime'] = $order_is_prime;
+
+        return $this;
+    }
+    
+     /**
+     * Gets order_is_prime
+     *
+     * @return string
+     */
+    public function getOrderIsPrime()
+    {
+        return $this->container['order_is_prime'];
+    }
+
+
+    
+     /**
      * Sets order_fulfilled_by
      *
      * @param string $order_fulfilled_by
